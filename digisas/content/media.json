@@ -1,0 +1,2361 @@
+[
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Aolution-logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Aolution-logo.png",
+    "bytes": 1534,
+    "source_sha256": "2079200fdf66e58ec39506d531ba4cd62112c8e3a14992a3f5c217f95f65bdce",
+    "sha256": "d33d05c9577fbe6a2ace6048818a5ff6465466cb2ce0c5999ce1e6bb598b8bab"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Asif-Gill-Small-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Asif-Gill-Small-150x150.jpg",
+    "bytes": 5996,
+    "source_sha256": "48e71624eb4fd48e6d51ad62f27d4a8bbca2492e53668d752e34a546d9329385",
+    "sha256": "7bc98f1fdbd9bc2c8fb9a0054ce9b95f3c0b465cf6a47624ce0af05eabcc4957"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Capsifi-logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Capsifi-logo.png",
+    "bytes": 1483,
+    "source_sha256": "f2a850de5850493e69bfd1cdb49e8c1e8ce575834fd1b2475969b56605d3852a",
+    "sha256": "54693015053549bfd28e2e36b3f1a9c8c09213b52777a216b9f97498fb732f76"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Christine-St-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Christine-St-150x150.jpg",
+    "bytes": 7371,
+    "source_sha256": "74e5d8b4840f636b3da07c869689d92fd593f503088b0b79bf517a4a46d3d477",
+    "sha256": "9129a7962b99419773ea209c719b076866a245bdb586e80803bd86c77bc9d90c"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-1024x458.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-1024x458.png",
+    "bytes": 82629,
+    "source_sha256": "2a4bb6bc57ee26c48323fe967a0bfc8eef5474ff41be49122c3feca57a3960eb",
+    "sha256": "b19acc07445118df59228f17b52212292e42d2ff03819319218e7b5a9cdb0ae6"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/DemandManager-logo2.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/DemandManager-logo2.png",
+    "bytes": 1563,
+    "source_sha256": "7427aa18db4a6dd96648598fcffb0145b765a9f328f204bdb31afaf69f4ec624",
+    "sha256": "eb6009c4a4ade209cdbf730c6f366cdae3cd656c0722997bb99d33141c7b7c8d"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Denodo-logo-v2.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Denodo-logo-v2.png",
+    "bytes": 1648,
+    "source_sha256": "53457b62effe9b93fe0455263ae1ed8592d3868265436b76c7ffa9de1cefcb92",
+    "sha256": "2261dcfcd34abe9f253a6a1d01f34689f936628607b810def75dce44bac918e6"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/DigiSAS-Profile-MemoonaJ-e1574292925191-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/DigiSAS-Profile-MemoonaJ-e1574292925191-150x150.jpg",
+    "bytes": 6372,
+    "source_sha256": "704db506abafd646657af9d5674e64b23757789be850c1074b0ee339a742ca68",
+    "sha256": "1130e54a1ee14c04daeb39e66a946e66d29abc74b28f66043f7e0529c620ce8e"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Gayan-B-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Gayan-B-150x150.jpg",
+    "bytes": 7025,
+    "source_sha256": "b200ce5bc7e51e8870117768497d0d399d95b508249d41b054f2562a54c4189b",
+    "sha256": "da924f6ee06f17c8b0dc5301d7d58137c4a3d01f1f05f00b70e8563b57f888db"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Ghassan-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Ghassan-150x150.jpg",
+    "bytes": 5626,
+    "source_sha256": "19e10b1f0e1feb7afce07366242ea40c367e2b7b995185508be768faaa82344f",
+    "sha256": "c3c3d3f93a9432a652a13080a96091157ede18411109c1777134ff5d460bae61"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Rob-Livingstone-Image-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Rob-Livingstone-Image-150x150.png",
+    "bytes": 40634,
+    "source_sha256": "14330818d614d160ab52d087b565d838ef74be9266419e7841c479771935fb92",
+    "sha256": "0cc564290f9865ae7c45e9d21a420b680dde4dc0d3a75e4882c8adaa00eabbdd"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/Tyson-F-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Tyson-F-150x150.jpg",
+    "bytes": 5027,
+    "source_sha256": "80d415ee11549d46ad3ab62a3ef264a65bae56b1456aed865ff2f59f8a7e1a09",
+    "sha256": "a16ef668a98d317f1d5df44f2920e15c8bd2dd21592f439aaaacae1af5f0c295"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/11/envirofrontier-basic-logo.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/envirofrontier-basic-logo.jpg",
+    "bytes": 6495,
+    "source_sha256": "c71194862ec28e47f30cc03be5ce583f177d49fa30c094fc66f65f9710dfa59f",
+    "sha256": "438e122d163dbe5727c450342ad5708c32f261955ea9af4fe1f9badc5758bf70"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Andrew-B-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Andrew-B-150x150.jpg",
+    "bytes": 6759,
+    "source_sha256": "b5a12f4da1eebcdee06bbde6f3e049d4b8613c026e234fbfa4bb76664b966576",
+    "sha256": "61a172c926e17d29e726990a8347d09d4e09826d4b6ac04acce98c64fb48a8fe"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Christine-St-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Christine-St-150x150.jpg",
+    "bytes": 7371,
+    "source_sha256": "74e5d8b4840f636b3da07c869689d92fd593f503088b0b79bf517a4a46d3d477",
+    "sha256": "9129a7962b99419773ea209c719b076866a245bdb586e80803bd86c77bc9d90c"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Darryl-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Darryl-150x150.jpg",
+    "bytes": 6468,
+    "source_sha256": "de39716bc70d7c103a8fba87d1aa7a16656d587c0c4030194cada968007744d4",
+    "sha256": "d9f90555e14dcfabca0bb41a8c54d60dbc10f806c520102e70ca0670d8a6a1eb"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/EAPJ-logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/12/EAPJ-logo.png",
+    "bytes": 58861,
+    "source_sha256": "e1198681de4b1f16f007e191d82372254b89c86ceca5570b9c8769108e2b60ac",
+    "sha256": "b1c8aa13c040c3e94bf44398f4fb9f969653fcc217fad886045e192690e04ce9"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Hugh-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Hugh-150x150.jpg",
+    "bytes": 4622,
+    "source_sha256": "1e38965623b91d7e1308ed388e10a08897554c56674ed7cfaeca52736ff3f697",
+    "sha256": "bee4ec9f9d94a265c80931af8ae7b1fd379657a1d9f454e57bdbeeeecad504f1"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Kristine-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Kristine-150x150.jpg",
+    "bytes": 5831,
+    "source_sha256": "a0c7476de92ec5825d9fbd107cc21f22ba54152951a7a9c8735c752f56b339a3",
+    "sha256": "1e53f6eb6b416673747d0fc2c4dd3173425e3b4dc52c917d7ab73f2bf9e8de7b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Murali-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Murali-150x150.jpg",
+    "bytes": 5412,
+    "source_sha256": "8baad452b6dbb956c923f1d12430f39a35b3555d71347076b5017c4bcb082c09",
+    "sha256": "f2e564a7cabfd40723a92991f3c3222d81a128ab4e69ace0f7ac24d5ab87e0b2"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Sam-small-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Sam-small-150x150.jpg",
+    "bytes": 5883,
+    "source_sha256": "4f80ad20325d7f074527d9e20d1a0a13aa88d87714eb9adcd6e11e1f84a212dc",
+    "sha256": "feedaf28ab13bf72002cfcb7a188edf69f45b13d6fdfdadd469698e69b79f5d8"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Samir-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Samir-150x150.jpg",
+    "bytes": 5617,
+    "source_sha256": "8c87086c8681f785111e18efe54c2d8342e406fa08423c2a73e7645287acb15f",
+    "sha256": "aebae070a1ec13d7b4731af42990bef17a67fabd4dd068e885b4b5a69e5ded6b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Seyran-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Seyran-150x150.jpg",
+    "bytes": 5947,
+    "source_sha256": "9fa04e46b8220ba2a05d3d40d9c01f947c6ff1b47e99eb32a40226cdb1179492",
+    "sha256": "cdcd50099dbc7b7618562b9eed64dee4ecc4c7f20be6bb5860bc3f6026c28106"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Terry-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Terry-150x150.jpg",
+    "bytes": 8289,
+    "source_sha256": "86e3cc139ce7b30375f30aa48bb0d70eeb300629d9ddac5bae52f0b0ed7407ad",
+    "sha256": "be60ccb1c84fca79816c01df6f8fa20f91c5b3e4374ebebc6a1d647a54c088cd"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2019/12/Zubair-1-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/12/Zubair-1-150x150.jpg",
+    "bytes": 8287,
+    "source_sha256": "600b8f2b8565cab6018000c1e9bca3c9c938183cbc9580a3ef23ecc3296ac792",
+    "sha256": "9a075bd8e67392bd718641702a992bfe201258c42f96d1ed8b76f955ff198514"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Ali-Ramy-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Ali-Ramy-150x150.jpeg",
+    "bytes": 5392,
+    "source_sha256": "5cc4e5698ffbe303f1a632befcdd68ec9995e99ab3b7501473b005ee53b10b09",
+    "sha256": "76c94df8cab237dabdbd0516848c3f5002c3ce8f2639565377a19635dfadd9a5"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Australasian-EA-Summer-School-2020-Program-Final-2.pdf",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Australasian-EA-Summer-School-2020-Program-Final-2.pdf",
+    "bytes": 471579,
+    "source_sha256": "7ee889d113ec5edee89221c0ac4b57e5a06cc4e08ccefcacf7e76c554a1cfa5b",
+    "sha256": "7ee889d113ec5edee89221c0ac4b57e5a06cc4e08ccefcacf7e76c554a1cfa5b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Ben-Faro-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Ben-Faro-150x150.jpeg",
+    "bytes": 6758,
+    "source_sha256": "31a371446d9593992fee0508c02d0119ad57d9fd50a9718d2a914df509012289",
+    "sha256": "c1e4ef3bd6ff28edfe8e6ff041d40aa9854e202838cb3b5a93e8f2ad167ac5e4"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Craig-Armour-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Craig-Armour-150x150.jpeg",
+    "bytes": 5851,
+    "source_sha256": "953edd24daccb1515a6f81f0d6eb29859d33d868ae1390716b69e86f98d2724e",
+    "sha256": "3022abd190dbad6585dca01db918d8d3f66b2d5a6ab9de65eafd90ad01558ae2"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Farookh-Hussain-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Farookh-Hussain-150x150.jpeg",
+    "bytes": 8050,
+    "source_sha256": "9cfbdd0487a77d120469d47e96a514097588c3fa9318075910a5579391aa61bc",
+    "sha256": "ce2e691c0950c4e374e96d2448712b0063f081bae3fbf51f9565e81da82042d1"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Jack-Ross-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Jack-Ross-150x150.jpeg",
+    "bytes": 11072,
+    "source_sha256": "c1594cec85fd39abab0626abf32edf8051aaee0fd3750aec4d2820eeb848c34e",
+    "sha256": "c3f62709856a169cf7a77f7d514d22c71b044192c5ed4fe7f2dcaf74cacc056f"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Krishan-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Krishan-150x150.jpeg",
+    "bytes": 6847,
+    "source_sha256": "366c947a9e2327e54198339897ee729b9d929a45bcff3c46a3a7430cd71ad2a7",
+    "sha256": "9be3c0409942b622b2b6d9c880e2b2bb59e07db1e52652cc39e435e1b65df2bd"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/MacLemonF-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/MacLemonF-150x150.jpg",
+    "bytes": 6174,
+    "source_sha256": "9b9d171ea8c3048ac57f536a7f583a9bd73d3e527a3fe32e79645bb39218a3d6",
+    "sha256": "adf869513e766e73473c40e3e5ea9d7c9dd1dd5c526b00528c234e249aa6ff9a"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Paul-Taylor-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Paul-Taylor-150x150.jpg",
+    "bytes": 5699,
+    "source_sha256": "46c45717568613948b6dc23c7f1758f86826ca6572bae8cb4dd04c31afaa2c81",
+    "sha256": "c3242fe008f9aeb577eae01ca147e4021b7377e814c1533ed083cbbe0ce9367f"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/PeterDubiez_picture-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/PeterDubiez_picture-150x150.jpg",
+    "bytes": 5308,
+    "source_sha256": "0d0645f024a12af4ad0deccbad4a7a23c55a56e2cd4603bb3968aeeee75959d6",
+    "sha256": "a882eec31c22a8b6a2f22bba6eed96fa0206849148800ecf76276fae463f130c"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Samuel-Higgins.jpeg-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Samuel-Higgins.jpeg-150x150.jpg",
+    "bytes": 10383,
+    "source_sha256": "be6a042d7114d586cc1acb4831a5c6eac35732215fb37f553f36362ab1fdcb5b",
+    "sha256": "c63cc2878204233ad3116cd5238057db13bcee211f0074e79bfb9bf326a5d09d"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Sarath-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Sarath-150x150.jpg",
+    "bytes": 5847,
+    "source_sha256": "f072c9ddc4182316424162a02e0d2a2c93bd3cba39181c02bc7bf1163a7eec1a",
+    "sha256": "583f65ada9f4d589216cdd451edd9cccffd111c7498bc9f9f1acf36e8a11a12c"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Shri_picture-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Shri_picture-150x150.jpg",
+    "bytes": 6191,
+    "source_sha256": "3a52bcd7d5b7a37625030b4477ad4180c526e1ac396fda52e2a0ef666846a4b1",
+    "sha256": "c6fa89c2527bfb8eb2b15294a5c37a22c98ebc6b241a2d13e8b883802c6164d4"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Sunil-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Sunil-150x150.jpg",
+    "bytes": 5863,
+    "source_sha256": "61c2a83dffebc4fff22d861e3aca336cafff78d314d1b2ebeb1d1c4c6adb45d6",
+    "sha256": "d46b087e3e84430810ba7e388401fe3f7e1d1bf058a0e1e1c4847aa646840446"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Tony-Fi-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Tony-Fi-150x150.jpeg",
+    "bytes": 9304,
+    "source_sha256": "1cef59e2cbcd299b7e268c0e713795a7856a31d14c5aed41e7fd90929860a9c4",
+    "sha256": "059952a20f831da1425c430f8cc341322b6323ecee449021dbe622071b91e174"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Venn-Hardy.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Venn-Hardy.jpeg",
+    "bytes": 4748,
+    "source_sha256": "c599872aec06d1185d997e29e0a1f0eceb455158d657b42cfd6eeacf73059130",
+    "sha256": "8db85f700c4d16e29baa075d0075f0284bab34529a7f0e61f2bd9e7387f68089"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/Wanlei-Zhou-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/Wanlei-Zhou-150x150.jpg",
+    "bytes": 5607,
+    "source_sha256": "ff873d4eed2f1021a7d009a8cf16050a18b5893cebeffb01951b8f7ef453684f",
+    "sha256": "76d106def3382474bd65abe513814e53dd4fa9681286ecea66bf9f950e738b88"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/johnkeaveny-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/02/johnkeaveny-150x150.jpg",
+    "bytes": 5596,
+    "source_sha256": "68b3e8d14a06c14630c5d0ad10c245ada92584984ddeb7333e4b12aa63a9edef",
+    "sha256": "b4b9978077bc9660f72483ed2f4d14482b0e29ea96498b1ad29dd4c27b51ae8f"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/02/team-rachelle-gold-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2020/02/team-rachelle-gold-150x150.png",
+    "bytes": 18463,
+    "source_sha256": "75d637887826c54a48ed3666feb6df08f5178a2a0da3b8fa8a54d8d44c88b06a",
+    "sha256": "361d24e11735e67592a50af0612228192ff835deb75fe450a101a22e9e03123b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/08/Ali-Babar-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/08/Ali-Babar-150x150.jpg",
+    "bytes": 5664,
+    "source_sha256": "3c380ba7f8b0541231f759343448b2b5e686305928bf8e2441ed8a2e8b267ca5",
+    "sha256": "0d54babb1cd047886204a0e4c853dfb50d64c26143ef962978812e97bb9d1163"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/08/WillyPhoto-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/08/WillyPhoto-150x150.jpg",
+    "bytes": 7948,
+    "source_sha256": "1576fd9a2cc4a058017fe73a174f25cf054b350743a1bae60de0e4e5f23fa449",
+    "sha256": "ea993f6abaf5decb94aeec6171feffae883de549af04d5f7414e912e60e417e1"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour.jpg",
+    "bytes": 27341,
+    "source_sha256": "f69f0b805fb05ddda9019066c6e6529557397b9b08a8c5251919885b1ad4cf31",
+    "sha256": "2208f90474d64f61f0fcb09aaf173c20bb63ee2bf39d9d0a22beaae6debe356d"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2020/11/SURROUND-logo-trans-1.png",
+    "path": "/assets/imported/wp-content/uploads/2020/11/SURROUND-logo-trans-1.png",
+    "bytes": 28588,
+    "source_sha256": "ee00f7fc9a7a0f1d039bec4f7652af6e10a6f9dd0d4256a1099177891cc4d8d1",
+    "sha256": "cd9fe1e91ce05cc4a9e5fb1dba0f6edcee1d8545b15cc4e13f8c182578c8b02d"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/1200x400px-1024x320.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/1200x400px-1024x320.jpg",
+    "bytes": 65508,
+    "source_sha256": "512715f973e8681eeb875f43d7cc8e64eed856b356296c5b02672bd44897be57",
+    "sha256": "eee3b9c5311fd0d846560c70f49b26c9b61319f36ac9d1b8f18d83c1767df4e7"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Alan-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Alan-150x150.jpg",
+    "bytes": 6718,
+    "source_sha256": "b7121c267cefda29c710138fe373412fdc527d07dc17024b9e357e268e3aa80c",
+    "sha256": "06c430dade0a95643e47377be0b03ade6a7468d94829264ed018297d23c466e7"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Andrew-Sm-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Andrew-Sm-150x150.jpg",
+    "bytes": 6485,
+    "source_sha256": "6ebcf0cebf5f601875502eaa64ba79b567511d41278fadda45ec97808462f18e",
+    "sha256": "31ff92386b0499579dd9e39a645f1bdeb2f9adf4f5063857fabf430b90e07d77"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Brad-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Brad-150x150.jpg",
+    "bytes": 5888,
+    "source_sha256": "b9fa7198dffea66c3e69600ac632de9e280f4c419799e82e9b4665920ec4e43f",
+    "sha256": "68fc5394f03a2ff33af37de465ab861729601c854a64b2c7372e6cd3104d9c6d"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Chris-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Chris-150x150.jpg",
+    "bytes": 6414,
+    "source_sha256": "d7815cd5141e7a66d444cc79afe68ffd93ae83b280c0fbde93f92276d174244b",
+    "sha256": "386646a5fc7d9559255febd8f9eb8307fcf12c83a48d3dc324a020806a6b4d3b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Fawad-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Fawad-150x150.jpg",
+    "bytes": 8078,
+    "source_sha256": "c23a4c3678120b2009105adfe8ca469bebf619f068db886a6dd3ee1aaee8c237",
+    "sha256": "cc48b618976d76d616c6b0e3544014213a4d9eaa5a484a7f4b44f4d704880947"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Fran-Mether-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Fran-Mether-150x150.jpg",
+    "bytes": 5565,
+    "source_sha256": "3b066d63236b2b979659ab4ad9720b8bfaaff212d9d03c603f8b0138e3205311",
+    "sha256": "a9ead88c59be60cbff5fcc71014e0b5963718eae97f37557fcd867ca5ffd12d4"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Glenn-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Glenn-150x150.png",
+    "bytes": 43819,
+    "source_sha256": "c2c8b9cc80978e1c0c6738c2b42f501496c9e9c2f156ce5307c402152b526fc1",
+    "sha256": "177bf6b61fcfd71d800375b465ea84f9cad952889b88bdf379beb99de3a5fc5c"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/James-McPhillips-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/James-McPhillips-150x150.jpg",
+    "bytes": 6291,
+    "source_sha256": "121111bbf37ad528cbaa8a80049fb74d26c8f2b413cfd04fce00f88b6b1eb2fc",
+    "sha256": "aba07b89bd00eb4696fc725fc4d0e64f7a65f82fd4752f130ed78731b8b63d74"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Michelle-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Michelle-150x150.jpg",
+    "bytes": 7922,
+    "source_sha256": "99951acc3066a207e7e7e69fe8b15fde5eca9e86c055a7fe02df21ad5a6308fc",
+    "sha256": "f4f1fa01793fdac8e86cb55174990693910a26b3c9017e1c647e1e27ba5cbdb5"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Mick-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Mick-150x150.jpg",
+    "bytes": 6150,
+    "source_sha256": "3f842a757610edffa6829a05076ccd3c2e7d0cb31993110d4908af7c1b0e62f6",
+    "sha256": "2bb0c4f56ab36749029fd5b1888c72b4e04ffb6df0e0b403e59858ae2cd28aed"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Rod-Dilnutt-square-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Rod-Dilnutt-square-150x150.jpg",
+    "bytes": 5793,
+    "source_sha256": "48f30f4b33674ad814498c8facf78c09b15f2c4e74130d50e52a392e860a9840",
+    "sha256": "4b0cfd6dbe060b6b7ba2ecac8a538f3973ffcbca80765a0a59cfcb54c672eb7a"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/01/Sarv-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Sarv-150x150.jpg",
+    "bytes": 6493,
+    "source_sha256": "da9a8c70b1d545799bd5199ac3476510693f5ff7d12298760ff569d2dea44b18",
+    "sha256": "270f031d9fcae877bd1955e733b39798125a783586831b99a25c85b662cf071f"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/02/Dilek-Cetindamar-Kozanoglu-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/02/Dilek-Cetindamar-Kozanoglu-150x150.jpg",
+    "bytes": 8499,
+    "source_sha256": "43519bd7daab93360a8a616bd9a6b69db5e53dc05226c1b656825697f61b25f8",
+    "sha256": "81072b3ad53112515c35ae4be30bc4fa58cbea95597fd810de195b8473e1edae"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2021/02/sri-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/02/sri-150x150.jpg",
+    "bytes": 7181,
+    "source_sha256": "635e930b2dd61a6895e7b91c3df5b7998fd9576ae353887a2d6cd33c6aec31d8",
+    "sha256": "b5dd796886bfef43462c91636f63a7c61444218f881e5aecc267a352c1bc5ac3"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2022/11/Dr-Kyeong-Kang-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2022/11/Dr-Kyeong-Kang-150x150.jpg",
+    "bytes": 7024,
+    "source_sha256": "2da170f44157b075b862e871d72f86ceeccbc681dd6a86752fbaf3471e7c21fe",
+    "sha256": "1dc6ef3213e85f18a48f164d6ec9f0082a1c9ccc0bf3607d4b71d7295accb0f4"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2023/05/Madhushi-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2023/05/Madhushi-150x150.jpg",
+    "bytes": 7983,
+    "source_sha256": "874272f6a50cacf4003be4b0841ca0418597bbab975a9e34158e7d52000974c7",
+    "sha256": "e2ed6891f8199ae732c86608d51c083fd271b52f3a5e08bf4a6d80d1f8de1cc7"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2023/05/Madhushi.jpg",
+    "path": "/assets/imported/wp-content/uploads/2023/05/Madhushi.jpg",
+    "bytes": 9833,
+    "source_sha256": "73d1c3ecf47d1f509eaf67a70dc11006856bfb2e69bf5602fd2219ba85490842",
+    "sha256": "24f4c39c6e7e2edbb49c7817de648778adc18c99d8e64af3d0f84fefde1078aa"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/AQpic-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2024/07/AQpic-150x150.png",
+    "bytes": 34221,
+    "source_sha256": "5558d7010b41a61c4bece248087bdaade620545bf0934dd29516dd188e219945",
+    "sha256": "85ebb68ba6f1a0b5e490c206a7b848e6c4157db1ba8fc0b022a09c4946bde4df"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/Bushra-picture-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Bushra-picture-150x150.png",
+    "bytes": 18197,
+    "source_sha256": "b728233f8bdd7a5b41b433100ea679bc07289f9432241f33660b8fd369f7e091",
+    "sha256": "c149099757b8a3aea76b6f2f4ddab0275a27ecc9153fb5fe1b65c44a1563b553"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/Eesha-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Eesha-150x150.jpeg",
+    "bytes": 9016,
+    "source_sha256": "c50fcd74a22989397742f6ce422151e4776b6f01323fa30d5955ddbac7dbbd75",
+    "sha256": "e4476ba4cb82bfd3326a0371259913b3c26db4e7c71d1267b3f2cdcc8ea77ba7"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/Mayada-e1721100862590-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Mayada-e1721100862590-150x150.jpg",
+    "bytes": 8486,
+    "source_sha256": "13dc3f3552a504d9686d98ca1be4c73490d3684380590ee936db731829aa2784",
+    "sha256": "3d1a98aac71c4795880f4616328d3f3b8cc8a75d454c36179870cd3970a7ca2e"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/Murali-e1721100691567-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Murali-e1721100691567-150x150.jpeg",
+    "bytes": 5657,
+    "source_sha256": "9700c320e50da1adf084de57d11b870a97fec920f70fc1022693096437cdfcbd",
+    "sha256": "831e7776e13bc15ba1e1057b81360ad66a3d2d8f8a3fa549faf69a9a99be6eac"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/cecilia-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/cecilia-150x150.jpeg",
+    "bytes": 8943,
+    "source_sha256": "1a2d6f64a70a263719b6bb451d342a16900415df4e11c1d1b29dbc877897481c",
+    "sha256": "3b90b95ed832c2f0408b77a7f8916062f09dc8352e4468b2b99270f60af7cc33"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/iqbal-sarker-145x150.png",
+    "path": "/assets/imported/wp-content/uploads/2024/07/iqbal-sarker-145x150.png",
+    "bytes": 32713,
+    "source_sha256": "ae09cc66582e4bee3391780d9d778437813969aae37b3b3dce373216e7504964",
+    "sha256": "bce3feb455c73bcdffe47f9a8b476fef4e0f176b137d5918951d422100837f88"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/07/mick-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2024/07/mick-150x150.png",
+    "bytes": 36381,
+    "source_sha256": "832750900ba8eedb8fd16abce69fa9f43cbd34c9f1625e7fd11c1bc16a976363",
+    "sha256": "e4cea1481bce4e4d697f6c089c590bb24257c623518f00367c7860dc9d072acd"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/IMG_2385.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/12/IMG_2385.heic.jpg",
+    "bytes": 2054764,
+    "source_sha256": "137a47a61a21500f8e2a8702515c30775fbdd48faad4bdbf7364188b6f0ea283",
+    "sha256": "e6aeb65116a36d27eff4a8ce52ddd9ae9682f9d88a95dc5f7c35567a14855906"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/IMG_2390.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/12/IMG_2390.heic.jpg",
+    "bytes": 1958923,
+    "source_sha256": "6b0e10556bb261231828481da662fa2b2026b8e32db25a7ceea6f853305a2775",
+    "sha256": "1b979df83664911c19dee4e46892736212124af1b37ca9c0a2ab42a198ba5f9a"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/IMG_2401.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/12/IMG_2401.heic.jpg",
+    "bytes": 2252544,
+    "source_sha256": "1cad536fc621e0ff56f3e4df111345f79708d7e6a68b827e76e8d2ba418619ff",
+    "sha256": "08ef7ecb90030f26b7c9df2a130875908ce28d420e2c7b36ac3ca273a6e5fd59"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/IMG_2404.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/12/IMG_2404.heic.jpg",
+    "bytes": 2165813,
+    "source_sha256": "41321cd884b739bc0296404fa43ed80883f8d61747b7923c87f138959b1032c9",
+    "sha256": "7474e043ff172092d559b70766c601341925eca7ee03b6e3ef9922ad4bdcc872"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/IMG_2409.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/12/IMG_2409.heic.jpg",
+    "bytes": 1310997,
+    "source_sha256": "5d589636b0e0b44ef9bff54b56dcfc3370f6975519ded0f83269c08803bef3c5",
+    "sha256": "6172a4476f4f4835af40b00954586411ea84057d3a280428a671d609d5348528"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/IMG_2415.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/12/IMG_2415.heic.jpg",
+    "bytes": 1882081,
+    "source_sha256": "7e4699c7472af4467251b70203212eb11d0d90b945432b0bc4e14491cac69ab0",
+    "sha256": "8bb28c5abe417fb7c3d8731dc5a98a6ac76f8291165a423f13fa0664139394ec"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2024/12/q4-agenda-1024x582.png",
+    "path": "/assets/imported/wp-content/uploads/2024/12/q4-agenda-1024x582.png",
+    "bytes": 111104,
+    "source_sha256": "a27faa4173101f4dd6188ab8e2b27eeab737ea625366cedc14b2d122cee7048d",
+    "sha256": "42a6092580eb1b03afd7b81f952fee31a5c4390a521275ebef517d1560925861"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/03/Picture-1-2-1024x447.png",
+    "path": "/assets/imported/wp-content/uploads/2025/03/Picture-1-2-1024x447.png",
+    "bytes": 80629,
+    "source_sha256": "2ec941a43e159676eeec09963b445023014c52d4fa5dd6bf9b9de1cf872328e5",
+    "sha256": "8c21dcf1a6124ba269cb6eb53ab5ebe05df3c8d36d791f74fa3a05f4d3f29de2"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101435-1024x768.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101435-1024x768.jpg",
+    "bytes": 174324,
+    "source_sha256": "d679eb306ad783de50c089269c49bc12e6e9f68b2515ce76dc921bf33d6d04fe",
+    "sha256": "b852139a9efe41acd43e9ec59e498c25eaf1da0ae36ef23778134b778c9cc7fd"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/05/Payam-Mokhtarian-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/Payam-Mokhtarian-150x150.jpg",
+    "bytes": 4723,
+    "source_sha256": "00ce3877ceee6ad73b6a4aeb5623d9260312b41bba1000ce48d471b5a8af210b",
+    "sha256": "1feb5c0c2cee26d8720e91eabb87da95ff063b6df6c058d15437af1d62ea67c5"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/05/penny-lane-photoshoot-headshot-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/penny-lane-photoshoot-headshot-150x150.jpg",
+    "bytes": 10161,
+    "source_sha256": "f4cf11d5f3e965b4fc9b18e5ebf39ee61f0ec1a5cb754104fe898d11e46c48f2",
+    "sha256": "1bde69702bed95532c3cbefaa7e7e5f3971b1f878c907490bd92b72780f93df6"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/05/prof-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/prof-150x150.jpg",
+    "bytes": 8627,
+    "source_sha256": "af733633d983198ff9962ac4a2b31838d27b31071c4f17e7f487a4966ce7a56b",
+    "sha256": "e8fd227f2502fe59dd5323c3a0ca8ea89281444ea92ea58c35431b728b898d39"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-1024x572.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-1024x572.png",
+    "bytes": 458520,
+    "source_sha256": "f3f02cb2bb0eb1fe3cc53418f5c5b9121c05038a61a749ee35fb3652bbe481e9",
+    "sha256": "601888747416a9d1837f32c5ca5564575308a7fc9e861e54c848114247f43fb5"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/07/Didar-Zowghi-e1752476038315-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/07/Didar-Zowghi-e1752476038315-150x150.jpg",
+    "bytes": 7992,
+    "source_sha256": "098fd9c770024f884e5bf8b2b2601968f659c374ed72b44154b83465b95539a3",
+    "sha256": "3a6cfb1258a1f66419c736500e9f64c167d9bdf25eb38e9758782d54ac7e821a"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/07/Fahimeh-Ramezani-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/07/Fahimeh-Ramezani-150x150.jpg",
+    "bytes": 6457,
+    "source_sha256": "56a03c96e6bfa11524923e6a59c0e5ddd6222cffb40123682c7140cd0f03abc2",
+    "sha256": "4881d8176b02ad4823ad796a65a9cc08ecfbf688323ca0430ae487b4b6423412"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/07/Image.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/07/Image.jpeg",
+    "bytes": 117501,
+    "source_sha256": "c0f96cd11dbe2834dee4ac6333dde332c0e67a4e37243c60681449f900249c21",
+    "sha256": "f507e58a9521f1f842b2e5f82c7e0160a89a4f7ff551fa8b160ab9cb19d5de20"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/Bo-Liu-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Bo-Liu-150x150.png",
+    "bytes": 31928,
+    "source_sha256": "7754dcfb08f7e6b149fb3cb91eac01d752c83c2f2b4cb17e47b4dacd19f6feb2",
+    "sha256": "83b825676f92372c4043cbc10f6a0fc5806b2d0f0716228738f9b491b1ef8d9b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-1024x768.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-1024x768.jpeg",
+    "bytes": 218592,
+    "source_sha256": "c75915c62a459f0153ed8a72f69a17929422d8b61e47deadb33b5af43cb14669",
+    "sha256": "5b324f2793caab1108ccb5e3b88ff0adec3eb164d8374730962b4a5e7ee6f120"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/Justin-Stark-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Justin-Stark-150x150.jpg",
+    "bytes": 6334,
+    "source_sha256": "9aa67eb728433465e9b8c7cd0ddec1cf6d520f2e7856766a50ff3cb7d7bdb25a",
+    "sha256": "958fd4c93e76383444fb864b436a96315fe2fb52de6d199abfa738624b4106ef"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/Nabin-Sharma-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Nabin-Sharma-150x150.jpeg",
+    "bytes": 6875,
+    "source_sha256": "fb795889a389f514e800af13fa2e2b4ee759efa2222bfe2324d00409d92f8fca",
+    "sha256": "8588917d2449d6e554cad25389262348c6b6bfcc337782d979a3987855ae7840"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/Q3-Agenda-1024x440.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Q3-Agenda-1024x440.png",
+    "bytes": 96123,
+    "source_sha256": "f1221006b0e022d3ee2f2e47356f550053eebd92a57e27ae68438724ae484709",
+    "sha256": "dd69b63cc2ae5ba88f108f8121bb44c7159af2e4a4e19f339daed23b07830332"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-1.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-1.png",
+    "bytes": 85351,
+    "source_sha256": "d9a3843f5eb45fbcdac2ccae7bf22be7538f873bdee86f6b8212995278d65f9f",
+    "sha256": "2f33a1e0bc8485ead68590c8cb33472476d4b6331c410e5345a9f5420a701667"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-10-1024x576.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-10-1024x576.png",
+    "bytes": 460613,
+    "source_sha256": "428e7209c79f7739bb1b5c913663295658b99e043cb52cbdb0760f1369b5a6bf",
+    "sha256": "9423d8422aabcf83b3a3591c7a64b17037ec6bb28ca3cd918c359b32a474b2d8"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-11.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-11.png",
+    "bytes": 1196416,
+    "source_sha256": "8aa878d88a6708aa945f8e7211adad0df730dc2fdd64c79c0c1e4b7a32c2b9e2",
+    "sha256": "1fb03b4a1c84cd6089c2d97854bbf73472018bf9f8814a587115f95ff36b7947"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-2.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-2.png",
+    "bytes": 115908,
+    "source_sha256": "9bd1c689b737cb422e17ccbe21a23063f1a63bc5fb2d9adbeee4dba8484ac2db",
+    "sha256": "7db2d46674276f6f82cc12cd18f86f77800e3cb8745daadcd35d8bbb9888183a"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-3.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-3.png",
+    "bytes": 124544,
+    "source_sha256": "5ec3048c1bf3ed2b5edef1605dc87b894762e84ac0af1f1f1c134ae4e82abba2",
+    "sha256": "91ce81c519baf446594a5898efefd95fbe883d2d41d6dfe7c8907bf1795da9c4"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-4.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-4.png",
+    "bytes": 96382,
+    "source_sha256": "c430715b6b8b25276cd8373a45ff6192599b17a65840aab5d54e1f5ea986dab0",
+    "sha256": "584aea9827d74331a50771a04b36892f307ef9482e64405e104df5b01c72e1e5"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-5.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-5.png",
+    "bytes": 100992,
+    "source_sha256": "4dd2b0971f0d9591c22e23528283511b564a7f2c59174d36dce124ff82aee07b",
+    "sha256": "451e492fcbba9aafac56ce714daffaefc2938059a4ce3e83e9159504be1d4f76"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-6.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-6.png",
+    "bytes": 89790,
+    "source_sha256": "80f67674551a285c2d2e0eb3989d506a6b3dc87cd9e9645dca8f59d16725af04",
+    "sha256": "a5c1b41ba2ddd29c2c0ccc9ce261d708153aa8dae8ea4c8df1482bb57decc720"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-7.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-7.png",
+    "bytes": 128101,
+    "source_sha256": "1e219346845b73940f224ba2486ebeefcbfd896adb40cf0bbd0f8e577cb1c5ac",
+    "sha256": "9bb47f84c8080cd4a93a3e63ae1cd67d1d6f4ddf0b347a42b1ce37eee1020be0"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/08/image-8.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-8.png",
+    "bytes": 71816,
+    "source_sha256": "c286754ccddb8d9ea084662aec9c9dedd11e6bfe2f7414cad40dc504f12ba77a",
+    "sha256": "b50b748e49f020e75806b4737c7ead9ad36fe64ee30585e4e8d258bc568e217e"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB.png",
+    "bytes": 333402,
+    "source_sha256": "94ae6997e4db8fe8ef60f05682b3d65abdd2ce5f0f499705a5b0a434e5b20e04",
+    "sha256": "8664a1b83aa498c5cc01be7e666ae5c4a819e662a36cb218ab48d8e70e81516b"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/09/Ali-Braytee-150x150.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/Ali-Braytee-150x150.png",
+    "bytes": 37265,
+    "source_sha256": "64b0c739904685535ae4365b8850111ed5060bd7d09049be7cd4de6e2e7d620c",
+    "sha256": "0ddc26dd0b53a4ccad47ab8777f55924f3280b50f3661337fa9eb2046c35b355"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/10/EDOC-Logo.png",
+    "path": "/assets/imported/wp-content/uploads/2025/10/EDOC-Logo.png",
+    "bytes": 49374,
+    "source_sha256": "dcea7b142d8409e99541d7e03b7d8f8cc40a3e058eaf893788a482920f5732fc",
+    "sha256": "1dab1288eff764713b3d4a410cb9485fa8cf5433a054bba8964874c60afdc4eb"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2025/10/Mohamad-Nagib-Chrara-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/10/Mohamad-Nagib-Chrara-150x150.jpg",
+    "bytes": 4814,
+    "source_sha256": "b1153ad7c08fc4cf78fa513cea75bc12a5833784befa336836bfeedfd453c517",
+    "sha256": "7feaf747a48efb3e1a69db6daa07db30d14290af0a5ad4a1935775fb013bdcc5"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2026/05/IMG_4701-1024x768.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/IMG_4701-1024x768.jpeg",
+    "bytes": 261330,
+    "source_sha256": "12d6c1204fe8e18437b2731872fe3d84125fb40af16d836a404317f97304b1e0",
+    "sha256": "8d4341f75cd005e938a587b8946a65a9c7fb61e93769f78ba6ff9215b555b579"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-1024x584.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-1024x584.jpg",
+    "bytes": 162047,
+    "source_sha256": "801d4ef553999ff1a74e2bd33918e0ef490a7e52fd07bb5eac18d62d3399e65e",
+    "sha256": "b3ca0fc69b586ed92e45de75d4d975b05e2938a747da6e0e57cba87706b86700"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI-1021x1024.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI-1021x1024.jpg",
+    "bytes": 132601,
+    "source_sha256": "887d22da14373faf6efcfb42af91ec394590de3cf3992a32c86853fb3e888305",
+    "sha256": "3dee2f89202cc5c16aa57f125c2b254756883fbdedbc66a73a1891d3d9b0a036"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2026/07/Sonia-Boije-150x150.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/Sonia-Boije-150x150.jpeg",
+    "bytes": 6263,
+    "source_sha256": "219deff3497ff5791b39f758af01a74cfeea71080aa71e79ece292697314b2a9",
+    "sha256": "a6d9a35a2d37934fae3188f8dbd8d869c73e1b31557ee6e1f9df6e77ee529991"
+  },
+  {
+    "source": "http://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9669-1024x768.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9669-1024x768.jpg",
+    "bytes": 203988,
+    "source_sha256": "4868e8fe1bfc4ca468d3a0ba27e1b893b7f482895652fca3d015d70ef56bf68c",
+    "sha256": "b8c03b621a1d708f99a0328d5fdbd6dde1dc2d42f6a781b6113ca4df1e986937"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Aolution-logo-300x42.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Aolution-logo-300x42.png",
+    "bytes": 6123,
+    "source_sha256": "4d3b2ce83a59004be733bfa1d7093874c1a3ff1b22d3dc9ec9d2804c75e7ac16",
+    "sha256": "c0a9c4ee909e6ab09fe330dafa6c4d5b385371b2285b628c31eed069c10a4954"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Aolution-logo-768x108.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Aolution-logo-768x108.png",
+    "bytes": 25819,
+    "source_sha256": "582af4e039c2c659ffc2d4ce633bb1de21c56ed699c5f2725059406f8ce85a4c",
+    "sha256": "4958a169a0645c87b65d6b58e4b9ed238adea8f4ec652cdfb32c79399bb5ffeb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Aolution-logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Aolution-logo.png",
+    "bytes": 1534,
+    "source_sha256": "2079200fdf66e58ec39506d531ba4cd62112c8e3a14992a3f5c217f95f65bdce",
+    "sha256": "d33d05c9577fbe6a2ace6048818a5ff6465466cb2ce0c5999ce1e6bb598b8bab"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Asif-Gill-Small-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Asif-Gill-Small-150x150.jpg",
+    "bytes": 5996,
+    "source_sha256": "48e71624eb4fd48e6d51ad62f27d4a8bbca2492e53668d752e34a546d9329385",
+    "sha256": "7bc98f1fdbd9bc2c8fb9a0054ce9b95f3c0b465cf6a47624ce0af05eabcc4957"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Capsifi-logo-300x147.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Capsifi-logo-300x147.png",
+    "bytes": 31675,
+    "source_sha256": "0b474e477e5aeb7daf1850c458339f3e7f53f10aed97678ab477daf554d256cc",
+    "sha256": "ccb8a526e6a98cf3728903cf1cde5f8705befbaa78df2b8c99691159a9e49a21"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Capsifi-logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Capsifi-logo.png",
+    "bytes": 1483,
+    "source_sha256": "f2a850de5850493e69bfd1cdb49e8c1e8ce575834fd1b2475969b56605d3852a",
+    "sha256": "54693015053549bfd28e2e36b3f1a9c8c09213b52777a216b9f97498fb732f76"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-1024x458.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-1024x458.png",
+    "bytes": 82629,
+    "source_sha256": "2a4bb6bc57ee26c48323fe967a0bfc8eef5474ff41be49122c3feca57a3960eb",
+    "sha256": "b19acc07445118df59228f17b52212292e42d2ff03819319218e7b5a9cdb0ae6"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-1536x687.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-1536x687.png",
+    "bytes": 189351,
+    "source_sha256": "923e9c4e83d6225bf27d8b42f54a29f1ae6ed56a8c408b0f0680c7e818974baf",
+    "sha256": "69fa81a6cbb6caa5066e830a0d9ed32f3bf73ce59352bb052176e080c5144de4"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-300x134.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-300x134.png",
+    "bytes": 11211,
+    "source_sha256": "37abbf5458d823000af505d63edf2045871e1c2508d8f4c6cde010a7329d9fc7",
+    "sha256": "2ef43ded5668345505614c07587f54d21662094be73765047b66bfd771c85bea"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-768x343.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Data-Zoo-Logo-2017-768x343.png",
+    "bytes": 56932,
+    "source_sha256": "47b965539b7ad210cda76898f9dbd4fdcf8db9c6b0782fbbabad7d551cd5f748",
+    "sha256": "d8b767117051945ab20cf9af5d25d9115a74898004ab6d489340785d8a5522cf"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/Data-Zoo-Logo-2017.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/Data-Zoo-Logo-2017.png",
+    "bytes": 18862,
+    "source_sha256": "bb0659d2abcb73f687f58f9aba5db3c41348acd2f1ce6007f7dc1cc6bdd8adee",
+    "sha256": "8a753dbfa1e01d024ec632072978cca4e391cc1449ceb2aa4945fbd2ca570d15"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/DigiSAS-Lab-Home-Page-2.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/DigiSAS-Lab-Home-Page-2.jpg",
+    "bytes": 30565,
+    "source_sha256": "f08dee288b871d4fd5dbae6566540ca0050af7341856cc3642167391da57ab74",
+    "sha256": "dbe0b52b07da50abbe9265fef167d486dc204973ff20cbd6022971be767e8611"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/DigiSAS-Lab-Home-Page.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/DigiSAS-Lab-Home-Page.jpg",
+    "bytes": 48187,
+    "source_sha256": "5d88c0007928e47156bb59677a4d75fbc87b26c56f939dfb6c777809e3cf83a4",
+    "sha256": "97ae69310a7e9d0fea82e846f20a80354492c5cac0a414e123c06fd48cc9f794"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/UTS-Logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/UTS-Logo.png",
+    "bytes": 1078,
+    "source_sha256": "d710cb0aad79f0f3544b41c7cda9e9bcbbdfeb1cb950ceaea067bf80901f0079",
+    "sha256": "e1d1262d6c3019283a01d7536a3cb98279427229704c5170dec4877db86965a7"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/cropped-DigiSAS-Lab-Home-Page.jpg",
+    "path": "/assets/imported/wp-content/uploads/2019/11/cropped-DigiSAS-Lab-Home-Page.jpg",
+    "bytes": 266345,
+    "source_sha256": "8857d2111086d7161a8f12abe06d0c1053b1cd2bc02a888004118450a6b3ab16",
+    "sha256": "a17a973253abef911919ff8ba59c183319a6383f8f305da4c68bc8e6a9febc8b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/11/cropped-UTS-Logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/11/cropped-UTS-Logo.png",
+    "bytes": 6496,
+    "source_sha256": "3864191235c947681a503f962a997600bbde827c50ffae2b125964e465ed563f",
+    "sha256": "bc763377205953e649a1472c8dc623a00865ec8a7792da01c3d038de7c9f5854"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/12/EAPJ-logo-300x104.png",
+    "path": "/assets/imported/wp-content/uploads/2019/12/EAPJ-logo-300x104.png",
+    "bytes": 14498,
+    "source_sha256": "fcf9f47b903e8d6b24fea46620425fefeaacf49316fd18c0f2709903d5cdb97f",
+    "sha256": "4c913749cef1a9b808cf0f46b9733844995e39fadc655c0314840964d35ec699"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/12/EAPJ-logo.png",
+    "path": "/assets/imported/wp-content/uploads/2019/12/EAPJ-logo.png",
+    "bytes": 58861,
+    "source_sha256": "e1198681de4b1f16f007e191d82372254b89c86ceca5570b9c8769108e2b60ac",
+    "sha256": "b1c8aa13c040c3e94bf44398f4fb9f969653fcc217fad886045e192690e04ce9"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/12/FromHereOn-1-300x30.png",
+    "path": "/assets/imported/wp-content/uploads/2019/12/FromHereOn-1-300x30.png",
+    "bytes": 3932,
+    "source_sha256": "b9d9d01200edd30e75bf739a0b5e23649507216b000b919ef7fe753749da1132",
+    "sha256": "6c620204130eb44101360b32e6b64f546a7db1b5668104dcaf6a7c6ef63f220b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2019/12/FromHereOn-1.png",
+    "path": "/assets/imported/wp-content/uploads/2019/12/FromHereOn-1.png",
+    "bytes": 7212,
+    "source_sha256": "3ca6e2e4688c871e467497e0bf2607572e1cbff5c5689ae1ac35b517acc46779",
+    "sha256": "e1482e186a24532dbbddb5de8b4e87e85968aaaf8b84a3efcbf0cf45967a2320"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/01/MongoDB-New-Logo-1024x276.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/01/MongoDB-New-Logo-1024x276.jpg",
+    "bytes": 32118,
+    "source_sha256": "8ad1f07c77b7cc1a5d95d249c747ac1fb8f4068cb5e6574c530bcd7f85807bfd",
+    "sha256": "65542b91a23284b47a67a69515a7bbb263b2c9109aed79860941061d18190e94"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/01/MongoDB-New-Logo-1536x415.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/01/MongoDB-New-Logo-1536x415.jpg",
+    "bytes": 51392,
+    "source_sha256": "a0c60affc514dfbe5fd9d3aace08a9b7e90e898eae6f687a222984a2809d824b",
+    "sha256": "e95af2d08f6c96aab67d9a701fc69cef99b2d1454b36e3a3ab51f1fea58d861a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/01/MongoDB-New-Logo-2048x553.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/01/MongoDB-New-Logo-2048x553.jpg",
+    "bytes": 73091,
+    "source_sha256": "533a9ecb62d3d0132c5a32523e629d0357d61cf0537d214c7b10c98ee28d97bf",
+    "sha256": "a5b41b28219f9ae842d0a58d502804dbe1f4f0c4ff54f66cafc15eb499d7a99c"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/01/MongoDB-New-Logo-300x81.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/01/MongoDB-New-Logo-300x81.jpg",
+    "bytes": 7140,
+    "source_sha256": "b383f77d72f8b3221e92368bda7ad9889dbef835857a929db1e4f93f51111c1f",
+    "sha256": "2824221b414a2f33c31d94a26a6d5eec94445c1af40cc499e7f249a51287fd64"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/01/MongoDB-New-Logo-768x207.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/01/MongoDB-New-Logo-768x207.jpg",
+    "bytes": 23121,
+    "source_sha256": "69398b54d9167fddae61447c5125f5f92a87cde545b94b98f75a9b33126b8538",
+    "sha256": "3ed744b0b74d93c1cca717ea4372b0f82524587a5ca70f46eeb999ff369793b2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour-300x44.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour-300x44.jpg",
+    "bytes": 6690,
+    "source_sha256": "e4794cb366deb2167ccf798159786c416fe149f108af389dcd4659b04fd8b538",
+    "sha256": "3b1ea28d93c298bd62b0c9898ce9947b7a1cef5bb0e325282810eda9960f540b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour-768x112.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour-768x112.jpg",
+    "bytes": 19006,
+    "source_sha256": "32741f3dd1ca923fe83a76fb91b1ca83156a2f75ad52527e10c68b4522dcae28",
+    "sha256": "d8b87c5911955d5713e5f4d2785f921c7d49e3e5feb1a065552c330c234736ee"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour.jpg",
+    "path": "/assets/imported/wp-content/uploads/2020/11/Evolve-and-Amplify-logo-colour.jpg",
+    "bytes": 27341,
+    "source_sha256": "f69f0b805fb05ddda9019066c6e6529557397b9b08a8c5251919885b1ad4cf31",
+    "sha256": "2208f90474d64f61f0fcb09aaf173c20bb63ee2bf39d9d0a22beaae6debe356d"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/11/SURROUND-logo-trans-1-300x66.png",
+    "path": "/assets/imported/wp-content/uploads/2020/11/SURROUND-logo-trans-1-300x66.png",
+    "bytes": 15628,
+    "source_sha256": "b31d1fba2a483be7e704202bc04a5309876fdf6226c0ae1907d7a63bc38659d4",
+    "sha256": "6a3bc62caeac648b1d40f75819100ec0ebc977e4bad3b68578ae32548051fe5e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/11/SURROUND-logo-trans-1.png",
+    "path": "/assets/imported/wp-content/uploads/2020/11/SURROUND-logo-trans-1.png",
+    "bytes": 28588,
+    "source_sha256": "ee00f7fc9a7a0f1d039bec4f7652af6e10a6f9dd0d4256a1099177891cc4d8d1",
+    "sha256": "cd9fe1e91ce05cc4a9e5fb1dba0f6edcee1d8545b15cc4e13f8c182578c8b02d"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2020/11/SURROUND-logo-trans.png",
+    "path": "/assets/imported/wp-content/uploads/2020/11/SURROUND-logo-trans.png",
+    "bytes": 63633,
+    "source_sha256": "3e560c9f1bd1b7689e358f70ca3f4775a957a68166e0b02feaef2446cca5de32",
+    "sha256": "6901478435dcb3943eb79f90b1afb8e79523f05427902b3555fa6958bf0f3d1b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2021/01/1200x400px-1024x320.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/1200x400px-1024x320.jpg",
+    "bytes": 65508,
+    "source_sha256": "512715f973e8681eeb875f43d7cc8e64eed856b356296c5b02672bd44897be57",
+    "sha256": "eee3b9c5311fd0d846560c70f49b26c9b61319f36ac9d1b8f18d83c1767df4e7"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2021/01/1200x400px-300x94.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/1200x400px-300x94.jpg",
+    "bytes": 11870,
+    "source_sha256": "b5b1298607f6345c1a3afcba5085767319c40a3e17f852c9dcf752c5c5ec7540",
+    "sha256": "91a80c0724af9f745814f186717c7f62e5da3e77842bb9f2dde7a824032889ce"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2021/01/1200x400px-768x240.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/1200x400px-768x240.jpg",
+    "bytes": 45424,
+    "source_sha256": "57af907b63d8e6a906b65d1b6a4fa6dcfd99282e4066802d4b792acd5a886284",
+    "sha256": "900d5da9c8cb8c2318769316c2139a998a03af6c639db41d08ccc5ef392cc05a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2021/01/1200x400px.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/1200x400px.jpg",
+    "bytes": 98694,
+    "source_sha256": "a50725cc5e562398d1d385c31eddf105fc4bc0c7ac49c6677b19b2aa62169149",
+    "sha256": "d3e2fc8ce6551101c4236ef9d7d628db0ade154fe68a54d61e7a4c6e726de548"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2021/01/Australasian-EA-Summer-School-2021-Program.pdf",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Australasian-EA-Summer-School-2021-Program.pdf",
+    "bytes": 149550,
+    "source_sha256": "1acca16bd8d93606ba30f07d6c925efeb16c6a686573546c5ea3bb1a8abcc136",
+    "sha256": "1acca16bd8d93606ba30f07d6c925efeb16c6a686573546c5ea3bb1a8abcc136"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf",
+    "path": "/assets/imported/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf",
+    "bytes": 136161,
+    "source_sha256": "debd25d0d57b57228893560c87575092ed0120c63691e8932fe8bdc199c75026",
+    "sha256": "debd25d0d57b57228893560c87575092ed0120c63691e8932fe8bdc199c75026"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/02/Prof-Winter-5-scaled.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2024/02/Prof-Winter-5-scaled.jpeg",
+    "bytes": 1156100,
+    "source_sha256": "44c5121283096d111d1207e455215e15ed5b6019543f2900f68acf15b506abcb",
+    "sha256": "d6ca22b76e8fa199a738b1413e3501cc22f2dadf423daf2b26625d8aa7fbc7c3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/FGEA_CoP_24Q2-scaled.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2024/06/FGEA_CoP_24Q2-scaled.jpeg",
+    "bytes": 740115,
+    "source_sha256": "631aee99aed2657edd72f73cc42c60e173c14d43a60f34b79cd32bf7486f1ca8",
+    "sha256": "e0608213d8e9c102e7b74e2bda88be253285cfbcc4cbef97c084cd973bd95b1b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/Future-Generation-Enterprise-Architecture-Symposium-2024-Q2-300x169.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/Future-Generation-Enterprise-Architecture-Symposium-2024-Q2-300x169.png",
+    "bytes": 23778,
+    "source_sha256": "ef16f6e08a4cf1e9d188c176e7604890b02c9c96bd2366f57d1a8b8ed07a4ffd",
+    "sha256": "8aac261df17ca2d177e03fd313d5d3eaddb7785af53a4327a63ad56ca44da3b5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/Future-Generation-Enterprise-Architecture-Symposium-2024-Q2-768x432.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/Future-Generation-Enterprise-Architecture-Symposium-2024-Q2-768x432.png",
+    "bytes": 93570,
+    "source_sha256": "a93d192bd7ff0539777451115359e133537c54ddf5a864b7a856345a49682825",
+    "sha256": "6f71ccbb6e207a1076fc8b4d02488ec9dd49a60bb4f34c0367ca3f87ab3d76bf"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/Future-Generation-Enterprise-Architecture-Symposium-2024-Q2.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/Future-Generation-Enterprise-Architecture-Symposium-2024-Q2.png",
+    "bytes": 118770,
+    "source_sha256": "caa913d50544a04225cd13a8f91148b09bd8e09cfb9ba327e5c3720185604a3f",
+    "sha256": "4517b40c53d83c22e405637cebf9fabbd20ec63fa21b82505ef7bb8eb12680fd"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/Screenshot-2024-06-12-at-2.33.31 PM-300x192.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/Screenshot-2024-06-12-at-2.33.31 PM-300x192.png",
+    "bytes": 22619,
+    "source_sha256": "8b3e8d97dd0efe0e0864987614dceab182b73d85da0ff3005ab8318289ecd551",
+    "sha256": "bf63e289d9eacaddccb8f7577a54963425c9eb8a10861f8daff01de767e1b9d5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/Screenshot-2024-06-12-at-2.33.31 PM.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/Screenshot-2024-06-12-at-2.33.31 PM.png",
+    "bytes": 50051,
+    "source_sha256": "1e72fe4a3751212fbcc8284ca8b81fec858d1f1fa52645af59a894dd76d39c42",
+    "sha256": "907394b12beccfab1a4d4a1df5f9c508d796673acc085071f97a4c4f5cf9995b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/image001.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/image001.png",
+    "bytes": 199323,
+    "source_sha256": "6577f9666f576a3fd893bc6ba9f6ce5676f6c29326d7400e4bf295bb1ae3366c",
+    "sha256": "c5567278eb8515ac46a56ec7ea841adbc8a937b4957851b4e825926b6c376f7e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/mqu-1.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/mqu-1.png",
+    "bytes": 8559,
+    "source_sha256": "f10a7c3472de611ccf46e947ffef798074f94b45d25edd9cc9b7a3f7b3084c54",
+    "sha256": "e62fb5304727c064ab271da91b4b78d9f46ec795ffeeb98eb16099fc00e9aaad"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/unsw-2.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/unsw-2.png",
+    "bytes": 6336,
+    "source_sha256": "0efde6f7e9f8aae76c855428e536334626d6316d5a02895fcc1d52f547a5a51b",
+    "sha256": "62ff1f373dc9b6e58878a62bfdc52449405d54895b3255fc87d7a0f39333d365"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/uts-logo-1.png",
+    "path": "/assets/imported/wp-content/uploads/2024/06/uts-logo-1.png",
+    "bytes": 12133,
+    "source_sha256": "10a3d10ee3d1c0d182a6579dd2993dc3a94711363f8cc5a7d97c6efc4a578437",
+    "sha256": "8b06228d15e4f54af11934a85eeb7306c244be920af18944262f785be88f106b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/06/wire-body-fethi-500x254-1-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/06/wire-body-fethi-500x254-1-150x150.jpg",
+    "bytes": 5790,
+    "source_sha256": "cb7c198d3a9d1fac6666a17c8be44ba1cf101b038a316d7350f05ef79747813c",
+    "sha256": "0809ff825501b0911a0b65e99e74cf463f03421258a03ef6f3488c0b5169adee"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/07/Amin2023-1021x1024.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Amin2023-1021x1024.jpg",
+    "bytes": 132662,
+    "source_sha256": "1b12256a3e4893290a0b2598d254cafe53b223683d8984fae6dcef03ed3b7cf1",
+    "sha256": "afbf17da4a7d5367eee97bfbad523da8d2a4c64c4254f1b0daaa9509d90b5801"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/07/Amin2023-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Amin2023-150x150.jpg",
+    "bytes": 5834,
+    "source_sha256": "8d00152c309915fb7d8c1b41648af64fa25be9fb1ebc81f6b60dcdbbb506f5cb",
+    "sha256": "0a21fe7df070ac9bbaffa0f86b84318e3380fc64f15ff4253e35671a7b9f644a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/07/Amin2023-1531x1536.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Amin2023-1531x1536.jpg",
+    "bytes": 298338,
+    "source_sha256": "250edb29250ded26a231ae55d4ac07c8c4330569a32b92099f60fae64391df43",
+    "sha256": "104f5c0d4853177c39bb9e737451193dedd07d372df6964f6d693ad4a66a6b87"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/07/Amin2023-300x300.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Amin2023-300x300.jpg",
+    "bytes": 15546,
+    "source_sha256": "d49b3cdd66937136822407d4300b397ec213134275a8df4a62f956e624107456",
+    "sha256": "c52091348253fa2e162e9d36796ba5462838b266b372f95754879cae863c78ed"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/07/Amin2023-768x770.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Amin2023-768x770.jpg",
+    "bytes": 77546,
+    "source_sha256": "421f40c7c4f3e8e2b0bc4043052439e8cb70f45fd52512ee4363c4904d5efc47",
+    "sha256": "fa4307a4ab145d515ef908fd4859fa6c6104f543aae4022559b2fd54eff4f297"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/07/Amin2023.jpg",
+    "path": "/assets/imported/wp-content/uploads/2024/07/Amin2023.jpg",
+    "bytes": 465248,
+    "source_sha256": "db1c28bbc312d8e03e149a25dcf7fa8cf6c677c1d721ee1497f6b0fc54df997a",
+    "sha256": "98b6fec0eb0db11898206999ff886895215fd16ebfa185a6c8e158edf68b0cee"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/08/ProfBelanger.png",
+    "path": "/assets/imported/wp-content/uploads/2024/08/ProfBelanger.png",
+    "bytes": 234201,
+    "source_sha256": "c362886ae426aa05653b5dd38d0d3018f25b8d14a312fbc634c8163003b5ee66",
+    "sha256": "85615cf0f4ea6aa0c946ebe94109227bd89414b5358b60f566537e0d2b42df83"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/09/IMG_2415.heic",
+    "path": "/assets/imported/wp-content/uploads/2024/09/IMG_2415.heic.jpg",
+    "bytes": 1882081,
+    "source_sha256": "7e4699c7472af4467251b70203212eb11d0d90b945432b0bc4e14491cac69ab0",
+    "sha256": "8bb28c5abe417fb7c3d8731dc5a98a6ac76f8291165a423f13fa0664139394ec"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/09/Picture-1-1024x532.png",
+    "path": "/assets/imported/wp-content/uploads/2024/09/Picture-1-1024x532.png",
+    "bytes": 100726,
+    "source_sha256": "361e8ad3a566a459e00dbf7ab1f21800c2f2df4eaee7217d3eb46562fced2f57",
+    "sha256": "a6966b0463d27effe22174b5356975c284b3c15e84bfe49810af3eb4cf91e201"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/09/Picture-1-1536x798.png",
+    "path": "/assets/imported/wp-content/uploads/2024/09/Picture-1-1536x798.png",
+    "bytes": 188850,
+    "source_sha256": "08d5dc9b9985df54819736f9a89e5de87adb9c70364758f58d4617e79d355e9a",
+    "sha256": "972a80ef30a26fd5c888b501340537d884e6cb813a9bd205b423912ff778a29e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/09/Picture-1-2048x1064.png",
+    "path": "/assets/imported/wp-content/uploads/2024/09/Picture-1-2048x1064.png",
+    "bytes": 289524,
+    "source_sha256": "56efc672fbd3b4f52939fcc94e02c4752203dcbdc2d60c831ba88473072818c6",
+    "sha256": "e1b27d2e6a9c838ab9b938396788163801d59de2f4390750b2221270444cccfa"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/09/Picture-1-300x156.png",
+    "path": "/assets/imported/wp-content/uploads/2024/09/Picture-1-300x156.png",
+    "bytes": 14983,
+    "source_sha256": "3f851470d9f6008e08dbefd46560cfc34e86a35b821f2241ccbf85c4bb6ce65e",
+    "sha256": "cf9e252f93ade688aa4d99aeeaa44c885e9baced9097595b2a98ae70af438f25"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/09/Picture-1-768x399.png",
+    "path": "/assets/imported/wp-content/uploads/2024/09/Picture-1-768x399.png",
+    "bytes": 65337,
+    "source_sha256": "18e17204d396200b6bca0671a95a86c06754d6084e780bb8c00b0a0dbd091291",
+    "sha256": "7d5a235f5b9cce15d36dd938e1e47c7cc4547ddee21eb165930a48e58e50a1c2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/12/q4-agenda-1024x582.png",
+    "path": "/assets/imported/wp-content/uploads/2024/12/q4-agenda-1024x582.png",
+    "bytes": 111104,
+    "source_sha256": "a27faa4173101f4dd6188ab8e2b27eeab737ea625366cedc14b2d122cee7048d",
+    "sha256": "42a6092580eb1b03afd7b81f952fee31a5c4390a521275ebef517d1560925861"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/12/q4-agenda-1536x873.png",
+    "path": "/assets/imported/wp-content/uploads/2024/12/q4-agenda-1536x873.png",
+    "bytes": 202077,
+    "source_sha256": "f8220c192f5dc1da10c0cea105eaa7d12930d01e920cdb1e66a2be50046097c5",
+    "sha256": "b2078991afb5e1f4afabb9add2b4e914bce2b939929cb74c238603fcf9b94bca"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/12/q4-agenda-2048x1164.png",
+    "path": "/assets/imported/wp-content/uploads/2024/12/q4-agenda-2048x1164.png",
+    "bytes": 310807,
+    "source_sha256": "2c43f0131df3ef8cdef32cbdaadf15aa25d94506fa2008449aeb2de617bb50d7",
+    "sha256": "b6b308c68b90009318d3b98eb10e77bcdf649701d01e9219a6944fa6fcbb8e2d"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/12/q4-agenda-300x170.png",
+    "path": "/assets/imported/wp-content/uploads/2024/12/q4-agenda-300x170.png",
+    "bytes": 16380,
+    "source_sha256": "621c38de6fca86e89e5315ac2857a30cba46e191b53b03d9ad232e16871e0131",
+    "sha256": "d4a9f0f91146e107258d6ade408fe72fd6ef677e4b19b94ad910f7ce3e974ec1"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2024/12/q4-agenda-768x436.png",
+    "path": "/assets/imported/wp-content/uploads/2024/12/q4-agenda-768x436.png",
+    "bytes": 71480,
+    "source_sha256": "345a2347011821b2ec86d5b7513cf230771fecbd7c520a9cebc325464d3b1255",
+    "sha256": "64d7f43bfcd3e2b12ee37d69b4a22af411e2fb27e64593db120c563807fba5e3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/02/Future-Generation-Enterprise-Architecture-Symposium-2025-Q1.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/02/Future-Generation-Enterprise-Architecture-Symposium-2025-Q1.jpg",
+    "bytes": 130993,
+    "source_sha256": "4e0c79155666b95369548f2b6df70524c94813ffdc69ce9ac1971e71d606f536",
+    "sha256": "c8583648d3bf8725e00084547746225debc3ced94dbdda7612dbbe83a76055a3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/03/Picture-1-2-1024x447.png",
+    "path": "/assets/imported/wp-content/uploads/2025/03/Picture-1-2-1024x447.png",
+    "bytes": 80629,
+    "source_sha256": "2ec941a43e159676eeec09963b445023014c52d4fa5dd6bf9b9de1cf872328e5",
+    "sha256": "8c21dcf1a6124ba269cb6eb53ab5ebe05df3c8d36d791f74fa3a05f4d3f29de2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/03/Picture-1-2-1536x671.png",
+    "path": "/assets/imported/wp-content/uploads/2025/03/Picture-1-2-1536x671.png",
+    "bytes": 148284,
+    "source_sha256": "4bea4f970bbdb5b09124764345d081f50b8bbef93842e11e960ffc6ad81c2eb8",
+    "sha256": "08618ff07d4d31ce45794a191cd2faf1ebf6a530aa26acedf80c63d5dba53bff"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/03/Picture-1-2-2048x894.png",
+    "path": "/assets/imported/wp-content/uploads/2025/03/Picture-1-2-2048x894.png",
+    "bytes": 227081,
+    "source_sha256": "3f674624bf94215a57669c7bc09374af89933dbcbd6b4b0abc7a28040e5119ae",
+    "sha256": "318f782da999b6f6982fc21f6d4ac53a078cd3d6c78f05ccdee722844243de7a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/03/Picture-1-2-300x131.png",
+    "path": "/assets/imported/wp-content/uploads/2025/03/Picture-1-2-300x131.png",
+    "bytes": 12016,
+    "source_sha256": "57e3c7819839acc47d59021a33e9ac35a78744b4b9e3ea70ae36d33faccf909a",
+    "sha256": "9255e483a302d38ab17a146dc1de8b7b414a7bcf8417b783c5c6d779ec835af8"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/03/Picture-1-2-768x335.png",
+    "path": "/assets/imported/wp-content/uploads/2025/03/Picture-1-2-768x335.png",
+    "bytes": 52418,
+    "source_sha256": "8d44ebe223744c098b07b5e3bdfcaf299e568262d069af093a135365af18f475",
+    "sha256": "8d915fe195d0d4a90ce2abc02d3d14b5090ff8b4b3258f1e5b0c03cc082a28ab"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101435-1024x768.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101435-1024x768.jpg",
+    "bytes": 174324,
+    "source_sha256": "d679eb306ad783de50c089269c49bc12e6e9f68b2515ce76dc921bf33d6d04fe",
+    "sha256": "b852139a9efe41acd43e9ec59e498c25eaf1da0ae36ef23778134b778c9cc7fd"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101435-1536x1152.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101435-1536x1152.jpg",
+    "bytes": 331120,
+    "source_sha256": "20b1a45a0e9309a3b297d6b3a90021de90bb4a09d943f57c4dc03fb5c037ba04",
+    "sha256": "9331bd014cbdebb211cdd3969282056fdf992477e5df7f707288e92a0daeadc2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101435-300x225.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101435-300x225.jpg",
+    "bytes": 24360,
+    "source_sha256": "ccbf2446913dd5e3e94d5658192c1f4d8584324afb22c3555bb539c0656d3401",
+    "sha256": "81a4d94e6762b7b8240e85df48a8b65db3b2a23b1237c729ba8b1db6204c97b3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101435-768x576.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101435-768x576.jpg",
+    "bytes": 109575,
+    "source_sha256": "356bb167d8f53f656589c9292b259007f5b96fe00a183351259a3f5ccb515634",
+    "sha256": "23507950b7993faeb4e8afa2f4ebbcca940f9138d479f35859c83a5035347a18"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101435.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101435.jpg",
+    "bytes": 476824,
+    "source_sha256": "74aa625f835146dfd801bc279995456302f1ce29bd72bbd1cebbd2c735092918",
+    "sha256": "3227ecd218635dd06056f6369b074503190231e13204653e38c7b35ad641ffdc"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/04/20250417_101454.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/04/20250417_101454.jpg",
+    "bytes": 478256,
+    "source_sha256": "5ba8ec306696564be84e2d544c676e0f5faec443b3ae57943ab52a69e459f0d8",
+    "sha256": "be9786615c0cd04e0fa1dba6be7d5eb6f5689a6f95dd1e65757d55b77d5c14a7"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/05/PXL_20250409_011058931-1024x771.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/PXL_20250409_011058931-1024x771.jpeg",
+    "bytes": 202282,
+    "source_sha256": "7a822278b7ba61bd9512e4ee95ecf4b283860c6afda1aab0ca433f78981236c8",
+    "sha256": "0243626bfd623b731c89e8c532d48c8e221a833a657620005adb54af8cc0137b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/05/PXL_20250409_011058931-1536x1157.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/PXL_20250409_011058931-1536x1157.jpeg",
+    "bytes": 391985,
+    "source_sha256": "3a04875286602fe38a0f18c0b6f2f48901cc623cbf05010360aeabaedad1d054",
+    "sha256": "1bca0152be70394918f24cc2a19fa0b4af2c264d1f16c26bab1d03a37f3b426a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/05/PXL_20250409_011058931-2048x1542.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/PXL_20250409_011058931-2048x1542.jpeg",
+    "bytes": 619048,
+    "source_sha256": "7d26776eceabe4b14a47d0f7ed24cd3dc19978748fe20f6956d36d7cec8319ac",
+    "sha256": "4633ca5906dea77e06c1ded1cb7ec5c97bcf75a850a4f3c9cecd248014c01f76"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/05/PXL_20250409_011058931-300x226.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/PXL_20250409_011058931-300x226.jpeg",
+    "bytes": 26127,
+    "source_sha256": "637fdc13085f4fd335dca52f89e6e8db070b6846811058ad59e9a6106a7e3d76",
+    "sha256": "5a86bd1968d29df16dff4cedd04e51b880209a867ce134e073c43d0f5c6c9c01"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/05/PXL_20250409_011058931-768x578.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/PXL_20250409_011058931-768x578.jpeg",
+    "bytes": 124965,
+    "source_sha256": "08643c141d2d8e747d52bfef45be67f507925c4acf6060436c664efecb073b9c",
+    "sha256": "e06146f8faac1619e348b96ff7e7148b3e193e2d417cf1be051db5527360d5e6"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/05/PXL_20250409_011058931-scaled.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/05/PXL_20250409_011058931-scaled.jpeg",
+    "bytes": 874876,
+    "source_sha256": "fff60ca50a4f6b59f24ed837132ae0e773e2d8a63c201a7855c94ce9c8631539",
+    "sha256": "875f091583e4c443cc40bd4a81440dbc53aa1565d64c062820c05b6fd3083c02"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Picture-1-1024x478.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Picture-1-1024x478.png",
+    "bytes": 81518,
+    "source_sha256": "35a654d5c58aa4f10b22efcd58ae6459e1c149e21bff290df053ee6c82729aa7",
+    "sha256": "b3974d679b6a004ca6cd5404ef640f4510461e3f1d0e3dce4fcb0dc0fb07a09a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Picture-1-1536x716.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Picture-1-1536x716.png",
+    "bytes": 145815,
+    "source_sha256": "97e00b779fd69477040686e06d62e399008e253f6e176d9a5b4bdcd2fe0ea9ec",
+    "sha256": "0e65b401813c3d0f3a6ffb1ae3318cc0acfd9ec62cc9001b3c87e9768a474ab3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Picture-1-2048x955.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Picture-1-2048x955.png",
+    "bytes": 221973,
+    "source_sha256": "62766faaa9a3eb37921d25a2f02c6be5127c4cd734d2f5965f883c6d48bd12a0",
+    "sha256": "656a26fcccde8100e5c1f0bb3d2d9325e5448c0fd1d81da9d5fd26026b5ce7f0"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Picture-1-300x140.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Picture-1-300x140.png",
+    "bytes": 12762,
+    "source_sha256": "8cf0252cda38773be8a689ef76a928e1bc9e2b0f5c26491b4530bb067aeb3bb1",
+    "sha256": "16c2f2e2bfe260b0f25a60869befc75f02486f050de390ebbb725c82991f622e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Picture-1-768x358.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Picture-1-768x358.png",
+    "bytes": 53154,
+    "source_sha256": "6a5b43b87ba1dcb835a8d23a86431815c152494cf9d1d400a7dc5edc9a4f86b2",
+    "sha256": "0b669779d8c51b6aa02df1bdf73e2f6a97a525649185669a23340fa7e8061f95"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-1024x572.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-1024x572.png",
+    "bytes": 458520,
+    "source_sha256": "f3f02cb2bb0eb1fe3cc53418f5c5b9121c05038a61a749ee35fb3652bbe481e9",
+    "sha256": "601888747416a9d1837f32c5ca5564575308a7fc9e861e54c848114247f43fb5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-300x168.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-300x168.png",
+    "bytes": 55982,
+    "source_sha256": "49e142bdc5cf084f53276b30bd2c1e37096640f7346f9dad407db83f4b016731",
+    "sha256": "069c7249c735a64ed68816b9c7bde7a4596a63b0b6edcea3e8f92ecbf0cd7f4e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-768x429.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am-768x429.png",
+    "bytes": 280679,
+    "source_sha256": "12878a2dd5877fb8529c13c17043835f682109ad672d4344c195d58e1d0b554b",
+    "sha256": "a41a90aaaa766e08a2612454f0dac28f866955d4c731d171df10a2a41f0f4802"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am.png",
+    "path": "/assets/imported/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-10.40.39 am.png",
+    "bytes": 821304,
+    "source_sha256": "51a5069426e9c36a4290add228c2ebde2b6cce679f215409b0d7159b309eecfc",
+    "sha256": "61f23302da677fef2b81ca8fa749bca06c17a69d5357b949c9bfdf57ef4dc917"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/07/IMG_4663.heic",
+    "path": "/assets/imported/wp-content/uploads/2025/07/IMG_4663.heic.jpg",
+    "bytes": 2289620,
+    "source_sha256": "d132b17414e3b2895c7c0df3010cc0fb7fba532205063eb148bdb964a89b8c70",
+    "sha256": "125ad5404ee8880f2fc6c5c17ecc9862fafbe9ff7601303062e1a71fc1d50376"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/07/IMG_4672.heic",
+    "path": "/assets/imported/wp-content/uploads/2025/07/IMG_4672.heic.jpg",
+    "bytes": 1751669,
+    "source_sha256": "7aa07cc7df1bea85d3615e2559e141f69b9cf476305e7d47fb66bcf86c7de695",
+    "sha256": "4b0ae63b14a696abecfa340c3446109edfddbd1fdffd8d92c7854b0a23176c4e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/07/Image-300x225.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/07/Image-300x225.jpeg",
+    "bytes": 23483,
+    "source_sha256": "4b23ece19b43c7e4ddeecfd026bfd41ed7c845cbca18c9598c5888b87cd88f87",
+    "sha256": "4cae91fc2d7aea4de92c09d78d3517a94bd48261dbf4d6ecbd21148661fa9a5e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/07/Image-768x576.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/07/Image-768x576.jpeg",
+    "bytes": 108416,
+    "source_sha256": "46ef460be2c30da6525928af7ede1a684a5cce381f74ce38f7f92e4f379932ec",
+    "sha256": "fef83809e3a88ff3ccc8366fa4223e5ad58b7e1cf34e8e2c86b25daf294fccef"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/07/Image.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/07/Image.jpeg",
+    "bytes": 117501,
+    "source_sha256": "c0f96cd11dbe2834dee4ac6333dde332c0e67a4e37243c60681449f900249c21",
+    "sha256": "f507e58a9521f1f842b2e5f82c7e0160a89a4f7ff551fa8b160ab9cb19d5de20"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-1024x768.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-1024x768.jpeg",
+    "bytes": 218592,
+    "source_sha256": "c75915c62a459f0153ed8a72f69a17929422d8b61e47deadb33b5af43cb14669",
+    "sha256": "5b324f2793caab1108ccb5e3b88ff0adec3eb164d8374730962b4a5e7ee6f120"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-1536x1152.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-1536x1152.jpeg",
+    "bytes": 468996,
+    "source_sha256": "811ad1ea0b1b6fc0720ec5c2e17775e439c53ea748f51da1b0d2bc7cfb569c0a",
+    "sha256": "52f424c44bb3c610be83e65ce8109d123508d00061a2e6e3f2659f3161834c60"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-2048x1536.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-2048x1536.jpeg",
+    "bytes": 798205,
+    "source_sha256": "6104a46df2f6119e9f839a569aa7789b7c6642a47cf218455a9a040058e15501",
+    "sha256": "84017cf0aa1e1f2f9f245119a3251d9b1fe1bae8ea3ed54b6ff66ca1c19ea6b8"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-300x225.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-300x225.jpeg",
+    "bytes": 24481,
+    "source_sha256": "35105ca6a460183ee70803b3342b7b00f0202ab5c5b9abe52c110169b83e1234",
+    "sha256": "409e220c0136e172712503ca6641f816c164594c022d3bee59c51d856fd59026"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-768x576.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2025/08/FGEA-CoP-Q3-Group-Photo-768x576.jpeg",
+    "bytes": 128064,
+    "source_sha256": "237b1f3f92bcd4782eac758a0a37eeba02a6851a918ed20c20d5965e1153217a",
+    "sha256": "eea2b13a4487c5085e1c5cc7c4dcde325e5106433c4bc7479ac9874cc4ae3fbb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/Q3-Agenda-1024x440.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Q3-Agenda-1024x440.png",
+    "bytes": 96123,
+    "source_sha256": "f1221006b0e022d3ee2f2e47356f550053eebd92a57e27ae68438724ae484709",
+    "sha256": "dd69b63cc2ae5ba88f108f8121bb44c7159af2e4a4e19f339daed23b07830332"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/Q3-Agenda-1536x660.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Q3-Agenda-1536x660.png",
+    "bytes": 173448,
+    "source_sha256": "2902f73991eb36027cffd6f20819285a75a1ca10007c224b77df233c11eb3373",
+    "sha256": "36906d795f507c5da3027f35eca7760935ab0d2a06a2db9135cd73dbac47d177"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/Q3-Agenda-2048x880.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Q3-Agenda-2048x880.png",
+    "bytes": 254147,
+    "source_sha256": "e488ea11f6c66dcbd542bf6261a4c664ddb8302fe176c1ebd1e2067c87a0a569",
+    "sha256": "557c01e80cc8555e7e2bff6b9b85945ed525292f3741cb170ef0ddc0192e1670"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/Q3-Agenda-300x129.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Q3-Agenda-300x129.png",
+    "bytes": 13256,
+    "source_sha256": "a419b302c88b1d791a99ffea694c52a9227792eb0138030c81991081efe96c61",
+    "sha256": "bec190460089e87454548ce71a6f2834736772d38abb4c044866f45d49566172"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/Q3-Agenda-768x330.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/Q3-Agenda-768x330.png",
+    "bytes": 63815,
+    "source_sha256": "4cd1a24b1dd85900e41a2c19a04a4a1f22eac6a5018c09e72a2599779691f9d0",
+    "sha256": "5780a8834a9e7aab038f0cf79aaa33dd43ceb55f848e5ec9aa658ab71a820f90"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-10-1024x576.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-10-1024x576.png",
+    "bytes": 460613,
+    "source_sha256": "428e7209c79f7739bb1b5c913663295658b99e043cb52cbdb0760f1369b5a6bf",
+    "sha256": "9423d8422aabcf83b3a3591c7a64b17037ec6bb28ca3cd918c359b32a474b2d8"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-10-1536x864.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-10-1536x864.png",
+    "bytes": 917451,
+    "source_sha256": "df468e7b85660907b27bfad861928c96455af616e368d1df20e4ba0883abe7ec",
+    "sha256": "5e894d426a93ffe559d3313de6128df210bc47cb45feb20b13dc723901d2a8bc"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-10-300x169.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-10-300x169.png",
+    "bytes": 54852,
+    "source_sha256": "de9fa8ef5dff4d29c2448b79f9889b8759a2edd22ff996f534ffc809ada7ab8a",
+    "sha256": "ff437c9b9ca9ea865c682905f303621a59cfc85b87b13863452c01e902843ef7"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-10-768x432.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-10-768x432.png",
+    "bytes": 279485,
+    "source_sha256": "53c3fc12a31a943d599838ac2034cab18186842027ce1cbbd286a5120aa28e13",
+    "sha256": "3d6a0571bd4f60d37d55ed7062286bbc7f1d602e5d5ec4f9889d8ecca4287b95"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-10.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-10.png",
+    "bytes": 1520691,
+    "source_sha256": "68fea514717d944ea80d25ce94ac18800e3188563b6bcc1b8385e81446b1db80",
+    "sha256": "69ff9853d9df96c623d92cd07df02a7255f4f9f3b0e53f9e6bc95796900c9557"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-11-1024x573.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-11-1024x573.png",
+    "bytes": 425512,
+    "source_sha256": "f156e3cc924563177bfdde3b6d8408c15153f77973c2b0ed28d2fbfd4e44f40d",
+    "sha256": "a94ea4ec03890fa54f20e76d913fb6f8202840c6577612f2944f9ebd82fe6e95"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-11-1536x859.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-11-1536x859.png",
+    "bytes": 848574,
+    "source_sha256": "66952f786908f5ae78f7e9c17bd9b8bc34869a56a99f94862d4e52a1d13b6669",
+    "sha256": "4086def159aae28511380842f16653e470e43e603507663e3adf7421ea89a952"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-11-300x168.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-11-300x168.png",
+    "bytes": 49634,
+    "source_sha256": "6c030f991571f45636ca2487d1d0653c308af7bfbaebb5777b63735e72bd5229",
+    "sha256": "8c9393019af481a60f513cd0c711b13268cecc131f6160e747b283fd42738c0d"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-11-768x430.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-11-768x430.png",
+    "bytes": 257075,
+    "source_sha256": "6a5a68abf8fdfc7f999ba028d9930ab0210c9efa115960c8596cebf81281a3ce",
+    "sha256": "48f8e5dcb8175faa9122cf8a506b04cdb55c8c35483ce626aa82274fdec808f0"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/08/image-11.png",
+    "path": "/assets/imported/wp-content/uploads/2025/08/image-11.png",
+    "bytes": 1196416,
+    "source_sha256": "8aa878d88a6708aa945f8e7211adad0df730dc2fdd64c79c0c1e4b7a32c2b9e2",
+    "sha256": "1fb03b4a1c84cd6089c2d97854bbf73472018bf9f8814a587115f95ff36b7947"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-1460x1536.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-1460x1536.png",
+    "bytes": 98838,
+    "source_sha256": "1efeaa21797d15cc1af9aa0df7aec15683a2952f92bfcfa66181ea490754b23a",
+    "sha256": "88504783f9dda072ac070085e3cdf8135ab2c6dbfccb2fb83dc5ebd7116833af"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-1947x2048.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-1947x2048.png",
+    "bytes": 147159,
+    "source_sha256": "c7d295abf27463891c9fc164c10f26ac0501c6115a521007b53df1ddbceb4565",
+    "sha256": "65ed124d9046b68a46ce8782a1bc4e617621b7a1d48d724e2f25a56ed75851d6"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-285x300.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-285x300.png",
+    "bytes": 11655,
+    "source_sha256": "410ac56c9ee37c642bc112abd4ebe7490499d024513198c40b2e637ea72d2234",
+    "sha256": "5657b645d650f8222c7ed15dbf1f72c3c344e57edea0d562dae17e1274725d24"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-768x808.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-768x808.png",
+    "bytes": 40375,
+    "source_sha256": "af9a409d72ce62728ef94a50eafbfa769987b37e2e16922e22274a5380e8c114",
+    "sha256": "e668c2c3b6d1901295e36677bebd13ce69d854b44ae782a15d853b4db0694028"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-973x1024.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB-973x1024.png",
+    "bytes": 56092,
+    "source_sha256": "6beddf31392b6b24953277fc47f4e2b7f27e677e2d899a1506bb9b95b7981898",
+    "sha256": "e63899a4d3817a53579df72ca9ceec4fedb855b05a6cb6825489bd54e5496adb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB.png",
+    "path": "/assets/imported/wp-content/uploads/2025/09/ACS-Logo_ForGradient_ImageBackground_StandardSpacing-RGB.png",
+    "bytes": 333402,
+    "source_sha256": "94ae6997e4db8fe8ef60f05682b3d65abdd2ce5f0f499705a5b0a434e5b20e04",
+    "sha256": "8664a1b83aa498c5cc01be7e666ae5c4a819e662a36cb218ab48d8e70e81516b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/10/EDOC-Logo-300x179.png",
+    "path": "/assets/imported/wp-content/uploads/2025/10/EDOC-Logo-300x179.png",
+    "bytes": 37009,
+    "source_sha256": "decc7213b54e92a8bb24f48284d8e9b120df7a01e1aa9d1cbf8286476b1977d3",
+    "sha256": "de657e6a68cae28c3556d45ba173d8b6cb75e5afd8c52a39b4a4f219142bb94f"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/10/EDOC-Logo.png",
+    "path": "/assets/imported/wp-content/uploads/2025/10/EDOC-Logo.png",
+    "bytes": 49374,
+    "source_sha256": "dcea7b142d8409e99541d7e03b7d8f8cc40a3e058eaf893788a482920f5732fc",
+    "sha256": "1dab1288eff764713b3d4a410cb9485fa8cf5433a054bba8964874c60afdc4eb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-1024x558.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-1024x558.png",
+    "bytes": 445116,
+    "source_sha256": "1424af9a2e5863c8720b1b48f3f247e2fb94e52f84c4c00a6cb4b17baee88f07",
+    "sha256": "01a5ff555738e0b6f10a12b835867795c848b5e8ff4321bd0c197ec775e14df2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-1536x836.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-1536x836.png",
+    "bytes": 912527,
+    "source_sha256": "ecc3f7c062ef51ae99e2f1b59145b6fa526f1ea2e0754e0e15778d234e99d03a",
+    "sha256": "af70be9b879dad02b04e26be76abbdf22e6f7f08961c8256d558e55a2fde0a71"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-300x163.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-300x163.png",
+    "bytes": 52444,
+    "source_sha256": "0605ff53cc252c3561ad1c5445b673a201b535aa8fcd5a0975cc48538218dcce",
+    "sha256": "8e64de5458d077a37684f732e450ce62a1e4b672e67ff5503961175ac48e4b65"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-768x418.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm-768x418.png",
+    "bytes": 268808,
+    "source_sha256": "fa0145cdca515bcc981c47947d85a899c40eb8fd6846eed94e1b22ccfc2fde40",
+    "sha256": "07cd60a8cf35a187f33b17dd847869b3ff20f6f935443ad40089a37d93b90b69"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-18-at-2.47.52 pm.png",
+    "bytes": 1380451,
+    "source_sha256": "33f3275e5fe6dd4abada3310767b7c171dc09844e809cc8d04ec1ababa793a46",
+    "sha256": "761fb9b2a869b2f355d870064c45fbf1197ac97aefa2893d839c823292a8a8fc"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-1024x499.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-1024x499.png",
+    "bytes": 117526,
+    "source_sha256": "8f8fd6dd05b5ae1c9adffd7e64efe86a3730833bd9edc5936724b89a05726f66",
+    "sha256": "73a57acab15be443b2bffcc2fcf3d72f738bac53660abd47054744d408eb5480"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-1536x749.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-1536x749.png",
+    "bytes": 209477,
+    "source_sha256": "69bb696f6c1ef8f7e2cde87fe6b58cf60f7848f36a0dcc12cc75ff6b9e2bbd2e",
+    "sha256": "88837e1b9ecc8f7355a9044d617cbf8a48c253043c14192f5c14b08432beab19"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-2048x999.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-2048x999.png",
+    "bytes": 311982,
+    "source_sha256": "21a3edbbdc9b7a9dc9f30478fe9f04eecc5e3912ce291008b67989a357b8e36a",
+    "sha256": "5652f3122a3c75482b80fe39c42074a5e36ca36ff6922bc74a6c888d5717fb34"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-300x146.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-300x146.png",
+    "bytes": 15695,
+    "source_sha256": "f8b2e80f2aad9f8cff1db5310be1d7938bde71761055575eb2669e5cd4819649",
+    "sha256": "c61c338351e5cdd239ac480df2f10ddc2819876f8fc2f6e6946c300d54fd9217"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-768x375.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-3.06.56 pm-768x375.png",
+    "bytes": 76237,
+    "source_sha256": "1201ce82bc7c3dc0125a7c33a11ff6e1638c1c88e5bf7d6e29b5136b08518bc1",
+    "sha256": "54f6f7a861d27978737f769d497741729753b4e87ea5841f23d663160c4431bb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-1024x556.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-1024x556.png",
+    "bytes": 436173,
+    "source_sha256": "38b2c63384227bd837e87cef38565eb4ba1c7d729138078e1a18cc28766965ac",
+    "sha256": "7451c88a9f24c4aec2ffd66e5c77ea736f1ac18f06cad46de3d1b67d41c7bebe"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-1536x834.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-1536x834.png",
+    "bytes": 896422,
+    "source_sha256": "a08ca516d5d21ff53b8597f0179c860146cead1c25c7346ac830ece5bfe73c3d",
+    "sha256": "00f420b4795e508a83b5346ad5b19e8e97a4231ea2c15758ab0141c479252db3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-300x163.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-300x163.png",
+    "bytes": 51718,
+    "source_sha256": "3b0f563beff6e5ffdae43193779cecabaacdc0fc01d9cbf7959789993d098413",
+    "sha256": "85ac165bbdea22ed440edf9ef24df367886ac64cc49539ea82e66a76479e9ad5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-768x417.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am-768x417.png",
+    "bytes": 264096,
+    "source_sha256": "8e421fb0a7bf92c1c93947936ae2cb66cdcc4c5d6f2259268d628d6a988c7ae0",
+    "sha256": "aabcb5252b94e09aefdc190c387ff1d1ad3e95c15eecdfbc3684c5b1999aebe2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am.png",
+    "path": "/assets/imported/wp-content/uploads/2025/11/Screenshot-2026-02-16-at-11.22.29 am.png",
+    "bytes": 1528573,
+    "source_sha256": "3d58df6c73bbff90787742c65fb373ae52e93ea94d6435d73463dfee9f4d47ea",
+    "sha256": "ef32e9f7419f0d039bff4cde93f84d19ab145b862d784858b3d31f6d620a319c"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/12/IMG_0269-1024x768.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/12/IMG_0269-1024x768.jpg",
+    "bytes": 152470,
+    "source_sha256": "925d4686e142b7f62552c0c2a2f8d0717bd419bfca2176aaaf5c7a19bb44df37",
+    "sha256": "4efcd789178f3ef6e19118886ba3d6bfa31c18fd202776f2a12916ef4254098f"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/12/IMG_0269-1536x1152.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/12/IMG_0269-1536x1152.jpg",
+    "bytes": 310891,
+    "source_sha256": "e2dac3bdb250c0eaf30728debdbbc512b6a56bfe5317a6234c6a2ffcf25fd093",
+    "sha256": "6deb31ebe6ce198cd8288566d16b094f3d32003541da43eff6fdb87bec8d101a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/12/IMG_0269-2048x1536.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/12/IMG_0269-2048x1536.jpg",
+    "bytes": 512008,
+    "source_sha256": "8a32305e50656de2aae412ae5a6bda8c7b0d2fa7065eebb58d589e85ea8df93e",
+    "sha256": "3c94d52143c8e9e909ddc0cee5fa075a6933009a0a0b57f01ec4d8abea41158e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/12/IMG_0269-300x225.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/12/IMG_0269-300x225.jpg",
+    "bytes": 19342,
+    "source_sha256": "e8831a5f5d10f9fab6fa624ad15c7b60738066c2a1f02f1bda421d3ae1b06d20",
+    "sha256": "1e5b95670947514d44d74620c934c202ffedb3193347fa336de7df0b982dc90f"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2025/12/IMG_0269-768x576.jpg",
+    "path": "/assets/imported/wp-content/uploads/2025/12/IMG_0269-768x576.jpg",
+    "bytes": 91778,
+    "source_sha256": "8d6446edcfb54f2eab2c2ba76dcdc46ef0438cfe9593a955a0f2a2fdacaaacaa",
+    "sha256": "b6761b440e03e994ac30953bab1e3d46bdf5da9fdd4f6ae769ce9925ae5414c0"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-1024x435.png",
+    "path": "/assets/imported/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-1024x435.png",
+    "bytes": 90236,
+    "source_sha256": "21e8c4c8b2daf4963269001381e61148d158f37ac7d9dd62038dffd26651795e",
+    "sha256": "7ffa5c9b61b8055048c496675c169b655acbf481667b76ab522c2a3f72eff26a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-1536x653.png",
+    "path": "/assets/imported/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-1536x653.png",
+    "bytes": 159138,
+    "source_sha256": "bd85a0f865d85cbad76961c627e4e148688cbd5340d98ea863847eb45ca06140",
+    "sha256": "32505d5fd9018f85b94a76c673bacb77619a15e2587fc85e1d49ed573ad946be"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-300x127.png",
+    "path": "/assets/imported/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-300x127.png",
+    "bytes": 12401,
+    "source_sha256": "02ef4f491bceb7d63affe57d6d8dc6ea6746917abaa29df5d2f8cd5077b2e3ce",
+    "sha256": "c85d897dbbb7fd1001e40b840dce96c07e1abfc654a8e35546e90ed1cf0f8277"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-768x326.png",
+    "path": "/assets/imported/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm-768x326.png",
+    "bytes": 59139,
+    "source_sha256": "58963654bc62e6652d1f3129cc5bb7f980cd7e513d8f05f69d79d02739259d6f",
+    "sha256": "db26eff2903f9975d61bb5b3316a939fb147e3a548b642009af6189f4aeaf8a3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm.png",
+    "path": "/assets/imported/wp-content/uploads/2026/03/Screenshot-2026-03-19-at-3.42.02 pm.png",
+    "bytes": 106545,
+    "source_sha256": "431c2d14023dd862a7bed6552c634b1eb405d973416c5ba49b0689071fd67300",
+    "sha256": "1009966fe4fb517b685eb1b9d3cbbce991679a2f665d152de47f37c98857360a"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/IMG_4701-1024x768.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/IMG_4701-1024x768.jpeg",
+    "bytes": 261330,
+    "source_sha256": "12d6c1204fe8e18437b2731872fe3d84125fb40af16d836a404317f97304b1e0",
+    "sha256": "8d4341f75cd005e938a587b8946a65a9c7fb61e93769f78ba6ff9215b555b579"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/IMG_4701-1536x1152.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/IMG_4701-1536x1152.jpeg",
+    "bytes": 503593,
+    "source_sha256": "806f9c0fe1fbf5bbaf35c47d27aefc854b5cb62070cb8837cfd0672ab6cbc96d",
+    "sha256": "d90206d03b5b546950913007fdaee80f446b957b9b072217db3ed5a45d060925"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/IMG_4701-2048x1536.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/IMG_4701-2048x1536.jpeg",
+    "bytes": 789084,
+    "source_sha256": "b0a299d82cf7d0d2461625319d95105e2883f5c8fe0daa55d5975cf8d638cf45",
+    "sha256": "b3dae697fc576ad4c7784b7fb038da9808b76f592dc66780c5fe49afbaedd8b4"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/IMG_4701-300x225.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/IMG_4701-300x225.jpeg",
+    "bytes": 32515,
+    "source_sha256": "0936f3f09777ebe2a624a66c0960f22215f62d132c19f8feef69bd2dc64200fc",
+    "sha256": "2884462ad70f8dbaceb47257510624acdc686cc7faaef00b4b15bba021416870"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/IMG_4701-768x576.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/IMG_4701-768x576.jpeg",
+    "bytes": 161724,
+    "source_sha256": "8a024b5984543b6729d3244dfa0bc3348983b39a24b70c666b8010255ffe6aed",
+    "sha256": "8e6a74fd0362c8f9d9eba637486e8a4133dd96cdcd80fc6e97ef2c3171d08f44"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-1024x584.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-1024x584.jpg",
+    "bytes": 162047,
+    "source_sha256": "801d4ef553999ff1a74e2bd33918e0ef490a7e52fd07bb5eac18d62d3399e65e",
+    "sha256": "b3ca0fc69b586ed92e45de75d4d975b05e2938a747da6e0e57cba87706b86700"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-1536x876.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-1536x876.jpg",
+    "bytes": 285889,
+    "source_sha256": "362ad0f9815a2b6e627d0e3e35fad13bd4f3799bb5b3c81dd2620d8e1b4e2f24",
+    "sha256": "157ff3ede30d62cf9b52ebbe9926fa10f32096cfc4e01423493b5cec3be45007"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-2048x1168.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-2048x1168.jpg",
+    "bytes": 419358,
+    "source_sha256": "e03c17bbf6b289cf2eeb85ae86dde8ad92bfba9125ac10b20f0c06600605fd14",
+    "sha256": "8493eba0455ec5d2ac945ddd38ca21533851286f369b3147ee25c4bb5e9a5de9"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-300x171.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-300x171.jpg",
+    "bytes": 24047,
+    "source_sha256": "0232f394130eea709b050952bf4804064c62c85b289e58f839caa5cf1fb764a0",
+    "sha256": "1ae98e8924956f240815c7b130047ad272f17d76991b689c591936ad6808d094"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-768x438.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-21-at-4.38.45 pm-768x438.jpg",
+    "bytes": 106846,
+    "source_sha256": "a5d469f8180cc8f690b048616de44b27aba1d52b16e57e492c88a4a7f5304055",
+    "sha256": "9a5a09e8328beb6be939cc5adebe693b3329a57683451c39454431e52f492c22"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-1024x576.png",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-1024x576.png",
+    "bytes": 463455,
+    "source_sha256": "3c8d624f2a8a9ff73dfe722f586036bc2f4aa44f859e7e2e5acbc8643d519c39",
+    "sha256": "9b2c6f061c154b96c5dd3a9728fc62ee192eb349a5c2c7e3d532ebb55551ff58"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-1536x864.png",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-1536x864.png",
+    "bytes": 951915,
+    "source_sha256": "3b6f8297529bcb64ab7eaa63d5567b544f887e36c7117bb5872ae6521920ea6b",
+    "sha256": "aa45c5a8b7caf029f05110ece175158dc30423e20f6e0a36b0dd1eb05698ab15"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-300x169.png",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-300x169.png",
+    "bytes": 54317,
+    "source_sha256": "c97339ae82f35a92850df1ce4871c3d4d6ade100cf6f77047f5f95a7af309962",
+    "sha256": "50217db3b1c32cb2fe611aeadc7e25d10d938d2d984383e55cab52d645a88fcb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-768x432.png",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2-768x432.png",
+    "bytes": 278228,
+    "source_sha256": "ecdb84e8b01a9cf5a9546f3a65775d4a23d172691a25c28456d8614ec63bd303",
+    "sha256": "fb07db5b8e26004d2e276b8344399892774f39c36656cc5dcf4dcdcf9adbf241"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2.png",
+    "path": "/assets/imported/wp-content/uploads/2026/05/Screenshot-2026-05-25-at-11.50.30 am-2.png",
+    "bytes": 1491885,
+    "source_sha256": "19c4b353d641c334170f6acd1a3e55ccf1b6f200c971e487e0c1e689e17e6c17",
+    "sha256": "591c287bfad8e9168ef118ba3df4ad2d6ed146674076c5b5e32261778670eabb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-1-300x225.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-1-300x225.jpeg",
+    "bytes": 26928,
+    "source_sha256": "3389ae459c4baa19c2159733f328d90530d61d617a723e2115d68ee9ee848c42",
+    "sha256": "70c1cc082bad8f0904d8c1cc3f742c30d6bbe96ca027b0a27e8db9f273d0f8c9"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-1-768x576.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-1-768x576.jpeg",
+    "bytes": 134416,
+    "source_sha256": "a49a9877732f373924f5026235af1d1019b602afe4e4942c8987bb99e54f1a36",
+    "sha256": "667fa7e2d80bb5055bcba9a06c29062498ce612d1dfd978f693bab053c64485f"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-1.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-1.jpeg",
+    "bytes": 237617,
+    "source_sha256": "a3b912b86a1dbbd3a4dfed277ccced16957a7c44099ef014553e580a1088b5fe",
+    "sha256": "03064ff442d1113488b891cb77709bc06ac5b05375b270665f39a280e5149bcf"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-2-1024x768.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-2-1024x768.jpeg",
+    "bytes": 244806,
+    "source_sha256": "c67b5c90778176c69ff7fb4e56e8e680beabc1a2e7398d43dccee39685a67fdc",
+    "sha256": "5f1b83d772e6b28bdab8cae67c56b8f0aa4d317e6115bcbd29448ab6a65e2227"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-2-1536x1152.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-2-1536x1152.jpeg",
+    "bytes": 490872,
+    "source_sha256": "a768fccc545962f2a8a5781b4716d3307c7eec0f5509c0a6fdf0ab663cab1b66",
+    "sha256": "2fba55beb845342cb3903876ab32a3a17888abb481b51d2a811a7ecfc7f22610"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-2-300x225.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-2-300x225.jpeg",
+    "bytes": 27196,
+    "source_sha256": "eb16bfba7d02bc95f564b92fcac9305c5d5daf6eed8fda042bb0456f6d487e7f",
+    "sha256": "58992b226e4c0a36b340ebbb03c80997fac3b25e800ea787288294ba503069e0"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-2-768x576.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-2-768x576.jpeg",
+    "bytes": 145503,
+    "source_sha256": "71c159b128607b3c2b723dd6dec5074e7dec54d12e0825356ece9fd9c2e64065",
+    "sha256": "089194f4544bc9068dedba406462172d16136744e2740d2d8e544d308830e417"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/05/aws-2.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/05/aws-2.jpeg",
+    "bytes": 773839,
+    "source_sha256": "2f3f35a15543c8899ed6e9068af6628801909e56c22588a6a7152403114f1b8f",
+    "sha256": "8ed00d9e20dcacee45dfc740756759fccd5f37b11246131314beaac1eccb2714"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-1024x435.png",
+    "path": "/assets/imported/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-1024x435.png",
+    "bytes": 79982,
+    "source_sha256": "352108ba03cf3fbd814ab5d9fc239a30d91bef59a57bb8afe64a416d8499596f",
+    "sha256": "a93ff83fcf136d7e88b6825230e1a4ec04186010226571c1367a68ac8ecbdc8b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-1536x652.png",
+    "path": "/assets/imported/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-1536x652.png",
+    "bytes": 144323,
+    "source_sha256": "e2c13f079ba61dc896814610dcfa936746faf2ba8e775aa0dbae1908e5f3d392",
+    "sha256": "fd0137961ec33de4438aa11fa4d5a53fa2bdd97934fc1137ad9a43229a8d7f52"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-300x127.png",
+    "path": "/assets/imported/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-300x127.png",
+    "bytes": 11104,
+    "source_sha256": "1d4517a06fe4408cbd859734c76abd8fd02ceacdf1ca6615d41a5dba2e33cfa2",
+    "sha256": "8156e27875cac9d673cb68683f6a0bbae4deecffa42a51f8526886011434837d"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-768x326.png",
+    "path": "/assets/imported/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am-768x326.png",
+    "bytes": 51092,
+    "source_sha256": "b4987f0d0bcc93d6305bdadf42009140ce4d2cca331dab129e1bc29a2ab4e197",
+    "sha256": "37e8237d921c3261bc0dc79250c6005dfd478aa3c936d4fb1b4487d4e0790c0c"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am.png",
+    "path": "/assets/imported/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-11.55.46 am.png",
+    "bytes": 117889,
+    "source_sha256": "b37871f53fc45c739b3bab38a5d7e15f891af45e577af43bc05fd20de76b775f",
+    "sha256": "582e38b18be021166959355da0166163b41018bff9064d231ace45993a08cbf2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI-1021x1024.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI-1021x1024.jpg",
+    "bytes": 132601,
+    "source_sha256": "887d22da14373faf6efcfb42af91ec394590de3cf3992a32c86853fb3e888305",
+    "sha256": "3dee2f89202cc5c16aa57f125c2b254756883fbdedbc66a73a1891d3d9b0a036"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI-150x150.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI-150x150.jpg",
+    "bytes": 5835,
+    "source_sha256": "284f4477332ba5a1cfb39833a0b559e66b34f33287378f59c551cb54f3e0b755",
+    "sha256": "0f9a806bbe86944f395a44f1cfdbed32366e08ff3f0ca45ca457d10883de92cc"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI-1531x1536.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI-1531x1536.jpg",
+    "bytes": 300781,
+    "source_sha256": "55a9e728ba87480e945d340954ff42878320c43cf2990a1bae5944d44e195e0d",
+    "sha256": "2d4a275d1d122ed842b42c38cb783a5dd96a189c8cab2f570229d0d4bd23e099"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI-300x300.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI-300x300.jpg",
+    "bytes": 15531,
+    "source_sha256": "df5b539a9928e269abccb962f9c678099bf9ac79adaf0f926a1c2f7eed4e9fc0",
+    "sha256": "8dcc47e95e6023f7513c07f3edb855536c690c893f5b6255bc84acb6cccfc9d4"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI-768x770.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI-768x770.jpg",
+    "bytes": 77261,
+    "source_sha256": "128be40f0aeb68de76571bc0e7304ad9f805c83c2318ad2bdd8ff6ca5e5683eb",
+    "sha256": "b553b46e9938530bf02f5acb8394eaa668033f973c782d3714ad9ccff7eb5fa5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/AminBEHESHTI.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/07/AminBEHESHTI.jpg",
+    "bytes": 465248,
+    "source_sha256": "db1c28bbc312d8e03e149a25dcf7fa8cf6c677c1d721ee1497f6b0fc54df997a",
+    "sha256": "98b6fec0eb0db11898206999ff886895215fd16ebfa185a6c8e158edf68b0cee"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/07/IADC-template.pdf",
+    "path": "/assets/imported/wp-content/uploads/2026/07/IADC-template.pdf",
+    "bytes": 1179271,
+    "source_sha256": "35d4b8c17986ab96d477e5b08bfeebe59444a7aa243599341f8a3edf9389b9c3",
+    "sha256": "35d4b8c17986ab96d477e5b08bfeebe59444a7aa243599341f8a3edf9389b9c3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9669-1024x768.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9669-1024x768.jpg",
+    "bytes": 203988,
+    "source_sha256": "4868e8fe1bfc4ca468d3a0ba27e1b893b7f482895652fca3d015d70ef56bf68c",
+    "sha256": "b8c03b621a1d708f99a0328d5fdbd6dde1dc2d42f6a781b6113ca4df1e986937"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9669-1536x1152.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9669-1536x1152.jpg",
+    "bytes": 419291,
+    "source_sha256": "f8a0742f76bab6edb4ba303fd9327719a1d33af26920e461e892141084ff5aa4",
+    "sha256": "250e1af44ab1d5760d7782840a83db255a6e53a6b01968cb19aec6c6f0f4fbd2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9669-2048x1536.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9669-2048x1536.jpg",
+    "bytes": 696007,
+    "source_sha256": "94ea90c75d9196d08eb5806e4a37ec46035e92f4f174108ae69bfbcddb362dcb",
+    "sha256": "3ea59896a85cd08965b5661f169e280a09bf81e7da3d2518a013f267a2badfa0"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9669-300x225.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9669-300x225.jpg",
+    "bytes": 24609,
+    "source_sha256": "eab4503fc0f06d5d13670e6d217803ec3f15a655a47389564a7fe7b2d517846a",
+    "sha256": "ab625b3d98dd9dc57011ac6536f7f87864d1c96880566bb17c3b506b8eb5dda2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9669-768x576.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9669-768x576.jpg",
+    "bytes": 122128,
+    "source_sha256": "b600bc1f10b08088704738b8cf39c88b29782d0d2f10bf475c5f75513b83aee0",
+    "sha256": "1eb61ec7fd2f574a1d7856e92f66e60234faf7933759cacd4b8fbc3ed0cac4f4"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/08/IMG_9670-1.heic",
+    "path": "/assets/imported/wp-content/uploads/2026/08/IMG_9670-1.heic.jpg",
+    "bytes": 2445640,
+    "source_sha256": "1b3085a3cc6ecf3f9d8c5c8e16426c6bfbd62750abb294edac939bf61ae86ba7",
+    "sha256": "0adb54c286d8455f7dcc8f41dda4619f5f9a29b5d0d794e4fd47034aa3b58552"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Q3-1024x488.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Q3-1024x488.jpg",
+    "bytes": 130911,
+    "source_sha256": "bbf189560a30c7de1cc3d5c9b03c2200baa28dd1c3a88e4314b86ad043c54742",
+    "sha256": "8758edc341453c5338ccae05070aae338d5a6d0cd52ab7e57b120b37fa721ac2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Q3-1536x731.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Q3-1536x731.jpg",
+    "bytes": 232462,
+    "source_sha256": "d44b81d9610b61dbe8f54bafde1caa979c7f016eac19bea02c3fd231a21368ce",
+    "sha256": "c42b7a9de61cc042d81744dbbb506dbacd6af47540a94bec20e4aeb6d76bf552"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Q3-300x143.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Q3-300x143.jpg",
+    "bytes": 20701,
+    "source_sha256": "bd29f8fc3db4057e7c94c3f2d41be4e66db6e9826139e4e06a5e4b4c9b8259f2",
+    "sha256": "95fc22fe7c48858c5af35bee3cdabbcdf2e940d7540ab19ffe7064bb5dd46653"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Q3-768x366.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Q3-768x366.jpg",
+    "bytes": 86448,
+    "source_sha256": "2f978abd9c0be44b6b2795786f80c51bd4d706065a94d7d60319fb9417e863dd",
+    "sha256": "b2a713e6e9eb838f71e7e8835243da05a38b5ae623d85ee65b8e11698423c935"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Q3.jpg",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Q3.jpg",
+    "bytes": 325844,
+    "source_sha256": "c4db4f6761c27b0063a2d967d5aa02f90518f9589981842b3ab477d457d0d680",
+    "sha256": "e88e7cfb98234d23cc91e3c709a859237d2ee442dc894e41c646b7c296f56e02"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-1024x515.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-1024x515.png",
+    "bytes": 122850,
+    "source_sha256": "acb69fd8cab550ef787f47f05c188e27ec2d8a8580a054d977509ffd98f5def6",
+    "sha256": "93a35fe22fd6f03560253582ba83502c54cf707332ed2156a34dff31db75fbbb"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-1536x772.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-1536x772.png",
+    "bytes": 222595,
+    "source_sha256": "fb55c801a3d5190122cfe770d3babd8a5c86b7c06d0cbdf8b11ad4807cec8ac8",
+    "sha256": "ff1a39dcbacb1a82176fe26eadedd0c1d91b08b29d7c72d00c009dcfc92eee24"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-300x151.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-300x151.png",
+    "bytes": 16327,
+    "source_sha256": "2f0ef9f5e86483754db9b320f7a790f1ee80736989275b1347cc6810498350d7",
+    "sha256": "fdbd3adc767add6a346c1a8bcbdb4971cdcfc935054b93cc84c6c11b7d2ddda5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-768x386.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am-768x386.png",
+    "bytes": 78132,
+    "source_sha256": "9dfc1f77f2e2269851577fb53010c01b2877d7aed19de1e7492517d4460befd0",
+    "sha256": "e4e1a799cc1b62ec3ac2348b5861f8aa69954fc07d8e71c8420bdfd41a1a940e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49 am.png",
+    "bytes": 212638,
+    "source_sha256": "c0f54936d29d87bf8b8b788136c664f33a054ad9fab67a7a14cfc4f83e61509c",
+    "sha256": "6bec08a1085bdec89dfbc29b45289f97e43be53077f2e350d432a59d4a16d860"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-1024x590.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-1024x590.png",
+    "bytes": 439493,
+    "source_sha256": "63d7861703d167badb5425de8babc423b7713d5a5e925a33907fcc29586a255a",
+    "sha256": "4b54766f1bcc02ec65421a0593093f8e6d722c30ce52e7029e03f9b1e48418b5"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-1536x884.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-1536x884.png",
+    "bytes": 877749,
+    "source_sha256": "0ccccc0b70ad1472d7de151ac62379156662f6a09a49cd56d65ed487bd7b6e40",
+    "sha256": "278f2cf3ed8c3106b0d18c69a003ca852a65a0eb2a4e52ebc378d3b5832031ff"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-300x173.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-300x173.png",
+    "bytes": 53466,
+    "source_sha256": "d098b37cf36e81ea3a3cde2292ec4a99836057acd8ba3242661f1170cacc6a6c",
+    "sha256": "843c81afde7a06a10a777e16daf97ed5998844afcefed74123143065eb134e2e"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-768x442.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am-768x442.png",
+    "bytes": 268034,
+    "source_sha256": "2716c41d01e24a04bab1a22be030578c05748c36a485d57588499d87a2a621f3",
+    "sha256": "1fd7d4827a07cc48e52c3d0d992855217e562ef432c0d86d72a10927fc37fde9"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am.png",
+    "path": "/assets/imported/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.34.00 am.png",
+    "bytes": 1428150,
+    "source_sha256": "6c56d73f1cb74f413d5c9938958e2cae14e601dc6e4df574fd06fa3ab668d1b9",
+    "sha256": "a7d38018daa55a35dce327aed774feb702a3f610c356902db520819533928359"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Image-1-1024x768.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Image-1-1024x768.jpeg",
+    "bytes": 219897,
+    "source_sha256": "1e4ec3365d94f5317689fc4f099fe1459e38f0fd4028b7a5e02fcd4cd4acc432",
+    "sha256": "cf29089ea17a2d5650f5fc8e4188c0bd40cfeaaddd8f72d75becdb3a61b74c33"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Image-1-1536x1152.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Image-1-1536x1152.jpeg",
+    "bytes": 442271,
+    "source_sha256": "6abb0bbf6db3af740e31a8059c3ae4b768db9c632c26ea4055bfd1bbb3788a52",
+    "sha256": "770103e865edcf4be198a9a9ee8f151056586004a139ff06cde6c544a19cf9b3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Image-1-2048x1536.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Image-1-2048x1536.jpeg",
+    "bytes": 715036,
+    "source_sha256": "82aa6e1dae2b936e44e10ef4ae6c8af7fa8087c74bcd07a83a075755267ed45f",
+    "sha256": "602e71e37b707f9d543f872b47ed0a63d004d44d53f53c531dbe93d759885d18"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Image-1-300x225.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Image-1-300x225.jpeg",
+    "bytes": 27483,
+    "source_sha256": "2d399f94dc8c81c912d2f15bca2160b91e98f5c7a3c85af3b5d4d920c9ff2e66",
+    "sha256": "d4cd04026b05610d25d5772cb75dc05de27f3dfe0e8d3522e9d11ae73abdcdb2"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Image-1-768x576.jpeg",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Image-1-768x576.jpeg",
+    "bytes": 132612,
+    "source_sha256": "6db3c9c381ac1002277b939ef0337b67c02c897be2ad07182147b27d5a0423a2",
+    "sha256": "213f8ac78b61cf912e421f7531c1017c537789abb8af276fb9839f294218043b"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-1024x502.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-1024x502.png",
+    "bytes": 90047,
+    "source_sha256": "ca5bfc33b8fa13ca21c85fe2db1707e0f79e5eef41a3c1d83e74a3fdfcf79c96",
+    "sha256": "1c13c2417d39586ed1953836812a90292770085dd0d17f7310d111aafffd2854"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-1536x752.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-1536x752.png",
+    "bytes": 160934,
+    "source_sha256": "2e5afe98fe04cba173a5fc88dd3fbb59821e94f7b3e4b95d4ef9b252746eba04",
+    "sha256": "2c94f24e3ec3eca44798b0dfd524dd2c41c020074ab32aae0c902386f03a3783"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-2048x1003.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-2048x1003.png",
+    "bytes": 240314,
+    "source_sha256": "256bef0933990a690f60b2035f68f8cbf395d312a91fae3e19e84ad82b2f9947",
+    "sha256": "82250706af923f657d0d70eadf9cdb57b74d51c1782ff684cfc8afd4b79268b4"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-300x147.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-300x147.png",
+    "bytes": 13229,
+    "source_sha256": "8fc924001231af3251a43115f5536c8c3e4e0157e023faa6229a08195c1b4e09",
+    "sha256": "cb60a364f44bb1193b23e8ee34164bf9886f4aefbd2dfc7c8b9f0ff5d1faf161"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-768x376.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-768x376.png",
+    "bytes": 57939,
+    "source_sha256": "168410922a17d5b3f17fbe45314b57bfdbdea84bb99a73e3dcfde7b33e7628df",
+    "sha256": "47a47b2bf4e6371a6347ddfbd8e5ac2f4712e7d2c18d1ae4310eed3140e78ae3"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-1024x491.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-1024x491.png",
+    "bytes": 99540,
+    "source_sha256": "346dbc4f31007d3a9eb501c85ab99535f4c6d2af03c1f025e73d68eabbe268ae",
+    "sha256": "070c551b9eff0f3d16fcbd4191912fee6bb9734baac2585f103d83205d48eb87"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-1536x736.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-1536x736.png",
+    "bytes": 143285,
+    "source_sha256": "5af5d2107df6535520489604b187a5f985d6f4c2cf256b47691070ee74d475ff",
+    "sha256": "2b414b8ccc64e3ca286bdc548a64966d57c2d853b0915208fa06cd65ade26037"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-2048x981.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-2048x981.png",
+    "bytes": 258390,
+    "source_sha256": "6376f4f9b8731c9e3394ce94d2d5d94497980c30185e40b539d41df9477ae0c9",
+    "sha256": "5fddcad7637904b753c53d2affedf682496c3a86c7d64c7152b52a65953538df"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-300x144.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-300x144.png",
+    "bytes": 16705,
+    "source_sha256": "57a792bfa9bf6bd55ad175ca7f7b2066de26b030bc7f3732a5cb886d88da6793",
+    "sha256": "a5e26a89aa8b8fa887ef400e055b4b4b0f9047ade6a922427ebccde5d8e9d9aa"
+  },
+  {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-768x368.png",
+    "path": "/assets/imported/wp-content/uploads/2026/11/Pasted-2026-11-17-at-12.43.00-pm-768x368.png",
+    "bytes": 65165,
+    "source_sha256": "cdc4148314b6889d102447737eabfb06f74d3d9c0796eb1ac07a339c4a008432",
+    "sha256": "7a0a47b26fd187148fdc25d0b1afa36a0d401afa969ed6a296071c7b276a379c"
+  }
+]

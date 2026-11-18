@@ -1,5 +1,8 @@
 {% assign organization = site.data.organization %}
 {% assign brand_name = organization.short_name | default: organization.name | default: site.title %}
+<div class="container parent-site-link">
+  <a href="{{ site.lab_baseurl | append: '/' }}">&larr; DigiSAS Lab</a>
+</div>
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ brand_name }} home">

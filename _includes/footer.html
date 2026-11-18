@@ -16,6 +16,7 @@
       {% endfor %}
     </nav>
     <div class="footer-contact">
+      <a href="{{ site.lab_baseurl | append: '/' }}">DigiSAS Lab</a>
       {% if organization.email %}<a href="mailto:{{ organization.email | uri_escape }}">{{ organization.email }}</a>{% endif %}
       {% if organization.address %}<address>{{ organization.address | newline_to_br }}</address>{% endif %}
     </div>

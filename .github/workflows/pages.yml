@@ -1,4 +1,4 @@
-name: Validate and deploy Jekyll site
+name: Validate and deploy DigiSAS and FGEA
 
 on:
   pull_request:
@@ -26,6 +26,16 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: digisas/requirements.txt
+
+      - name: Install static migration tools
+        run: pip install -r digisas/requirements.txt
+
       - name: Determine Pages base path
         id: pages
         shell: bash
@@ -37,13 +47,12 @@ jobs:
             echo "base_path=/${repository_name}" >> "${GITHUB_OUTPUT}"
           fi
 
-      - name: Validate source content
-        run: bundle exec ruby _scripts/validate_content.rb
+      - name: Validate lab rendering
+        working-directory: digisas
+        run: python -m unittest discover -s tests
 
-      - name: Build site
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build --strict_front_matter --trace --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Build both sites
+        run: python _scripts/build_site.py --base-path "${{ steps.pages.outputs.base_path }}"
 
       - name: Validate generated site
         env:

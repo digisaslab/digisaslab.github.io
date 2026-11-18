@@ -1,0 +1,8 @@
+[
+  {
+    "url": "http://www.digisaslab.org/wp-content/uploads/2019/12/Whynde-150x150.jpg",
+    "page": "/organisers-2020/",
+    "reason": "The original public portrait returns HTTP 404. The corresponding HTTPS URL, full-size filename and WordPress media search were also checked; no authoritative replacement was found.",
+    "fallback": "Keep the organiser's full text and use an accessible image-unavailable placeholder."
+  }
+]

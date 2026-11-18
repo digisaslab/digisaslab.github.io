@@ -1,15 +1,30 @@
-# FGEA Community of Practice website
+# DigiSAS Lab and FGEA Community of Practice
 
-The production website for the Future Generation Enterprise Architecture
-Community of Practice. It is a static Jekyll 4 site published at
-<https://fgeacop.github.io/>.
+This repository hosts DigiSAS Lab at <https://fgeacop.github.io/> and the Future
+Generation Enterprise Architecture Community of Practice at
+<https://fgeacop.github.io/fgea-cop/>. The GitHub account name does not determine
+the lab's branding or contact address. The FGEA contact remains
+`FGEA@UTS.EDU.AU`.
 
-The site has no analytics, cookies, forms, external CMS, search service, or
-runtime API. Content is reviewed in this repository and built into static
-files.
+Both websites are static. DigiSAS has local browser-side search across lab and
+community content; neither site requires WordPress, a database or a search
+service at runtime. Existing external registration links remain external.
+The paid WordPress site and its DNS are not changed by this repository.
 
 ## Architecture
 
+- `digisas/` contains the complete public lab content snapshot, localised media,
+  responsive lab design and Python importer/builder. It is excluded from Jekyll
+  and is never published as source.
+- `_scripts/build_site.py` builds both sites into one `_site/` artifact: DigiSAS
+  at `/`, the existing Jekyll community site at `/fgea-cop/`.
+- The original WordPress FGEA overview is retained at
+  `/fgea-cop/lab-overview/`; `/fgea-cop/` is the richer community landing page.
+- Non-conflicting old FGEA page/media addresses remain available through
+  redirects or asset copies. `/` and `/about/` now intentionally belong to
+  DigiSAS; the corresponding FGEA pages live below `/fgea-cop/`.
+- The root sitemap and search index cover both websites. The original FGEA
+  `/feed.xml` is retained; the lab feed is `/feed/index.xml`.
 - Jekyll layouts and includes render pages, collections, navigation, metadata,
   and JSON-LD.
 - News uses Jekyll posts in `_posts/`.
@@ -34,6 +49,7 @@ event date alone is never treated as evidence that an event occurred.
 
 - Ruby 3.4.4, as declared in `.ruby-version`
 - Bundler
+- Python 3.11 or newer
 
 From the repository root:
 
@@ -41,35 +57,47 @@ From the repository root:
 gem install bundler
 bundle config set --local path vendor/bundle
 bundle install
+python3 -m venv digisas/.venv
+digisas/.venv/bin/python -m pip install -r digisas/requirements.txt
 ```
 
 ## Develop and validate
 
-Serve locally:
+Build and serve the combined site locally:
 
 ```sh
-bundle exec jekyll serve --livereload
+digisas/.venv/bin/python _scripts/build_site.py
+digisas/.venv/bin/python -m http.server 4000 --bind 127.0.0.1 --directory _site
 ```
 
-Open <http://127.0.0.1:4000/>.
+Open <http://127.0.0.1:4000/> for DigiSAS or
+<http://127.0.0.1:4000/fgea-cop/> for FGEA. On Homebrew macOS installations,
+prefix build commands with `PATH=/opt/homebrew/opt/ruby/bin:$PATH` if the system
+Ruby is older than the project version.
 
 Run the source validator and the production build:
 
 ```sh
-bundle exec ruby _scripts/validate_content.rb
-JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace
+cd digisas && .venv/bin/python -m unittest discover -s tests && cd ..
+digisas/.venv/bin/python _scripts/build_site.py
 bundle exec htmlproofer ./_site --disable-external
 ```
 
 To test a project-path deployment:
 
 ```sh
-JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace --baseurl /example
+digisas/.venv/bin/python _scripts/build_site.py --base-path /example
 bundle exec htmlproofer ./_site --disable-external --swap-urls '^/example/:/'
 ```
 
 `FGEA_TODAY=YYYY-MM-DD` may be supplied to make event grouping deterministic
 during a focused test.
+
+See `digisas/README.md` for lab editing, refreshes and known source limitations.
+Do not retire WordPress hosting before obtaining a full administrator
+files/database backup, confirming the domain/email arrangements, and approving
+the static site and external registration workflows. GitHub Pages hosting is
+free; retaining a custom domain still incurs domain renewal charges.
 
 ## Add events and news
 

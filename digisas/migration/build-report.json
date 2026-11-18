@@ -1,0 +1,430 @@
+{
+  "base_path": "",
+  "site_url": "https://fgeacop.github.io",
+  "content_documents": 75,
+  "generated_routes": 185,
+  "missing_images": [
+    {
+      "page": "/organisers-2020/",
+      "url": "http://www.digisaslab.org/wp-content/uploads/2019/12/Whynde-150x150.jpg"
+    }
+  ],
+  "external_dependencies": [
+    {
+      "page": "/about/",
+      "url": "https://www.uts.edu.au/staff/asif.gill",
+      "type": "href"
+    },
+    {
+      "page": "/about/move-2024/",
+      "url": "https://url.au.m.mimecastprotect.com/s/HdraCQnMOqCkmg3j1FPhXtGorfr?domain=sysaffairs.org",
+      "type": "href"
+    },
+    {
+      "page": "/about/move-2024/",
+      "url": "https://url.au.m.mimecastprotect.com/s/InX-CRONLrTv8oRqDcPiPt1vUyi?domain=sysaffairs.org",
+      "type": "href"
+    },
+    {
+      "page": "/about/move-2024/",
+      "url": "https://sysaffairs.org",
+      "type": "href"
+    },
+    {
+      "page": "/ai-data-digital-profession-video-podcast/",
+      "url": "https://youtu.be/F9l5yU2H-bI?feature=shared",
+      "type": "href"
+    },
+    {
+      "page": "/australasian-enterprise-architecture-summer-school-2/",
+      "url": "https://events.humanitix.com.au/australasian-enterprise-architecture-summer-school-2020",
+      "type": "href"
+    },
+    {
+      "page": "/australasian-enterprise-architecture-summer-school/",
+      "url": "https://open.uts.edu.au/uts-open/study-area/Technology/business-technology/digital-strategy/",
+      "type": "href"
+    },
+    {
+      "page": "/australasian-enterprise-architecture-summer-school/",
+      "url": "https://open.uts.edu.au/uts-open/study-area/business-and-transformation/data-science/applied-adaptive-enterprise-architecture-foundation-online/",
+      "type": "href"
+    },
+    {
+      "page": "/australasian-enterprise-architecture-summer-school/",
+      "url": "https://open.uts.edu.au/uts-open/study-area/engineering-management/digital-innovation-workshop/",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2023/11/30/vectara-industry-presentation-generative-ai-large-language-models/",
+      "url": "https://protect-au.mimecast.com/s/Fk_9CyojmOIrzQwjgIZpQV4?domain=vectara.com/",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2024/10/21/research-seminar-achieving-organisational-privacy-agility-resiliency/",
+      "url": "https://zoom.uts.edu.au/j/87333505059",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/02/13/agile-ai-system-sdlc-applications/",
+      "url": "https://www.neoxa.com.au/",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/02/13/agile-ai-system-sdlc-applications/",
+      "url": "https://events.humanitix.com/agile-ai-system-sdlc-and-applications-master-class",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/07/25/ai-system-architecture-seminar-4/",
+      "url": "https://url.au.m.mimecastprotect.com/s/JBqnC1WL9zSM92PVJHpi4iVCJ8k?domain=linkedin.com",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/07/25/ai-system-architecture-seminar-4/",
+      "url": "https://open.substack.com/pub/moderndata101/p/the-ontology-pipeline?r=ee6qm&utm_medium=ios",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/07/25/ai-system-architecture-seminar-4/",
+      "url": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGZmZjVlNTEtNGVhMy00NmIyLWI3M2MtMGUxNTNmNjdiNzA5%40thread.v2/0?context=%7b%22Tid%22%3a%22e8911c26-cf9f-4a9c-878e-527807be8791%22%2c%22Oid%22%3a%2211770d89-f553-42cc-9082-1efe31377638%22%7d",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/07/30/professor-asif-gill-on-architecting-for-ai-with-digital-twins-human-in-the-loop-design/",
+      "url": "https://adapt.com.au/resources/peer-insights/cloud-infrastructure/uts-head-of-discipline-software-engineering-on-architecting-for-ai-with-digital-twins-and-human-in-the-loop-design",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/11/04/phd-research-presentations-on-agentic-ai-systems-for-productivity-and-reliability/",
+      "url": "https://youtu.be/rI445kXdqjs",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/11/04/phd-research-presentations-on-agentic-ai-systems-for-productivity-and-reliability/",
+      "url": "https://www.youtube.com/watch?v=Y-4q216VvZE",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2025/11/04/phd-research-presentations-on-agentic-ai-systems-for-productivity-and-reliability/",
+      "url": "https://www.youtube.com/watch?v=uWY3sr18-9g",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/06/22/from-concept-to-production-inside-the-aws-x-uts-agentic-ai-workshop/",
+      "url": "https://profiles.uts.edu.au/Asif.Gill",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/expression-of-interest-infoq-certified-architect-program-sydney-online-cohort-with-luca-mezzalira/",
+      "url": "https://forms.gle/fcDCPmPrTYLauQ9Y6",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/human-centred-ai-product-design-workshop/",
+      "url": "https://events.humanitix.com/human-centred-ai-product-design-workshop",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/human-centred-ai-product-design-workshop/",
+      "url": "https://url.au.m.mimecastprotect.com/s/O9OgCjZ1nVUj1584oCWfKfm14fi?domain=doi.org",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/human-centred-ai-product-design-workshop/",
+      "url": "https://url.au.m.mimecastprotect.com/s/UC6HCk81oVHn3W9y2iVh5fGl3_p?domain=doi.org",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/human-centred-ai-product-design-workshop/",
+      "url": "https://url.au.m.mimecastprotect.com/s/apgeClx1pVUoqnxwRHyiGfz5NfE?domain=doi.org",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/human-centred-ai-product-design-workshop/",
+      "url": "https://url.au.m.mimecastprotect.com/s/OrodCmO5EVT5LJzoyC9sBfR3Ygr?domain=chatgpt.com",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/07/29/human-centred-ai-product-design-workshop/",
+      "url": "https://url.au.m.mimecastprotect.com/s/M7UXCnx1zVUGpOvZ9CmtmfJ400h?domain=people.utwente.nl",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/08/11/research-seminar-by-a-professor-sebastion-pies/",
+      "url": "https://teams.microsoft.com/meet/417193746661352?p=UprR8bFnGFmFakvgOj",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/08/11/research-seminar-by-a-professor-sebastion-pies/",
+      "url": "https://url.au.m.mimecastprotect.com/s/M7UXCnx1zVUGpOvZ9CmtmfJ400h?domain=people.utwente.nl",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/09/20/professor-asif-gill-authors-new-mit-cisr-briefing-on-governing-ai-at-scale/",
+      "url": "https://lnkd.in/guPCeD3c",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/10/13/professor-asif-gill-on-designing-intelligent-systems-that-augment-human-thinking/",
+      "url": "https://reshub.uts.edu.au/whats-on/news/designing-and-building-intelligent-systems-augment-human-thinking",
+      "type": "href"
+    },
+    {
+      "page": "/blog/2026/11/17/research-frontiers-in-agentic-ai-data-secure-digital-innovation/",
+      "url": "https://youtu.be/xwJporT_4A8",
+      "type": "href"
+    },
+    {
+      "page": "/business-architecture-copilot/",
+      "url": "https://doi.org/10.1142/12961",
+      "type": "href"
+    },
+    {
+      "page": "/call-for-submissions-2/",
+      "url": "https://events.humanitix.com/copy-of-australasian-enterprise-architecture-summer-school-2021",
+      "type": "href"
+    },
+    {
+      "page": "/call-for-submissions/",
+      "url": "https://events.humanitix.com.au/australasian-enterprise-architecture-summer-school-2020",
+      "type": "href"
+    },
+    {
+      "page": "/data-information-knights-series/",
+      "url": "https://www.linkedin.com/in/blessedireneliu/",
+      "type": "href"
+    },
+    {
+      "page": "/data-information-knights-series/",
+      "url": "https://www.linkedin.com/in/brett-avery-225148/",
+      "type": "href"
+    },
+    {
+      "page": "/data-information-knights-series/",
+      "url": "https://www.linkedin.com/in/rizwanbashir/",
+      "type": "href"
+    },
+    {
+      "page": "/data-information-knights-series/",
+      "url": "https://www.linkedin.com/in/mickmioduszewski/",
+      "type": "href"
+    },
+    {
+      "page": "/data-information-knights-series/",
+      "url": "https://www.linkedin.com/in/vipra-kulkarni-5a184334/",
+      "type": "href"
+    },
+    {
+      "page": "/data-information-knights-series/",
+      "url": "https://www.linkedin.com/in/saadamin/",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://zoom.uts.edu.au/j/84396105596",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://utsmeet.zoom.us/rec/share/gm_H6XPHZbnvNNGK0F6UjIWUwsKB58IxQwxDhkrMhqgh-XGpXjMvD_ZZRnLePZoi.DhRD9osy8xc04eOh",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://events.humanitix.com/feit-research-excellence-2024-lecture-series-research-seminar-prof-erik-proper",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://zoom.uts.edu.au/j/84874776383",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://utsmeet.zoom.us/rec/share/qyauXRjyo6exbu_vE1nvO4lWG4Ew1B3zrMAYuNj_vRmIwdHK70RxE6b0IWPDSUTP.VytwH_KtaJwStxqb",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://zoom.uts.edu.au/j/89205337072",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://zoom.uts.edu.au/j/88660172095",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://utsmeet.zoom.us/rec/share/g-8G_JS87sIAeKQJpEk-ZX4AZZPCdL2bWtUbtaznUGkCeF1OvWYn-Zs-jDIeKqBB.jdkTG24ICxN670xs",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://www.unsw.edu.au/research/faic",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://www.eventbrite.com.au/e/conceptual-and-architectural-modelling-for-ai-tickets-998193292007",
+      "type": "href"
+    },
+    {
+      "page": "/digital-data-week/",
+      "url": "https://utsmeet.zoom.us/rec/share/7w9oV-wvqHxA03zkSpxi4MnDTKZSc1aWUR3t7OHukq66VPFGJr7Jw0Uom_y9vPbf.ADlxxJoD0sgoHxtO",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2025-2/",
+      "url": "https://cbi-edoc-2025.inesc-id.pt/",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2025-2/",
+      "url": "https://www.springer.com/series/7911",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2025-2/",
+      "url": "https://easychair.org/conferences2/submissions?a=34770849",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://conf.researchr.org/venue/cbi-edoc-2026/cbi-edoc-2026-venue",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://cbi-edoc-2025.inesc-id.pt/",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://conf.researchr.org/home/cbi-edoc-2026",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://data-science-group.github.io/",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://collectivelearning.ai",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://www.springer.com/series/7911",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://easychair.org/conferences/?conf=cbiedoc2026",
+      "type": "href"
+    },
+    {
+      "page": "/ea4ai-2026/",
+      "url": "https://conf.researchr.org/track/cbi-edoc-2026/cbi-edoc-2026-workshops#important-dates",
+      "type": "href"
+    },
+    {
+      "page": "/gdda/",
+      "url": "https://www.unsw.edu.au/research/faic",
+      "type": "href"
+    },
+    {
+      "page": "/gdda/",
+      "url": "https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/Asif.Gill",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/Madhushi.Bandara",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/Nabin.Sharma",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/Srinivas.Madhisetty",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/bo.liu",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/Ali.Braytee",
+      "type": "href"
+    },
+    {
+      "page": "/people/",
+      "url": "https://profiles.uts.edu.au/memoona.anwar",
+      "type": "href"
+    },
+    {
+      "page": "/registration-2020-2/",
+      "url": "https://events.humanitix.com/copy-of-australasian-enterprise-architecture-summer-school-2021",
+      "type": "href"
+    },
+    {
+      "page": "/registration-2020/",
+      "url": "https://events.humanitix.com.au/australasian-enterprise-architecture-summer-school-2020",
+      "type": "href"
+    },
+    {
+      "page": "/research/",
+      "url": "https://profiles.uts.edu.au/Asif.Gill/grants",
+      "type": "href"
+    },
+    {
+      "page": "/research/",
+      "url": "https://profiles.uts.edu.au/Nabin.Sharma/grants",
+      "type": "href"
+    },
+    {
+      "page": "/research/",
+      "url": "https://profiles.uts.edu.au/Yanjun.Zhang/publications",
+      "type": "href"
+    },
+    {
+      "page": "/research/",
+      "url": "https://profiles.uts.edu.au/Madhushi.Bandara/grants",
+      "type": "href"
+    },
+    {
+      "page": "/sead-2021/",
+      "url": "https://ieee-edoc.org/2021/",
+      "type": "href"
+    },
+    {
+      "page": "/sead-2021/",
+      "url": "https://eapj.org/journal/",
+      "type": "href"
+    },
+    {
+      "page": "/sead-2021/",
+      "url": "https://eapj.org/papers/",
+      "type": "href"
+    },
+    {
+      "page": "/sead-2021/",
+      "url": "https://easychair.org/conferences/?conf=sead2021",
+      "type": "href"
+    }
+  ],
+  "unresolved_local_links": []
+}

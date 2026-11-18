@@ -1,0 +1,367 @@
+{
+  "source": "https://www.digisaslab.org",
+  "fetched_at": "2026-11-18T08:54:18.795028+00:00",
+  "counts": {
+    "pages": 30,
+    "posts": 45,
+    "media_library": 250,
+    "referenced_assets": 338,
+    "downloaded_assets": 337
+  },
+  "documents": [
+    {
+      "id": 1588,
+      "path": "/ea4ai-2025-2/"
+    },
+    {
+      "id": 1241,
+      "path": "/ea4ai-2026/"
+    },
+    {
+      "id": 1389,
+      "path": "/business-architecture-copilot/"
+    },
+    {
+      "id": 1289,
+      "path": "/ai-data-digital-profession-video-podcast/"
+    },
+    {
+      "id": 1030,
+      "path": "/digital-data-week/"
+    },
+    {
+      "id": 948,
+      "path": "/gdda/"
+    },
+    {
+      "id": 929,
+      "path": "/about/move-2024/"
+    },
+    {
+      "id": 821,
+      "path": "/fgea-cop/"
+    },
+    {
+      "id": 773,
+      "path": "/data-information-knights-series/"
+    },
+    {
+      "id": 723,
+      "path": "/archive-2021/"
+    },
+    {
+      "id": 633,
+      "path": "/sead-2021/"
+    },
+    {
+      "id": 544,
+      "path": "/speakers-2020-2/"
+    },
+    {
+      "id": 514,
+      "path": "/archive/"
+    },
+    {
+      "id": 508,
+      "path": "/registration-2020/"
+    },
+    {
+      "id": 510,
+      "path": "/program-2020/"
+    },
+    {
+      "id": 506,
+      "path": "/organisers-2020/"
+    },
+    {
+      "id": 494,
+      "path": "/call-for-submissions/"
+    },
+    {
+      "id": 490,
+      "path": "/australasian-enterprise-architecture-summer-school-2/"
+    },
+    {
+      "id": 367,
+      "path": "/call-for-submissions-2/"
+    },
+    {
+      "id": 311,
+      "path": "/organisers-2020-2/"
+    },
+    {
+      "id": 281,
+      "path": "/program-2020-2/"
+    },
+    {
+      "id": 278,
+      "path": "/registration-2020-2/"
+    },
+    {
+      "id": 275,
+      "path": "/speakers-2020/"
+    },
+    {
+      "id": 219,
+      "path": "/offerings/"
+    },
+    {
+      "id": 73,
+      "path": "/partners/"
+    },
+    {
+      "id": 43,
+      "path": "/australasian-enterprise-architecture-summer-school/"
+    },
+    {
+      "id": 38,
+      "path": "/projects/"
+    },
+    {
+      "id": 32,
+      "path": "/research/"
+    },
+    {
+      "id": 29,
+      "path": "/people/"
+    },
+    {
+      "id": 26,
+      "path": "/about/"
+    },
+    {
+      "id": 1739,
+      "path": "/blog/2026/11/17/research-frontiers-in-agentic-ai-data-secure-digital-innovation/"
+    },
+    {
+      "id": 1734,
+      "path": "/blog/2026/11/17/digisas-lab-2026-annual-research-showcase/"
+    },
+    {
+      "id": 1726,
+      "path": "/blog/2026/11/15/fgea-cop-2026-q4-symposium/"
+    },
+    {
+      "id": 1725,
+      "path": "/blog/2026/11/15/digisas-lab-seminar-with-dr-nassim-belbaly-safe-and-private-by-design/"
+    },
+    {
+      "id": 1721,
+      "path": "/blog/2026/11/03/the-executable-twin-modelling-an-organisation-so-ai-agents-can-act-inside-it-safely/"
+    },
+    {
+      "id": 1719,
+      "path": "/blog/2026/10/13/professor-asif-gill-on-designing-intelligent-systems-that-augment-human-thinking/"
+    },
+    {
+      "id": 1705,
+      "path": "/blog/2026/09/20/professor-asif-gill-authors-new-mit-cisr-briefing-on-governing-ai-at-scale/"
+    },
+    {
+      "id": 1701,
+      "path": "/blog/2026/09/03/fgea-cop-2026-q3-symposium/"
+    },
+    {
+      "id": 1669,
+      "path": "/blog/2026/08/19/research-seminar-by-professor-patrick-mikalef/"
+    },
+    {
+      "id": 1665,
+      "path": "/blog/2026/08/11/research-seminar-by-a-professor-sebastion-pies/"
+    },
+    {
+      "id": 1656,
+      "path": "/blog/2026/07/29/expression-of-interest-infoq-certified-architect-program-sydney-online-cohort-with-luca-mezzalira/"
+    },
+    {
+      "id": 1649,
+      "path": "/blog/2026/07/29/human-centred-ai-product-design-workshop/"
+    },
+    {
+      "id": 1631,
+      "path": "/blog/2026/06/22/from-concept-to-production-inside-the-aws-x-uts-agentic-ai-workshop/"
+    },
+    {
+      "id": 1626,
+      "path": "/blog/2026/05/25/fgea-cop-2026-q2-symposium/"
+    },
+    {
+      "id": 1619,
+      "path": "/blog/2026/05/25/insights-from-aws-summit-sydney-2026-building-reliable-responsible-ai-agents/"
+    },
+    {
+      "id": 1620,
+      "path": "/blog/2026/05/21/digisas-lab-seminar-with-snowflake-agentic-ai-adoption-in-higher-education/"
+    },
+    {
+      "id": 1559,
+      "path": "/blog/2026/02/15/fgea-cop-2026-q1-symposium/"
+    },
+    {
+      "id": 1596,
+      "path": "/blog/2025/11/16/fgea-cop-2025-q4-symposium/"
+    },
+    {
+      "id": 1555,
+      "path": "/blog/2025/11/04/phd-research-presentations-on-agentic-ai-systems-for-productivity-and-reliability/"
+    },
+    {
+      "id": 1541,
+      "path": "/blog/2025/10/30/digisas-lab-seminar-with-a-professor-nabin-sharma-drones-and-ai-for-saving-life/"
+    },
+    {
+      "id": 1491,
+      "path": "/blog/2025/08/27/digisas-lab-seminar-with-henry-chandra-from-diagrams-to-insights-making-architecture-actionable/"
+    },
+    {
+      "id": 1486,
+      "path": "/blog/2025/08/27/digisas-lab-seminar-trustworthy-systems-machine-learning-a-challenge-for-enterprise-system/"
+    },
+    {
+      "id": 1383,
+      "path": "/blog/2025/08/15/fgea-cop-2025-q3-symposium/"
+    },
+    {
+      "id": 1413,
+      "path": "/blog/2025/07/30/professor-asif-gill-on-architecting-for-ai-with-digital-twins-human-in-the-loop-design/"
+    },
+    {
+      "id": 1385,
+      "path": "/blog/2025/07/25/ai-system-architecture-seminar-4/"
+    },
+    {
+      "id": 1294,
+      "path": "/blog/2025/06/02/fgea-cop-2025-q2-symposium/"
+    },
+    {
+      "id": 1252,
+      "path": "/blog/2025/05/12/ai-system-architecture-seminar-3/"
+    },
+    {
+      "id": 1231,
+      "path": "/blog/2025/04/24/ai-system-architecture-seminar-2/"
+    },
+    {
+      "id": 1160,
+      "path": "/blog/2025/03/10/fgea-cop-2025-q1-symposium/"
+    },
+    {
+      "id": 1155,
+      "path": "/blog/2025/02/13/agile-ai-system-sdlc-applications/"
+    },
+    {
+      "id": 1149,
+      "path": "/blog/2025/02/12/ai-system-architecture-seminar/"
+    },
+    {
+      "id": 1039,
+      "path": "/blog/2024/10/21/research-seminar-achieving-organisational-privacy-agility-resiliency/"
+    },
+    {
+      "id": 1107,
+      "path": "/blog/2024/10/14/digisas-lab-seminar-enterprise-architecture-modeling-for-cybersecurity-analysis-in-critical-infrastructures/"
+    },
+    {
+      "id": 1069,
+      "path": "/blog/2024/09/18/fgea-cop-2024-q4-symposium/"
+    },
+    {
+      "id": 1051,
+      "path": "/blog/2024/08/26/fgea-cop-2024-q3-symposium/"
+    },
+    {
+      "id": 936,
+      "path": "/blog/2024/06/12/fgea-cop-2024-q2-symposium/"
+    },
+    {
+      "id": 939,
+      "path": "/blog/2024/03/28/fgea-cop-2024-q1-symposium/"
+    },
+    {
+      "id": 862,
+      "path": "/blog/2024/02/13/call-for-papers-move-2024/"
+    },
+    {
+      "id": 865,
+      "path": "/blog/2024/02/06/2024-feit-research-excellence-lecture-by-prof-robert-winter/"
+    },
+    {
+      "id": 851,
+      "path": "/blog/2023/11/30/vectara-industry-presentation-generative-ai-large-language-models/"
+    },
+    {
+      "id": 819,
+      "path": "/blog/2023/10/09/future-generation-enterprise-architecture-fgea-symposium-2023/"
+    },
+    {
+      "id": 817,
+      "path": "/blog/2023/02/14/australasian-ea-summer-school-2023/"
+    },
+    {
+      "id": 814,
+      "path": "/blog/2022/02/14/australian-ea-summer-school-2022/"
+    },
+    {
+      "id": 598,
+      "path": "/blog/2021/02/19/insights-from-enterprise-architecture-summer-school-2021/"
+    },
+    {
+      "id": 247,
+      "path": "/blog/2019/11/28/australian-ea-summer-school-2020/"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "About",
+      "url": "https://www.digisaslab.org/about/"
+    },
+    {
+      "label": "People",
+      "url": "https://www.digisaslab.org/people/"
+    },
+    {
+      "label": "Research & Innovation",
+      "url": "https://www.digisaslab.org/research/"
+    },
+    {
+      "label": "FGEA CoP",
+      "url": "https://www.digisaslab.org/fgea-cop/"
+    },
+    {
+      "label": "EA4AI 2026",
+      "url": "https://www.digisaslab.org/ea4ai-2026/"
+    },
+    {
+      "label": "Page 2",
+      "url": "https://www.digisaslab.org/page/2/"
+    },
+    {
+      "label": "Page 5",
+      "url": "https://www.digisaslab.org/page/5/"
+    },
+    {
+      "label": "Next Next page",
+      "url": "https://www.digisaslab.org/page/2/"
+    }
+  ],
+  "features_to_review": [
+    {
+      "url": "https://www.digisaslab.org/archive-2021/",
+      "embeds": [
+        {
+          "tag": "iframe",
+          "src": "http://www.digisaslab.org/call-for-submissions-2/embed/#?secret=WDjBzksMYw",
+          "action": null
+        }
+      ],
+      "shortcodes": [],
+      "comments_open": false
+    }
+  ],
+  "asset_failures": [
+    {
+      "url": "http://www.digisaslab.org/wp-content/uploads/2019/12/Whynde-150x150.jpg",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

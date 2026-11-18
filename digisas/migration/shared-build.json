@@ -1,0 +1,156 @@
+{
+  "root_site": "https://fgeacop.github.io/",
+  "community_site": "https://fgeacop.github.io/fgea-cop/",
+  "legacy_redirects": [
+    {
+      "from": "/chapters/",
+      "to": "/fgea-cop/chapters/"
+    },
+    {
+      "from": "/community/",
+      "to": "/fgea-cop/community/"
+    },
+    {
+      "from": "/contact/",
+      "to": "/fgea-cop/contact/"
+    },
+    {
+      "from": "/events/fgea-2023-symposium/",
+      "to": "/fgea-cop/events/fgea-2023-symposium/"
+    },
+    {
+      "from": "/events/fgea-2024-q1-symposium/",
+      "to": "/fgea-cop/events/fgea-2024-q1-symposium/"
+    },
+    {
+      "from": "/events/fgea-2024-q2-symposium/",
+      "to": "/fgea-cop/events/fgea-2024-q2-symposium/"
+    },
+    {
+      "from": "/events/fgea-2024-q3-symposium/",
+      "to": "/fgea-cop/events/fgea-2024-q3-symposium/"
+    },
+    {
+      "from": "/events/fgea-2024-q4-symposium/",
+      "to": "/fgea-cop/events/fgea-2024-q4-symposium/"
+    },
+    {
+      "from": "/events/fgea-2025-q1-symposium/",
+      "to": "/fgea-cop/events/fgea-2025-q1-symposium/"
+    },
+    {
+      "from": "/events/fgea-2025-q2-symposium/",
+      "to": "/fgea-cop/events/fgea-2025-q2-symposium/"
+    },
+    {
+      "from": "/events/fgea-2025-q3-symposium/",
+      "to": "/fgea-cop/events/fgea-2025-q3-symposium/"
+    },
+    {
+      "from": "/events/fgea-2025-q4-symposium/",
+      "to": "/fgea-cop/events/fgea-2025-q4-symposium/"
+    },
+    {
+      "from": "/events/fgea-2026-q1-symposium/",
+      "to": "/fgea-cop/events/fgea-2026-q1-symposium/"
+    },
+    {
+      "from": "/events/fgea-2026-q2-symposium/",
+      "to": "/fgea-cop/events/fgea-2026-q2-symposium/"
+    },
+    {
+      "from": "/events/fgea-2026-q3-symposium/",
+      "to": "/fgea-cop/events/fgea-2026-q3-symposium/"
+    },
+    {
+      "from": "/events/fgea-2026-q4-symposium/",
+      "to": "/fgea-cop/events/fgea-2026-q4-symposium/"
+    },
+    {
+      "from": "/events/",
+      "to": "/fgea-cop/events/"
+    },
+    {
+      "from": "/lab-overview/",
+      "to": "/fgea-cop/lab-overview/"
+    },
+    {
+      "from": "/news/2024-q1-symposium/",
+      "to": "/fgea-cop/news/2024-q1-symposium/"
+    },
+    {
+      "from": "/news/2024-q2-symposium/",
+      "to": "/fgea-cop/news/2024-q2-symposium/"
+    },
+    {
+      "from": "/news/2024-q3-symposium/",
+      "to": "/fgea-cop/news/2024-q3-symposium/"
+    },
+    {
+      "from": "/news/2024-q4-symposium/",
+      "to": "/fgea-cop/news/2024-q4-symposium/"
+    },
+    {
+      "from": "/news/2025-q1-symposium/",
+      "to": "/fgea-cop/news/2025-q1-symposium/"
+    },
+    {
+      "from": "/news/2025-q2-symposium/",
+      "to": "/fgea-cop/news/2025-q2-symposium/"
+    },
+    {
+      "from": "/news/2025-q3-symposium/",
+      "to": "/fgea-cop/news/2025-q3-symposium/"
+    },
+    {
+      "from": "/news/2025-q4-symposium/",
+      "to": "/fgea-cop/news/2025-q4-symposium/"
+    },
+    {
+      "from": "/news/2026-q1-symposium/",
+      "to": "/fgea-cop/news/2026-q1-symposium/"
+    },
+    {
+      "from": "/news/2026-q2-symposium/",
+      "to": "/fgea-cop/news/2026-q2-symposium/"
+    },
+    {
+      "from": "/news/2026-q3-symposium/",
+      "to": "/fgea-cop/news/2026-q3-symposium/"
+    },
+    {
+      "from": "/news/2026-q4-symposium/",
+      "to": "/fgea-cop/news/2026-q4-symposium/"
+    },
+    {
+      "from": "/news/fgea-symposium-2023/",
+      "to": "/fgea-cop/news/fgea-symposium-2023/"
+    },
+    {
+      "from": "/news/",
+      "to": "/fgea-cop/news/"
+    },
+    {
+      "from": "/news/posts/2025-q4-symposium.html",
+      "to": "/fgea-cop/news/posts/2025-q4-symposium.html"
+    },
+    {
+      "from": "/news/posts/2026-q1-symposium.html",
+      "to": "/fgea-cop/news/posts/2026-q1-symposium.html"
+    },
+    {
+      "from": "/news/posts/2026-q2-symposium.html",
+      "to": "/fgea-cop/news/posts/2026-q2-symposium.html"
+    },
+    {
+      "from": "/resources/",
+      "to": "/fgea-cop/resources/"
+    }
+  ],
+  "search_documents": 111,
+  "sitemap_urls": 218,
+  "intentional_route_changes": {
+    "/": "DigiSAS is now the primary homepage; FGEA moved to /fgea-cop/.",
+    "/about/": "The lab's About page is primary; FGEA About moved to /fgea-cop/about/."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": 9,
+      "name": "Event",
+      "slug": "event",
+      "url": "https://www.digisaslab.org/blog/category/event/"
+    },
+    {
+      "id": 22,
+      "name": "FGEA CoP",
+      "slug": "fgea-cop",
+      "url": "https://www.digisaslab.org/blog/category/fgea-cop/"
+    },
+    {
+      "id": 4,
+      "name": "Partners",
+      "slug": "partners",
+      "url": "https://www.digisaslab.org/blog/category/partners/"
+    },
+    {
+      "id": 3,
+      "name": "People",
+      "slug": "people",
+      "url": "https://www.digisaslab.org/blog/category/people/"
+    },
+    {
+      "id": 6,
+      "name": "Projects",
+      "slug": "projects",
+      "url": "https://www.digisaslab.org/blog/category/projects/"
+    },
+    {
+      "id": 7,
+      "name": "Publications",
+      "slug": "publications",
+      "url": "https://www.digisaslab.org/blog/category/publications/"
+    },
+    {
+      "id": 5,
+      "name": "Research",
+      "slug": "research",
+      "url": "https://www.digisaslab.org/blog/category/research/"
+    },
+    {
+      "id": 19,
+      "name": "Researchers",
+      "slug": "researchers",
+      "url": "https://www.digisaslab.org/blog/category/people/researchers/"
+    },
+    {
+      "id": 8,
+      "name": "Services",
+      "slug": "services",
+      "url": "https://www.digisaslab.org/blog/category/services/"
+    },
+    {
+      "id": 1,
+      "name": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://www.digisaslab.org/blog/category/uncategorized/"
+    }
+  ],
+  "tags": [
+    {
+      "id": 12,
+      "name": "event",
+      "slug": "event",
+      "url": "https://www.digisaslab.org/blog/tag/event/"
+    },
+    {
+      "id": 13,
+      "name": "FGEA Cop",
+      "slug": "fgea-cop",
+      "url": "https://www.digisaslab.org/blog/tag/fgea-cop/"
+    },
+    {
+      "id": 20,
+      "name": "news",
+      "slug": "news",
+      "url": "https://www.digisaslab.org/blog/tag/news/"
+    },
+    {
+      "id": 21,
+      "name": "publications",
+      "slug": "publications",
+      "url": "https://www.digisaslab.org/blog/tag/publications/"
+    },
+    {
+      "id": 14,
+      "name": "Q3",
+      "slug": "q3",
+      "url": "https://www.digisaslab.org/blog/tag/q3/"
+    },
+    {
+      "id": 15,
+      "name": "Q4",
+      "slug": "q4",
+      "url": "https://www.digisaslab.org/blog/tag/q4/"
+    }
+  ]
+}

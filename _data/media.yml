@@ -181,3 +181,27 @@ items:
     original_format: PNG
     derivative: Metadata-free PNG retained at 1808x768.
     authorisation: User-owned DigiSAS content; permanent migration authorised.
+
+  - path: /assets/images/events/fgea-2026-q3-symposium/published-agenda.png
+    event_id: fgea-2026-q3-symposium
+    source_page: https://www.digisaslab.org/blog/2026/09/03/fgea-cop-2026-q3-symposium/
+    source_url: "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49%E2%80%AFam.png"
+    original_format: PNG
+    derivative: Metadata-free PNG retained at 1576x792.
+    authorisation: User-owned DigiSAS content; permanent migration authorised.
+
+  - path: /assets/images/events/fgea-2026-q3-symposium/participants.jpg
+    event_id: fgea-2026-q3-symposium
+    source_page: https://www.digisaslab.org/blog/2026/09/03/fgea-cop-2026-q3-symposium/
+    source_url: https://www.digisaslab.org/wp-content/uploads/2026/09/Q3.jpg
+    original_format: JPEG
+    derivative: Orientation-preserving metadata-free JPEG retained at 1903x906.
+    authorisation: User-owned DigiSAS content and event photos; permanent migration authorised.
+
+  - path: /assets/images/events/fgea-2026-q4-symposium/published-agenda.png
+    event_id: fgea-2026-q4-symposium
+    source_page: https://www.digisaslab.org/blog/2026/11/15/fgea-cop-2026-q4-symposium/
+    source_url: https://www.digisaslab.org/wp-content/uploads/2026/11/Pasted-2026-11-16-at-8.50.38-pm-2048x1003.png
+    original_format: PNG
+    derivative: Metadata-free PNG retained at 2048x1003.
+    authorisation: User-owned DigiSAS content; permanent migration authorised.
