@@ -3,9 +3,10 @@
 <article class="card news-card{% if include.featured %} featured{% endif %}" data-reveal>
   {% include record-image.html record=item card=true %}
   <div class="card-content">
+    {% if item.kind %}<p class="card-kicker">{{ item.kind | capitalize }}</p>{% endif %}
     {% if item.date %}<time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%-d %B %Y" }}</time>{% endif %}
     <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-    {% if item_summary %}<p>{{ item_summary | strip_html | truncatewords: 24 }}</p>{% endif %}
+    {% if item_summary %}<p>{% if include.full_summary %}{{ item_summary | strip_html }}{% else %}{{ item_summary | strip_html | truncatewords: 24 }}{% endif %}</p>{% endif %}
     <span class="read-more" aria-hidden="true">Read update →</span>
   </div>
 </article>

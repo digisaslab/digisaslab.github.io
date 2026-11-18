@@ -72,17 +72,33 @@ try {
     { name: "mobile-home", route: "/", width: 390, height: 844 },
     { name: "mobile-people", route: "/people/", width: 390, height: 844 },
     { name: "desktop-people", route: "/people/", width: 1440, height: 1080 },
+    { name: "narrow-people", route: "/people/", width: 320, height: 844 },
+    { name: "tablet-people", route: "/people/", width: 820, height: 1180 },
     { name: "mobile-sarv", route: "/people/#sarv-girn", width: 390, height: 844 },
     { name: "desktop-sarv", route: "/people/#sarv-girn", width: 1440, height: 1080 },
     { name: "tablet-home", route: "/", width: 820, height: 1180 },
     { name: "mobile-research", route: "/research/", width: 390, height: 844 },
+    { name: "desktop-research", route: "/research/", width: 1440, height: 1080 },
+    { name: "desktop-research-cards", route: "/research/", scroll: ".cb-callback__inner", width: 1440, height: 1080 },
+    { name: "mobile-research-cards", route: "/research/", scroll: ".cb-callback__inner", width: 390, height: 844 },
+    { name: "desktop-about", route: "/about/", width: 1440, height: 1080 },
+    { name: "desktop-news", route: "/blog/", width: 1440, height: 1080 },
+    { name: "mobile-news", route: "/blog/", width: 390, height: 844 },
     { name: "mobile-fgea", route: "/fgea-cop/", width: 390, height: 844 },
     { name: "desktop-fgea", route: "/fgea-cop/", width: 1440, height: 1080 },
+    { name: "desktop-fgea-events", route: "/fgea-cop/events/", width: 1440, height: 1080 },
+    { name: "mobile-fgea-events", route: "/fgea-cop/events/", width: 390, height: 844 },
+    { name: "desktop-fgea-news", route: "/fgea-cop/news/", width: 1440, height: 1080 },
+    { name: "desktop-fgea-people", route: "/fgea-cop/about/", scroll: ".person-card", width: 1440, height: 1080 },
+    { name: "mobile-fgea-about", route: "/fgea-cop/about/", width: 390, height: 844 },
     { name: "mobile-search", route: "/search/?q=FGEA", width: 390, height: 844 },
+    { name: "desktop-search", route: "/search/?q=FGEA", width: 1440, height: 1080 },
     { name: "latest-event", route: "/blog/2026/11/15/fgea-cop-2026-q4-symposium/", width: 390, height: 844 },
     { name: "native-event", route: "/fgea-cop/events/fgea-2026-q4-symposium/", width: 390, height: 844 },
     { name: "desktop-native-event", route: "/fgea-cop/events/fgea-2026-q4-symposium/", width: 1440, height: 1080 },
     { name: "event-gallery", route: "/fgea-cop/news/2025-q4-symposium/", width: 390, height: 844 },
+    { name: "desktop-event-gallery", route: "/fgea-cop/news/2024-q4-symposium/", scroll: ".event-gallery", width: 1440, height: 1080 },
+    { name: "mobile-event-gallery", route: "/fgea-cop/news/2024-q4-symposium/", scroll: ".event-gallery", width: 390, height: 844 },
   ];
   const results = [];
   for (const test of cases) {
@@ -102,20 +118,38 @@ try {
       expression: `(async () => {
         await document.fonts.ready;
         if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({ behavior: "instant", block: "center" });
+        const scrollTarget = ${JSON.stringify(test.scroll || null)};
+        if (scrollTarget) document.querySelector(scrollTarget)?.scrollIntoView({ behavior: "instant", block: "center" });
         await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
         await new Promise(resolve => {
           const deadline = Date.now() + 15000;
+          let stableFrames = 0;
+          let previousScroll;
           const ready = () => {
             const images = [...document.images].filter(image => {
               const bounds = image.getBoundingClientRect();
               return bounds.bottom > 0 && bounds.top < innerHeight && image.checkVisibility();
             });
             const searching = document.querySelector("#search-status")?.textContent === "Searching...";
-            if ((!searching && images.every(image => image.complete)) || Date.now() > deadline) resolve();
+            const animating = document.getAnimations().some(animation =>
+              animation.playState === "running" && animation.effect.getComputedTiming().iterations !== Infinity);
+            const settled = !searching && !animating && images.every(image => image.complete) && scrollY === previousScroll;
+            stableFrames = settled ? stableFrames + 1 : 0;
+            previousScroll = scrollY;
+            if (stableFrames >= 3 || Date.now() > deadline) resolve();
             else setTimeout(ready, 100);
           };
           ready();
         });
+        const visibleImages = [...document.images].filter(image => {
+          const bounds = image.getBoundingClientRect();
+          return bounds.bottom > 0 && bounds.top < innerHeight && image.checkVisibility();
+        });
+        await Promise.race([
+          Promise.all(visibleImages.map(image => image.decode().catch(() => {}))),
+          new Promise(resolve => setTimeout(resolve, 3000))
+        ]);
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
       })()`, awaitPromise: true,
     }, sessionId);
     const { result } = await call("Runtime.evaluate", {
@@ -128,7 +162,48 @@ try {
         logo: (() => { const i = document.querySelector(".brand-logo"); if (!i) return null; const b = i.getBoundingClientRect(); return { src: i.src, width: i.naturalWidth, height: i.naturalHeight, displayedRatio: b.width / b.height, home: i.closest("a").pathname }; })(),
         portrait: (() => { const i = document.querySelector("#sarv-girn img"); if (!i) return null; const b = i.getBoundingClientRect(); return { src: i.src, width: i.naturalWidth, visible: b.bottom > 0 && b.top < innerHeight }; })(),
         cardImages: document.querySelectorAll("main .card img").length,
+        scrollTargetFound: ${JSON.stringify(test.scroll)} ? !!document.querySelector(${JSON.stringify(test.scroll)}) : true,
+        cardImageLink: (() => { const card = document.querySelector(".cards > .card"); const image = card?.querySelector(".card-media"); if (!image) return null; const b = image.getBoundingClientRect(); return document.elementFromPoint(b.x + b.width / 2, b.y + b.height / 2)?.closest("a")?.href === card.querySelector("h2 a, h3 a").href; })(),
+        alignmentIssues: (() => {
+          const issues = [];
+          for (const [gridSelector, itemSelector] of [
+            [".people-grid", ":scope > article"],
+            [".cards", ":scope > .card"],
+            [".card-grid", ":scope > .card, :scope > .person-card"],
+            [".event-gallery", ":scope > figure"]
+          ]) {
+            for (const grid of document.querySelectorAll(gridSelector)) {
+              const rows = new Map();
+              for (const item of grid.querySelectorAll(itemSelector)) {
+                const row = item.offsetTop;
+                if (!rows.has(row)) rows.set(row, []);
+                rows.get(row).push(item.getBoundingClientRect());
+              }
+              const bounds = grid.getBoundingClientRect();
+              for (const items of rows.values()) {
+                const left = Math.min(...items.map(item => item.left));
+                const right = Math.max(...items.map(item => item.right));
+                if (Math.abs((left + right) / 2 - (bounds.left + bounds.right) / 2) > 2) issues.push(gridSelector + ": row not centred");
+              }
+            }
+          }
+          for (const image of document.querySelectorAll(".people-grid article img, .cb-callback__inner > .imported-background")) {
+            const card = image.closest("article, .cb-callback__inner").getBoundingClientRect();
+            const picture = image.getBoundingClientRect();
+            if (Math.abs(picture.left + picture.width / 2 - card.left - card.width / 2) > 2) issues.push("Portrait/research icon not centred");
+          }
+          return issues;
+        })(),
         recordImage: document.querySelector(".record-image img")?.naturalWidth,
+        gallery: (() => {
+          const images = [...document.querySelectorAll(".event-gallery img")];
+          if (!images.length) return null;
+          const height = images[0].getBoundingClientRect().height;
+          return {
+            uniformThumbnails: images.every(image => Math.abs(image.getBoundingClientRect().height - height) < 1),
+            fullImagesLinked: images.every(image => image.closest("a")?.href === image.src)
+          };
+        })(),
         reducedMotion: matchMedia("(prefers-reduced-motion: reduce)").matches,
         cardTransition: document.querySelector(".cb-profile__post") ? getComputedStyle(document.querySelector(".cb-profile__post")).transitionDuration : null,
         brokenImages: [...document.images].filter(i => { const b = i.getBoundingClientRect(); return b.bottom > 0 && b.top < innerHeight && i.checkVisibility() && (!i.complete || i.naturalWidth === 0); }).map(i => i.src)
@@ -137,6 +212,10 @@ try {
     const metrics = JSON.parse(result.value);
     if (metrics.width > test.width + 1 || metrics.viewport > test.width + 1) failures.push(`${test.name}: horizontal overflow ${JSON.stringify(metrics)}`);
     if (metrics.brokenImages.length) failures.push(`${test.name}: broken visible images`);
+    if (!metrics.scrollTargetFound) failures.push(`${test.name}: expected content section was not rendered`);
+    if (test.scroll === ".event-gallery" && (!metrics.gallery?.uniformThumbnails || !metrics.gallery.fullImagesLinked)) failures.push(`${test.name}: gallery pictures are uneven or cannot open at full size`);
+    if (metrics.alignmentIssues.length) failures.push(`${test.name}: ${metrics.alignmentIssues.join("; ")}`);
+    if (["desktop-news", "mobile-news"].includes(test.name) && !metrics.cardImageLink) failures.push(`${test.name}: card image does not lead to its article`);
     if (!test.route.startsWith("/fgea-cop/") && (!metrics.logo || metrics.logo.width !== 260 || metrics.logo.height !== 170 || Math.abs(metrics.logo.displayedRatio - 260 / 170) > 0.01 || metrics.logo.home !== "/")) failures.push(`${test.name}: official lab logo is missing, distorted, or linked incorrectly`);
     if (test.name.endsWith("-sarv") && (!metrics.portrait?.visible || metrics.portrait?.width !== 400 || !metrics.portrait?.src.endsWith("/Sarv.jpg"))) failures.push(`${test.name}: Sarv's full-size portrait did not display`);
     if (test.name.includes("native-event") && !metrics.recordImage) failures.push(`${test.name}: event picture did not load`);

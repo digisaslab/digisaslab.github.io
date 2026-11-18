@@ -113,6 +113,28 @@ class MigrationRenderingTests(unittest.TestCase):
         self.assertEqual(logo.parent["href"], "/example/")
         self.assertIsNone(soup.select_one(".brand-mark"))
 
+    def test_news_navigation_keeps_section_context_on_articles_and_archives(self):
+        with TemporaryDirectory() as directory:
+            self.builder.output = Path(directory)
+            for route in ("/blog/example/", "/blog/2026/", "/category/example/"):
+                with self.subTest(route=route):
+                    if route.startswith("/category/"):
+                        self.builder.archives[route] = ("Archive", [])
+                    self.builder.write(route, "News", "<h1>News</h1>")
+                    soup = BeautifulSoup((Path(directory) / route.lstrip("/") / "index.html").read_text(), "html.parser")
+                    link = soup.select_one('nav a[href="/blog/"]')
+                    self.assertEqual(link["aria-current"], "location")
+            self.builder.write("/blog/", "News", "<h1>News</h1>")
+            soup = BeautifulSoup((Path(directory) / "blog/index.html").read_text(), "html.parser")
+            self.assertEqual(soup.select_one('nav a[href="/blog/"]')["aria-current"], "page")
+
+    def test_archive_card_titles_fit_the_page_heading_hierarchy(self):
+        rendered = BeautifulSoup(self.builder.cards(self.builder.posts[:1], heading_level=2), "html.parser")
+        title = rendered.select_one(".card h2 a")
+        self.assertEqual(title.get_text(), self.builder.posts[0]["title"])
+        self.assertEqual(title["href"], self.builder.posts[0]["path"])
+        self.assertIsNone(rendered.select_one(".card h3"))
+
 
 if __name__ == "__main__":
     unittest.main()

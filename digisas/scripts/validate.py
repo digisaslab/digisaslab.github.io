@@ -126,6 +126,25 @@ def validate(base_path="", output_path=None):
     sarv = people.select_one("#sarv-girn img") if people else None
     if not sarv or not sarv.get("src", "").endswith("/Sarv.jpg") or sarv.get("alt") != "Sarv Girn":
         errors.append("Sarv Girn's full-size labelled portrait is missing")
+    for path, soup in parsed_pages.items():
+        for layout, listing in (("post", "news"), ("event", "events")):
+            if not soup.select_one(f"body.layout-{layout}"):
+                continue
+            if layout == "event" and any(
+                json.loads(script.string or "{}").get("eventStatus") == "https://schema.org/EventCancelled"
+                for script in soup.select('script[type="application/ld+json"]')
+            ):
+                continue
+            listing_page = parsed_pages.get(output / f"fgea-cop/{listing}/index.html")
+            route = base + "/" + path.parent.relative_to(output).as_posix() + "/"
+            link = listing_page.select_one(f'.card h3 a[href="{route}"]') if listing_page else None
+            if not link or link.get_text(" ", strip=True) != soup.h1.get_text(" ", strip=True):
+                errors.append(f"FGEA {listing} listing is missing its record card: {route}")
+                continue
+            card_image = link.find_parent("article", class_="card").find("img")
+            detail_image = soup.select_one(".record-image img")
+            if not card_image or not detail_image or card_image.get("src") != detail_image.get("src"):
+                errors.append(f"FGEA listing picture does not match its record: {route}")
     if errors:
         for error in sorted(set(errors)):
             print("ERROR:", error)

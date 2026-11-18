@@ -3,6 +3,7 @@ layout: page
 title: About FGEA CoP
 description: The purpose, principles, and leadership of the Future Generation Enterprise Architecture Community of Practice.
 permalink: /about/
+wide: true
 ---
 
 ## {{ site.data.organization.purpose.heading }}
@@ -21,24 +22,27 @@ permalink: /about/
 
 ## Leadership
 
+<div class="card-grid">
 {% for person in site.data.people.leadership %}
-### {{ person.name }}
-
-{{ person.role }}<br>
-{{ person.affiliation }}
+{% include person-card.html person=person %}
 {% endfor %}
+</div>
 
 ## Advisory panel
 
+<div class="card-grid">
 {% for person in site.data.people.advisory_panel %}
-- **{{ person.name }}**, {{ person.affiliation }}
+{% include person-card.html person=person %}
 {% endfor %}
+</div>
 
 ## Advisory committee chairs
 
+<div class="card-grid">
 {% for person in site.data.people.advisory_committee_chairs %}
-- **{{ person.name }}**, {{ person.sector }}, {{ person.affiliation }}
+{% include person-card.html person=person %}
 {% endfor %}
+</div>
 
 The community purpose and structure are preserved from the
 [DigiSAS Lab FGEA CoP overview](https://www.digisaslab.org/fgea-cop/).

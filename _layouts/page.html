@@ -3,8 +3,8 @@ layout: default
 ---
 {% include page-hero.html %}
 <div class="section">
-  <div class="container content-grid">
-    <article class="prose">
+  <div class="container{% unless page.wide %} content-grid{% endunless %}">
+    <article class="prose{% if page.wide %} prose-wide{% endif %}">
       {{ content }}
     </article>
   </div>

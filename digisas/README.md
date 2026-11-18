@@ -68,6 +68,10 @@ under `editorial_assets` in `_data/media.yml`.
 FGEA event cards and detail pages reuse the picture from their linked news
 record unless the event supplies its own. Agenda images are shown uncropped.
 Keep accurate image descriptions and captions with the original news record.
+Photograph galleries use consistent thumbnails linked to the full-size images.
+People and incomplete card rows are centred; longer prose remains left-aligned
+in a narrower reading column. FGEA listing pages use `wide: true` with the shared
+card includes to keep the same layout across event, news, and leadership records.
 
 To replace a low-resolution source picture, map its original URL path to the
 verified full-size source URL in `content/site.json` under `image_overrides`.

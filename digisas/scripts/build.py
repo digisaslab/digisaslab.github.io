@@ -254,7 +254,7 @@ class Builder:
             soup.append(grid)
         return str(soup)
 
-    def cards(self, documents):
+    def cards(self, documents, heading_level=3):
         cards = []
         for doc in documents:
             excerpt = BeautifulSoup(doc["excerpt"], "html.parser").get_text(" ", strip=True)
@@ -267,14 +267,21 @@ class Builder:
             visual = self.visual(doc)
             picture = self.image_markup(visual, "card-image", decorative=True)
             cards.append(f'''<article class="card"><div class="card-media card-media--{visual["kind"]}">{picture}</div><div class="card-copy"><p class="eyebrow"><time datetime="{doc["date"][:10]}">{date}</time></p>
-<h3><a href="{ESC(self.local(doc["path"]))}">{ESC(doc["title"])}</a></h3><p>{ESC(excerpt)}</p>
+<h{heading_level}><a href="{ESC(self.local(doc["path"]))}">{ESC(doc["title"])}</a></h{heading_level}><p>{ESC(excerpt)}</p>
 <span class="card-arrow" aria-hidden="true">Read the story &nearr;</span></div></article>''')
         return '<div class="cards">' + "".join(cards) + "</div>"
 
     def write(self, route, title, body, description="", body_class=""):
         nav = [("/about/", "About"), ("/people/", "People"), ("/research/", "Research"),
                ("/blog/", "News & events"), ("/fgea-cop/", "FGEA CoP"), ("/ea4ai-2026/", "EA4AI 2026")]
-        links = "".join(f'<a href="{self.local(p)}"{" aria-current=page" if p == route else ""}>{label}</a>' for p, label in nav)
+        section = "/blog/" if route in self.archives or route.startswith("/blog/") else None
+        if route.startswith("/fgea-cop/"):
+            section = "/fgea-cop/"
+        links = ""
+        for path, label in nav:
+            current = "page" if path == route else "location" if path == section else None
+            state = f' aria-current="{current}"' if current else ""
+            links += f'<a href="{self.local(path)}"{state}>{label}</a>'
         canonical = f'<link rel="canonical" href="{ESC(self.site_url + self.local(route))}">' if self.site_url else ""
         logo_url = self.url(self.logo["source"], {"url": SOURCE + "/", "path": "/"}, "src")
         page = f'''<!doctype html>
@@ -313,6 +320,9 @@ class Builder:
             if doc["path"] == "/fgea-cop/":
                 intro = f'<aside class="notice">Explore the <a href="{self.local("/fgea-cop/")}">FGEA Community of Practice</a> for community information and its event archive.</aside>'
             route = self.route_overrides.get(doc["path"], doc["path"])
+            page_type = "article-page" if doc["kind"] == "post" else "information-page"
+            if doc["path"] == "/people/":
+                page_type = "people-page"
             cover = ""
             if not BeautifulSoup(rendered, "html.parser").find("img"):
                 visual = self.visual(doc)
@@ -320,11 +330,11 @@ class Builder:
             self.write(route, doc["title"],
                        f'<section class="page-heading wrap"><a class="breadcrumb" href="{self.local("/")}">DigiSAS Lab</a><p class="eyebrow">{ESC(eyebrow)}</p><h1>{ESC(doc["title"])}</h1></section>'
                        f'{cover}<div class="prose wrap">{intro}{rendered}</div>',
-                       body_class="people-page" if doc["path"] == "/people/" else "content-page")
+                       body_class="content-page " + page_type)
             text = BeautifulSoup(rendered, "html.parser").get_text(" ", strip=True)
             self.search.append({"title": doc["title"], "url": self.local(route), "text": text})
         for route, (title, items) in self.archives.items():
-            self.write(route, title, f'<section class="wrap section"><p class="eyebrow">DigiSAS Lab</p><h1>{ESC(title)}</h1>{self.cards(items)}</section>')
+            self.write(route, title, f'<section class="wrap section"><header class="listing-heading"><p class="eyebrow">DigiSAS Lab</p><h1>{ESC(title)}</h1></header>{self.cards(items, heading_level=2)}</section>')
         for item in self.attachments:
             target = urllib.parse.unquote(urllib.parse.urlsplit(item["source_url"]).path)
             target = self.media_by_path[target]["path"].removeprefix("/assets/imported")
@@ -343,7 +353,7 @@ class Builder:
         page_links = "".join(f'<li><a href="{ESC(self.local(d["path"]))}">{ESC(d["title"])}</a></li>'
                              for d in sorted(self.documents, key=lambda x: x["title"]) if d["kind"] == "page")
         self.write("/pages/", "All pages & archives", f'<section class="wrap section"><h1>All pages &amp; archives</h1><p>Research, people, services, programmes and historical event pages.</p><ul class="page-list">{page_links}</ul><a href="{self.local("/blog/")}">Browse all news &amp; events &rarr;</a></section>')
-        self.write("/search/", "Search", '''<section class="wrap section"><p class="eyebrow">Explore the lab</p><h1>Search</h1><form id="site-search" role="search"><label for="query">Search pages, people, research and news</label><div class="search-box"><input type="search" id="query" name="q" required><button class="button" type="submit">Search</button></div></form><p id="search-status" role="status"></p><ul id="search-results" class="search-results"></ul><noscript>Search requires JavaScript. Browse the site using the navigation or the all-pages link in the footer.</noscript></section>''')
+        self.write("/search/", "Search", '''<section class="wrap section"><p class="eyebrow">Explore the lab</p><h1>Search</h1><form id="site-search" role="search"><label for="query">Search pages, people, research and news</label><div class="search-box"><input type="search" id="query" name="q" required><button class="button" type="submit">Search</button></div></form><p id="search-status" role="status"></p><ul id="search-results" class="search-results"></ul><noscript>Search requires JavaScript. Browse the site using the navigation or the all-pages link in the footer.</noscript></section>''', body_class="search-page")
         (self.output / "search-index.json").write_text(json.dumps(self.search, ensure_ascii=False))
         self.feed()
         self.sitemap()
