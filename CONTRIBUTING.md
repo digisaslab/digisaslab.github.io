@@ -8,10 +8,16 @@ plain language.
 Run these checks before requesting review:
 
 ```sh
-bundle exec ruby _scripts/validate_content.rb
-JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace
+cd digisas && .venv/bin/python -m unittest discover -s tests && cd ..
+digisas/.venv/bin/python _scripts/build_site.py
 bundle exec htmlproofer ./_site --disable-external
 ```
+
+The shared build serves DigiSAS at `/` and FGEA at `/fgea-cop/`. The Markdown
+schemas below describe FGEA content. Edit lab pages/news through
+`digisas/content/documents.json`; see `digisas/README.md` for refresh and
+authoring instructions. Never run the WordPress importer over uncommitted
+editorial changes.
 
 ## News
 

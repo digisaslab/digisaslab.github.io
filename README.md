@@ -218,17 +218,18 @@ accessible.
 
 ### Preview and publish
 
-Run the local server and open <http://127.0.0.1:4000/>:
+Build the shared site and open <http://127.0.0.1:4000/fgea-cop/> to review
+FGEA content, or the root address for DigiSAS:
 
 ```sh
-bundle exec jekyll serve --livereload
+digisas/.venv/bin/python _scripts/build_site.py
+digisas/.venv/bin/python -m http.server 4000 --bind 127.0.0.1 --directory _site
 ```
 
 Before publishing, run:
 
 ```sh
-bundle exec ruby _scripts/validate_content.rb
-JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter --trace
+digisas/.venv/bin/python _scripts/build_site.py
 bundle exec htmlproofer ./_site --disable-external
 ```
 
@@ -242,12 +243,12 @@ review checklist, see [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Deployment
 
 `.github/workflows/pages.yml` validates content, builds with the base path
-reported by GitHub Pages, checks internal HTML links, uploads `_site`, and
+derived from the repository name, checks internal HTML links, uploads `_site`, and
 deploys that artifact. Pull requests validate without deploying. Pushes to
 `main`, manual runs, and the scheduled workflow can deploy.
 
 Only `_site` is uploaded. Source files, configuration, dependencies,
-documentation, scripts, and caches are not deployment inputs.
+documentation, scripts, and caches are not included in the published artifact.
 
 ## Repository structure
 
@@ -260,7 +261,8 @@ documentation, scripts, and caches are not deployment inputs.
 | `_resources/` | Resource records, created when the first resource is ready |
 | `_includes/`, `_layouts/` | Reusable presentation and metadata templates |
 | `_plugins/` | Build-time event and activity logic |
-| `_scripts/` | Source validation |
+| `_scripts/` | Shared-site build and FGEA source validation |
+| `digisas/` | Public lab content snapshot, media provenance, importer and static builder |
 | `_sass/`, `assets/` | Styles, JavaScript, images, and downloads |
 | `about/`, `chapters/`, `community/`, `contact/`, `events/`, `news/`, `resources/` | Archive and information pages |
 
