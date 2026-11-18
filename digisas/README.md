@@ -83,7 +83,8 @@ digisas/.venv/bin/python _scripts/build_site.py \
   --base-path /example --site-url https://example.github.io
 ```
 
-The workflow derives the root/project base path from the repository name.
+The workflow derives the Pages origin from the repository owner and the
+root/project base path from the repository name.
 Do not add a `CNAME` or change DNS until the final domain has been selected and
 the preview accepted.
 
@@ -107,7 +108,7 @@ source issue is recorded in `migration/known-source-issues.json`; unexpected
 missing assets fail validation.
 
 The existing FGEA community site is retained at
-<https://fgeacop.github.io/fgea-cop/>. Its native event/news archive now also
+<https://digisaslab.github.io/fgea-cop/>. Its native event/news archive now also
 includes the 2026 Q3 and Q4 symposium records. The original public FGEA overview
 is retained at `/fgea-cop/lab-overview/`.
 

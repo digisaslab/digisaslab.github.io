@@ -36,10 +36,11 @@ jobs:
       - name: Install static migration tools
         run: pip install -r digisas/requirements.txt
 
-      - name: Determine Pages base path
+      - name: Determine Pages URL and base path
         id: pages
         shell: bash
         run: |
+          echo "site_url=https://${GITHUB_REPOSITORY_OWNER}.github.io" >> "${GITHUB_OUTPUT}"
           repository_name="${GITHUB_REPOSITORY#*/}"
           if [[ "${repository_name}" == "${GITHUB_REPOSITORY_OWNER}.github.io" ]]; then
             echo "base_path=" >> "${GITHUB_OUTPUT}"
@@ -52,7 +53,7 @@ jobs:
         run: python -m unittest discover -s tests
 
       - name: Build both sites
-        run: python _scripts/build_site.py --base-path "${{ steps.pages.outputs.base_path }}"
+        run: python _scripts/build_site.py --base-path "${{ steps.pages.outputs.base_path }}" --site-url "${{ steps.pages.outputs.site_url }}"
 
       - name: Validate generated site
         env:
@@ -67,7 +68,7 @@ jobs:
       - name: Check external links
         if: github.event_name == 'schedule'
         continue-on-error: true
-        run: bundle exec htmlproofer ./_site --checks Links --ignore-urls '/^https:\/\/fgeacop\.github\.io\//'
+        run: bundle exec htmlproofer ./_site --checks Links --ignore-urls "/^https:\/\/${GITHUB_REPOSITORY_OWNER}\.github\.io\//"
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'

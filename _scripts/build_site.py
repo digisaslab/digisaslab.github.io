@@ -22,7 +22,7 @@ def command(*args, env=None):
     subprocess.run(args, cwd=ROOT, check=True, env=env)
 
 
-def build(base="", origin="https://fgeacop.github.io"):
+def build(base="", origin="https://digisaslab.github.io"):
     base = "/" + base.strip("/") if base.strip("/") else ""
     origin = origin.rstrip("/")
     if OUTPUT.is_symlink():
@@ -113,6 +113,6 @@ def build(base="", origin="https://fgeacop.github.io"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--base-path", default="")
-    parser.add_argument("--site-url", default="https://fgeacop.github.io")
+    parser.add_argument("--site-url", default="https://digisaslab.github.io")
     args = parser.parse_args()
     build(args.base_path, args.site_url)

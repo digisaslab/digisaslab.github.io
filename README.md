@@ -1,8 +1,8 @@
 # DigiSAS Lab and FGEA Community of Practice
 
-This repository hosts DigiSAS Lab at <https://fgeacop.github.io/> and the Future
+This repository hosts DigiSAS Lab at <https://digisaslab.github.io/> and the Future
 Generation Enterprise Architecture Community of Practice at
-<https://fgeacop.github.io/fgea-cop/>. The GitHub account name does not determine
+<https://digisaslab.github.io/fgea-cop/>. The GitHub account name does not determine
 the lab's branding or contact address. The FGEA contact remains
 `FGEA@UTS.EDU.AU`.
 
