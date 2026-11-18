@@ -1057,6 +1057,13 @@
     "sha256": "112d3dbe2872bf527b056e8d524d1c2eac74c4561b6b0a635043aa30a17c8852"
   },
   {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2022/03/cropped-DigiSAS-Logo-Under-Black.png",
+    "path": "/assets/imported/wp-content/uploads/2022/03/cropped-DigiSAS-Logo-Under-Black.png",
+    "bytes": 3783,
+    "source_sha256": "74505af955a26d1e9fc754248e79844c7544456209476fed8dec982c9548dd14",
+    "sha256": "df5f17038ef9bc4293bd4a28df3fdc00a8e3c65ee75a943e36ccec78687231d6"
+  },
+  {
     "source": "https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf",
     "path": "/assets/imported/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf",
     "bytes": 136161,

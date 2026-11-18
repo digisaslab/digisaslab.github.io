@@ -30,8 +30,10 @@ class Builder:
         self.base = "/" + base_path.strip("/") if base_path.strip("/") else ""
         self.site_url = site_url.rstrip("/")
         self.output = Path(output).resolve() if output else ROOT / "_site"
-        self.route_overrides = load("site").get("route_overrides", {})
-        self.image_overrides = load("site").get("image_overrides", {})
+        site = load("site")
+        self.route_overrides = site.get("route_overrides", {})
+        self.image_overrides = site.get("image_overrides", {})
+        self.logo = site["logo"]
         self.visual_cache = {}
         self.dimension_cache = {}
         self.documents = load("documents")
@@ -274,6 +276,7 @@ class Builder:
                ("/blog/", "News & events"), ("/fgea-cop/", "FGEA CoP"), ("/ea4ai-2026/", "EA4AI 2026")]
         links = "".join(f'<a href="{self.local(p)}"{" aria-current=page" if p == route else ""}>{label}</a>' for p, label in nav)
         canonical = f'<link rel="canonical" href="{ESC(self.site_url + self.local(route))}">' if self.site_url else ""
+        logo_url = self.url(self.logo["source"], {"url": SOURCE + "/", "path": "/"}, "src")
         page = f'''<!doctype html>
 <html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{ESC(title)} | DigiSAS Lab</title><meta name="description" content="{ESC(description[:250])}">
@@ -283,7 +286,7 @@ class Builder:
 <script src="{self.local('/assets/site.js')}" defer></script></head><body class="{body_class}">
 <a class="skip" href="#main">Skip to content</a>
 <div class="university-bar">University of Technology Sydney <span>Software and societal systems</span></div>
-<header class="site-header"><div class="header-inner"><a class="brand" href="{self.local('/')}"><span class="brand-mark" aria-hidden="true">D<span>:</span></span><span>DigiSAS Lab<small>Research &amp; innovation</small></span></a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="{self.local('/')}"><img class="brand-logo" src="{ESC(logo_url)}" alt="DigiSAS Lab" width="{self.logo['width']}" height="{self.logo['height']}" decoding="async"></a>
 <details class="navigation"><summary>Menu</summary><nav aria-label="Main navigation">{links}<a href="{self.local('/search/')}">Search</a></nav></details></div></header>
 <main id="main">{body}</main>
 <footer><div class="footer-grid"><div><a class="footer-brand" href="{self.local('/')}">DigiSAS Lab</a><p>Research and innovation in software<br>and societal systems.</p><p>School of Computer Science<br>University of Technology Sydney</p></div>

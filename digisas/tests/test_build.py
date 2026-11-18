@@ -1,4 +1,6 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from bs4 import BeautifulSoup
 
@@ -97,6 +99,19 @@ class MigrationRenderingTests(unittest.TestCase):
         self.assertTrue(portrait["src"].endswith("/Sarv.jpg"))
         self.assertEqual(portrait["alt"], "Sarv Girn")
         self.assertEqual(portrait["loading"], "eager")
+
+    def test_header_uses_official_local_logo_at_project_base_path(self):
+        with TemporaryDirectory() as directory:
+            self.builder.output = Path(directory)
+            self.builder.base = "/example"
+            self.builder.write("/", "Home", "<h1>Home</h1>")
+            soup = BeautifulSoup((Path(directory) / "index.html").read_text(), "html.parser")
+        logo = soup.select_one(".brand-logo")
+        self.assertIsNotNone(logo)
+        self.assertEqual(logo["src"], "/example/wp-content/uploads/2022/03/cropped-DigiSAS-Logo-Under-Black.png")
+        self.assertEqual(logo["alt"], "DigiSAS Lab")
+        self.assertEqual(logo.parent["href"], "/example/")
+        self.assertIsNone(soup.select_one(".brand-mark"))
 
 
 if __name__ == "__main__":

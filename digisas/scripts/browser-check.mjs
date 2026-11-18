@@ -125,6 +125,7 @@ try {
         menuOpen: document.querySelector(".navigation")?.open ?? (document.querySelector(".menu-toggle")?.getAttribute("aria-expanded") === "true"),
         navigationVisible: document.querySelector(".navigation nav, #site-nav").checkVisibility(),
         search: document.querySelector("#search-status")?.textContent,
+        logo: (() => { const i = document.querySelector(".brand-logo"); if (!i) return null; const b = i.getBoundingClientRect(); return { src: i.src, width: i.naturalWidth, height: i.naturalHeight, displayedRatio: b.width / b.height, home: i.closest("a").pathname }; })(),
         portrait: (() => { const i = document.querySelector("#sarv-girn img"); if (!i) return null; const b = i.getBoundingClientRect(); return { src: i.src, width: i.naturalWidth, visible: b.bottom > 0 && b.top < innerHeight }; })(),
         cardImages: document.querySelectorAll("main .card img").length,
         recordImage: document.querySelector(".record-image img")?.naturalWidth,
@@ -136,6 +137,7 @@ try {
     const metrics = JSON.parse(result.value);
     if (metrics.width > test.width + 1 || metrics.viewport > test.width + 1) failures.push(`${test.name}: horizontal overflow ${JSON.stringify(metrics)}`);
     if (metrics.brokenImages.length) failures.push(`${test.name}: broken visible images`);
+    if (!test.route.startsWith("/fgea-cop/") && (!metrics.logo || metrics.logo.width !== 260 || metrics.logo.height !== 170 || Math.abs(metrics.logo.displayedRatio - 260 / 170) > 0.01 || metrics.logo.home !== "/")) failures.push(`${test.name}: official lab logo is missing, distorted, or linked incorrectly`);
     if (test.name.endsWith("-sarv") && (!metrics.portrait?.visible || metrics.portrait?.width !== 400 || !metrics.portrait?.src.endsWith("/Sarv.jpg"))) failures.push(`${test.name}: Sarv's full-size portrait did not display`);
     if (test.name.includes("native-event") && !metrics.recordImage) failures.push(`${test.name}: event picture did not load`);
     if (test.name.includes("home") && metrics.cardImages !== 6) failures.push(`${test.name}: news cards are missing pictures`);

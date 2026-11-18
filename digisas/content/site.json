@@ -1,6 +1,12 @@
 {
+  "logo": {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2022/03/cropped-DigiSAS-Logo-Under-Black.png",
+    "width": 260,
+    "height": 170
+  },
   "additional_media": [
-    "https://www.digisaslab.org/wp-content/uploads/2021/01/Sarv.jpg"
+    "https://www.digisaslab.org/wp-content/uploads/2021/01/Sarv.jpg",
+    "https://www.digisaslab.org/wp-content/uploads/2022/03/cropped-DigiSAS-Logo-Under-Black.png"
   ],
   "image_overrides": {
     "/wp-content/uploads/2021/01/Sarv-150x150.jpg": "https://www.digisaslab.org/wp-content/uploads/2021/01/Sarv.jpg"

@@ -53,6 +53,11 @@ WordPress.
 
 ## Pictures and visual design
 
+The header uses the original DigiSAS Lab logo published on the WordPress site,
+downloaded locally and recorded in the media manifest. Its source and original
+dimensions are configured under `logo` in `content/site.json`, and its URL is
+also included in `additional_media` so later imports retain it.
+
 News cards use their own published pictures, and image-free articles display
 their imported featured image. Where no source picture exists, original SVG
 editorial covers provide a visual without pretending to be event photography.

@@ -11,8 +11,8 @@
 body { background: var(--paper); }
 .university-bar { padding-block: .6rem; }
 .site-header { background: #ffffffed; }
-.header-inner { padding-block: 1.4rem; }
-.brand-mark { border-radius: 12px 12px 12px 3px; }
+.header-inner { padding-block: .8rem; }
+.brand-logo { display: block; width: 126px; height: auto; }
 .navigation nav a { min-height: 2.75rem; display: inline-flex; align-items: center; }
 .navigation summary { border-radius: 8px; }
 .hero {
@@ -126,6 +126,7 @@ footer { padding-top: 4rem; }
   .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 42rem) {
+  .brand-logo { width: 110px; }
   .hero { padding-top: 2.7rem; }
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero h1 { font-size: 2.75rem; max-width: 17ch; }
