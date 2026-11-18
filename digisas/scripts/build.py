@@ -34,6 +34,7 @@ class Builder:
         self.route_overrides = site.get("route_overrides", {})
         self.image_overrides = site.get("image_overrides", {})
         self.logo = site["logo"]
+        self.homepage = load("homepage")
         self.visual_cache = {}
         self.dimension_cache = {}
         self.documents = load("documents")
@@ -218,6 +219,10 @@ class Builder:
             for attribute in ("href", "src", "poster"):
                 if node.has_attr(attribute):
                     node[attribute] = self.url(node[attribute], document, attribute)
+        if document["path"] == "/research/":
+            table = soup.find("table")
+            if table:
+                table.insert_before(soup.new_tag("span", id="research-areas"))
         if document["path"] == "/about/":
             contact = soup.find(string=lambda value: value and value.strip() == "Contact")
             if contact:
@@ -254,6 +259,19 @@ class Builder:
             soup.append(grid)
         return str(soup)
 
+    def card_media(self, document):
+        visual = self.visual(document)
+        if visual["kind"] == "photo":
+            return f'<div class="card-media">{self.image_markup(visual, "card-image", decorative=True)}</div>'
+        cover = self.homepage["card_covers"].get(str(document.get("id")), {})
+        title = cover.get("title", re.sub(r"^(DigiSAS Lab |FGEA CoP [–-] )", "", document["title"]))
+        brand = "FGEA CoP" if "fgea" in document.get("slug", "") else "DigiSAS Lab"
+        note = cover.get("note", "Research & innovation" if brand == "DigiSAS Lab" else "Community of practice")
+        return (f'<div class="card-media card-media--editorial" aria-hidden="true">'
+                f'<img class="card-image" src="{self.local("/assets/editorial/cover-field.svg")}" alt="" width="1200" height="720" loading="lazy" decoding="async">'
+                f'<span class="cover-brand">{brand}</span><span class="cover-title">{ESC(title)}</span>'
+                f'<span class="cover-note">{ESC(note)}</span></div>')
+
     def cards(self, documents, heading_level=3):
         cards = []
         for doc in documents:
@@ -264,12 +282,52 @@ class Builder:
             if len(excerpt) > 180:
                 excerpt = excerpt[:177].rsplit(" ", 1)[0] + "..."
             date = datetime.fromisoformat(doc["date"]).strftime("%d %b %Y").lstrip("0")
-            visual = self.visual(doc)
-            picture = self.image_markup(visual, "card-image", decorative=True)
-            cards.append(f'''<article class="card"><div class="card-media card-media--{visual["kind"]}">{picture}</div><div class="card-copy"><p class="eyebrow"><time datetime="{doc["date"][:10]}">{date}</time></p>
+            cards.append(f'''<article class="card">{self.card_media(doc)}<div class="card-copy"><p class="eyebrow"><time datetime="{doc["date"][:10]}">{date}</time></p>
 <h{heading_level}><a href="{ESC(self.local(doc["path"]))}">{ESC(doc["title"])}</a></h{heading_level}><p>{ESC(excerpt)}</p>
 <span class="card-arrow" aria-hidden="true">Read the story &nearr;</span></div></article>''')
         return '<div class="cards">' + "".join(cards) + "</div>"
+
+    def homepage_content(self):
+        hero = self.homepage["hero"]
+        document = next(doc for doc in self.documents if doc["id"] == hero["document_id"])
+        visual = {**self.visual(document), "alt": hero["alt"]}
+        photo = self.image_markup(visual, "hero-photo", "eager")
+        themes = "".join(
+            f'<a class="theme-link" href="{self.local("/research/#research-areas")}"><span class="eyebrow">0{number}</span>'
+            f'<h3>{ESC(theme["title"])}</h3><p>{ESC(theme["description"])}</p><span aria-hidden="true">&nearr;</span></a>'
+            for number, theme in enumerate(self.homepage["themes"], 1))
+        research = next(doc for doc in self.documents if doc["path"] == "/research/")
+        source = BeautifulSoup(research["content"], "html.parser")
+        projects = []
+        for project in self.homepage["projects"]:
+            block = source.find(id=project["anchor"])
+            title = block.select_one(".cb-callback__title").get_text(" ", strip=True)
+            title = project.get("title", title)
+            description = block.select_one(".cb-callback__text-wrap").get_text(" ", strip=True).split("Description:", 1)[-1].strip()
+            excerpt = description if len(description) <= 220 else description[:217].rsplit(" ", 1)[0] + "..."
+            projects.append(f'<article class="project-preview"><p class="eyebrow">{ESC(project["area"])}</p>'
+                            f'<h3><a href="{self.local("/research/#" + project["anchor"])}">{ESC(title)}</a></h3>'
+                            f'<p>{ESC(excerpt)}</p><span aria-hidden="true">Explore the project &nearr;</span></article>')
+        people = next(doc for doc in self.documents if doc["path"] == "/people/")
+        profiles = BeautifulSoup(self.content(people), "html.parser").select(".people-grid > article")[:4]
+        portraits = []
+        for profile in profiles:
+            name = profile.select_one(".cb-profile__title").get_text(" ", strip=True)
+            role = " ".join(node.get_text(" ", strip=True) for node in profile.select(".cb-profile__prefix, .cb-profile__desc")).strip()
+            picture = str(profile.find("img")) if profile.find("img") else ""
+            portraits.append(f'<a class="person-preview" href="{self.local("/people/#" + profile["id"])}">'
+                             f'{picture}<span><strong>{ESC(name)}</strong><small>{ESC(role)}</small></span></a>')
+        return f'''<section class="hero"><div class="wrap hero-grid"><div>
+<p class="eyebrow">DigiSAS Research &amp; Innovation Lab</p><h1>Software and societal systems.</h1>
+<p class="hero-intro">Human-centred research in cybersecurity, data management and software systems.</p>
+<p class="hero-context">At the University of Technology Sydney, we work with industry and government to design safe, resilient and responsible digital ecosystems.</p>
+<div class="actions"><a class="button" href="{self.local('/research/')}">Explore our research &rarr;</a><a class="text-link" href="{self.local('/about/#contact')}">Work with us &nearr;</a></div></div>
+<figure class="hero-visual"><a href="{self.local(document["path"])}">{photo}</a><figcaption>{ESC(hero["caption"])}<span>{ESC(hero["date"])} &nearr;</span></figcaption></figure></div></section>
+<section class="wrap section research-overview" aria-labelledby="research-title"><div class="section-top"><div><p class="eyebrow">Our research</p><h2 id="research-title">Connected disciplines.<br>Human-centred outcomes.</h2></div><p>Three integrated areas of research, bringing technical depth to challenges that matter to people, organisations and society.</p></div><div class="theme-grid">{themes}</div></section>
+<section class="section section-tint" aria-labelledby="projects-title"><div class="wrap"><div class="section-top"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">Research in practice.</h2></div><a href="{self.local('/research/')}">All research projects &rarr;</a></div><div class="feature-grid">{"".join(projects)}</div></div></section>
+<section class="wrap section" aria-labelledby="people-title"><div class="section-top"><div><p class="eyebrow">Our people</p><h2 id="people-title">Ideas start with people.</h2></div><a href="{self.local('/people/')}">Meet everyone &rarr;</a></div><div class="home-people">{"".join(portraits)}</div></section>
+<section class="wrap section news-section" aria-labelledby="news-title"><div class="section-top"><div><p class="eyebrow">From the lab</p><h2 id="news-title">News &amp; events.</h2></div><a href="{self.local('/blog/')}">All news &rarr;</a></div>{self.cards(self.posts[:3])}</section>
+<section class="community-strip"><div class="wrap community-grid"><figure><img src="{self.local('/fgea-cop/assets/images/events/fgea-2025-q4-symposium/participants.jpg')}" alt="FGEA CoP participants at the 2025 Q4 symposium at UTS" width="1600" height="1200" loading="lazy" decoding="async"><figcaption>FGEA CoP at UTS &middot; 2025 Q4</figcaption></figure><div><p class="eyebrow">Connecting research and practice</p><h2>Knowledge shared.<br>Connections made.</h2><p>The Future Generation Enterprise Architecture Community of Practice brings practitioners and researchers together through quarterly symposiums and knowledge exchange.</p><div class="actions"><a class="button" href="{self.local('/fgea-cop/')}">Explore FGEA CoP &rarr;</a><a class="text-link" href="{self.local('/ea4ai-2026/')}">EA4AI 2026 &nearr;</a></div></div></div></section>'''
 
     def write(self, route, title, body, description="", body_class=""):
         nav = [("/about/", "About"), ("/people/", "People"), ("/research/", "Research"),
@@ -288,6 +346,7 @@ class Builder:
 <html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{ESC(title)} | DigiSAS Lab</title><meta name="description" content="{ESC(description[:250])}">
 {canonical}<link rel="stylesheet" href="{self.local('/assets/site.css')}">
+<link rel="stylesheet" href="{self.local('/assets/identity.css')}">
 <link rel="stylesheet" href="{self.local('/assets/editorial.css')}">
 <link rel="alternate" type="application/rss+xml" title="DigiSAS Lab news" href="{self.local('/feed/index.xml')}">
 <script src="{self.local('/assets/site.js')}" defer></script></head><body class="{body_class}">
@@ -324,7 +383,14 @@ class Builder:
             if doc["path"] == "/people/":
                 page_type = "people-page"
             cover = ""
-            if not BeautifulSoup(rendered, "html.parser").find("img"):
+            if doc["path"] == "/about/":
+                hero = self.homepage["hero"]
+                source = next(item for item in self.documents if item["id"] == hero["document_id"])
+                photo = {**self.visual(source), "alt": hero["alt"]}
+                cover = (f'<figure class="document-cover document-cover--photo wrap">'
+                         f'<a href="{ESC(photo["src"])}" aria-label="View full image: {ESC(photo["alt"])}">{self.image_markup(photo, "cover-image", "eager")}</a>'
+                         f'<figcaption><a href="{self.local(source["path"])}">{ESC(hero["caption"])}</a> &middot; {ESC(hero["date"])}</figcaption></figure>')
+            elif not BeautifulSoup(rendered, "html.parser").find("img"):
                 visual = self.visual(doc)
                 cover = f'<figure class="document-cover document-cover--{visual["kind"]} wrap">{self.image_markup(visual, "cover-image", "eager")}</figure>'
             self.write(route, doc["title"],
@@ -340,15 +406,7 @@ class Builder:
             target = self.media_by_path[target]["path"].removeprefix("/assets/imported")
             self.write(item["path"], item["title"],
                        f'<section class="wrap section"><h1>{ESC(item["title"])}</h1><a class="button" href="{ESC(self.local(target))}">Open or download document &rarr;</a></section>')
-        self.write("/", "Research & innovation",
-                   f'''<section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">DigiSAS Research &amp; Innovation Lab</p>
-<h1>Intelligent software.<br>Meaningful societal impact.</h1>
-<p class="hero-intro">Human-centred research and innovation for safe, resilient and responsible digital ecosystems.</p>
-<div class="actions"><a class="button" href="{self.local('/research/')}">Explore our research &rarr;</a><a class="text-link" href="{self.local('/about/')}">Meet the lab &rarr;</a></div></div>
-<figure class="hero-visual"><a href="{self.local('/fgea-cop/news/2025-q4-symposium/')}"><img src="{self.local('/fgea-cop/assets/images/events/fgea-2025-q4-symposium/participants.jpg')}" alt="Participants at the FGEA CoP 2025 Q4 symposium at UTS" width="1600" height="1200" fetchpriority="high" decoding="async"></a><figcaption><span>Ideas grow through connection.</span>FGEA CoP at UTS &middot; 2025 Q4</figcaption><span class="photo-label">Research in practice</span></figure></div>
-<div class="wrap approach-strip"><span>Our approach</span><ol><li><b>01</b> Thinking</li><li><b>02</b> Architecting</li><li><b>03</b> Building</li><li><b>04</b> Evaluating</li></ol></div></section>
-<section class="wrap section"><div class="section-top"><div><p class="eyebrow">From the lab</p><h2>Latest news &amp; events</h2></div><a href="{self.local('/blog/')}">All news &rarr;</a></div>{self.cards(self.posts[:6])}</section>
-<section class="community-strip"><div class="wrap"><p class="eyebrow">Connecting research and practice</p><h2>A community for what comes next.</h2><p>Explore the Future Generation Enterprise Architecture Community of Practice, and our enterprise architecture and AI activities.</p><div class="actions"><a class="button" href="{self.local('/fgea-cop/')}">FGEA Community of Practice &rarr;</a><a class="text-link" href="{self.local('/ea4ai-2026/')}">EA4AI 2026 &rarr;</a></div></div></section>''',
+        self.write("/", "Research & innovation", self.homepage_content(),
                    "DigiSAS Lab at the University of Technology Sydney: research and innovation in human-centred software and societal systems.")
         page_links = "".join(f'<li><a href="{ESC(self.local(d["path"]))}">{ESC(d["title"])}</a></li>'
                              for d in sorted(self.documents, key=lambda x: x["title"]) if d["kind"] == "page")

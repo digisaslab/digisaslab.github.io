@@ -7,7 +7,7 @@ eyebrow: Future Generation Enterprise Architecture
 hero_title: Architecture for public good.
 hero_text: A community connecting enterprise architecture practitioners, researchers, and thought leaders to shape trustworthy, human-centric AI, data, and digital ecosystems.
 primary_action:
-  label: Join the community
+  label: Enquire about joining
   url: /contact/
 secondary_action:
   label: Discover our purpose
@@ -26,4 +26,5 @@ secondary_action:
   <p>{{ site.data.organization.symposiums.description }}</p>
   <p><a href="{{ '/events/' | relative_url }}">Browse events</a></p>
   <p><a href="{{ '/chapters/' | relative_url }}">Explore our regional chapters</a></p>
+  <p>Participation is voluntary and by invitation.</p>
 </section>

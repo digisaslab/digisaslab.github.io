@@ -143,7 +143,13 @@ def validate(base_path="", output_path=None):
                 continue
             card_image = link.find_parent("article", class_="card").find("img")
             detail_image = soup.select_one(".record-image img")
-            if not card_image or not detail_image or card_image.get("src") != detail_image.get("src"):
+            cover = link.find_parent("article", class_="card").select_one(".record-card-image--editorial")
+            matches = card_image and detail_image and (
+                cover.get("data-source-image") == detail_image.get("src")
+                and card_image.get("src") == base + "/assets/editorial/cover-field.svg"
+                if cover else card_image and detail_image and card_image.get("src") == detail_image.get("src")
+            )
+            if not matches:
                 errors.append(f"FGEA listing picture does not match its record: {route}")
     if errors:
         for error in sorted(set(errors)):

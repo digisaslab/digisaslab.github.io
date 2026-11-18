@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "document_id": 1721,
+    "alt": "Participants at The Executable Twin workshop hosted by DigiSAS Lab at UTS",
+    "caption": "Inside the lab: The Executable Twin workshop",
+    "date": "3 November 2026"
+  },
+  "themes": [
+    {
+      "title": "Cybersecurity",
+      "description": "Digital identity, cyber governance, privacy and trust."
+    },
+    {
+      "title": "Data management",
+      "description": "Data architecture, governance, quality and knowledge."
+    },
+    {
+      "title": "Software systems",
+      "description": "AI-powered architecture, system assessment and solutions."
+    }
+  ],
+  "projects": [
+    {"anchor": "cb-callback-instance-0", "area": "Digital identity"},
+    {"anchor": "cb-callback-instance-10", "area": "Digital health", "title": "Evaluating a new model of virtual care"}
+  ],
+  "card_covers": {
+    "1734": {"title": "Annual Research Showcase", "note": "26 November 2026 · Hybrid"},
+    "1726": {"title": "2026 Q4 Symposium", "note": "10 December 2026 · Online"},
+    "1725": {"title": "Safe and Private by Design", "note": "24 November 2026 · Mixed mode"},
+    "1739": {"title": "Agentic AI, Data & Digital Innovation", "note": "Research innovation talk"}
+  }
+}

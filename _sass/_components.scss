@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+.community-brand { display: flex; align-items: center; gap: 1rem; }
+.community-brand .brand-logo { width: 84px; height: auto; }
+.community-brand .brand { display: block; padding-left: 1rem; border-left: 1px solid var(--line); font-size: 1.05rem; }
+.community-brand small { display: block; font-size: .6rem; font-weight: 500; letter-spacing: 0; }
+
 .brand-mark {
   display: grid;
   width: 1.5rem;
@@ -37,7 +42,7 @@
 .eyebrow,
 .card-kicker {
   margin-bottom: 1.25rem;
-  color: var(--teal);
+  color: var(--accent);
   font-size: 0.75rem;
   font-weight: 750;
   letter-spacing: 0.15em;
@@ -68,18 +73,18 @@
 }
 
 .button-primary {
-  color: var(--navy);
-  background: var(--lime);
+  color: white;
+  background: var(--accent);
 }
 
 .button-primary:hover {
-  background: #e6f58e;
+  background: #10584e;
 }
 
 .button-link {
   min-height: 2.75rem;
   padding-inline: 0;
-  color: var(--white);
+  color: var(--accent);
   border-bottom: 1px solid #9caaaf;
   border-radius: 0;
 }
@@ -170,10 +175,9 @@
   min-height: 25rem;
   overflow: hidden;
   flex-direction: column;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 1.125rem;
-  box-shadow: 0 5px 20px rgba(11, 41, 56, 0.04);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
 }
 
 .card:focus-within {
@@ -188,12 +192,14 @@
 }
 
 .record-card-image {
+  position: relative;
   display: grid;
   height: 15rem;
   padding: 0.8rem;
   place-items: center;
   background: #edf2eb;
   border-bottom: 1px solid var(--line);
+  pointer-events: none;
 }
 
 .record-card-image .card-image {
@@ -202,6 +208,10 @@
   object-fit: contain;
   border-radius: 0.4rem;
 }
+
+.record-card-image--editorial, .record-card-image--photo { display: block; padding: 0; }
+.record-card-image--editorial .card-image, .record-card-image--photo .card-image { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.record-card-image--editorial .cover-title { font-size: 1.55rem; }
 
 .record-image {
   margin: 0 0 2rem;
@@ -250,7 +260,7 @@
 
 .card-content {
   display: flex;
-  padding: 1.75rem;
+  padding: 1.4rem 0;
   flex: 1;
   flex-direction: column;
   align-items: flex-start;
@@ -267,7 +277,7 @@
 }
 
 .article-hero .article-meta {
-  color: var(--teal);
+  color: var(--accent);
 }
 
 .article-meta span::before {
@@ -317,11 +327,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 14rem;
-  padding: 2rem 1.5rem;
+  min-height: 9rem;
+  padding: 1.5rem 1rem;
   text-align: center;
-  background: var(--navy-light);
-  border-radius: 1.125rem;
+  background: transparent;
+  border-bottom: 1px solid var(--line);
 }
 
 .person-card img {
@@ -334,7 +344,7 @@
 
 .person-card > div {
   align-self: stretch;
-  color: var(--white);
+  color: var(--ink);
 }
 
 .person-card h3,
@@ -350,12 +360,12 @@
 
 .person-card p {
   margin-bottom: 0.4rem;
-  color: #c6d0d4;
+  color: var(--muted);
   font-size: 0.84rem;
 }
 
 .person-card .person-role {
-  color: var(--teal);
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -373,7 +383,7 @@
 }
 
 .breadcrumb li {
-  color: #c8d0d4;
+  color: var(--muted);
   font-size: 0.8rem;
 }
 
@@ -387,7 +397,7 @@
   display: inline-flex;
   min-height: 2.75rem;
   align-items: center;
-  color: var(--white);
+  color: var(--accent);
 }
 
 .prose {

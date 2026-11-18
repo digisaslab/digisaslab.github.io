@@ -58,18 +58,27 @@ downloaded locally and recorded in the media manifest. Its source and original
 dimensions are configured under `logo` in `content/site.json`, and its URL is
 also included in `additional_media` so later imports retain it.
 
-News cards use their own published pictures, and image-free articles display
+Shared colours, typography and cover treatments live in `assets/web/identity.css`,
+loaded by both DigiSAS and FGEA. The lab homepage is research-led; its selected
+projects, three research themes, photographed workshop and dated event-cover
+labels are configured in `content/homepage.json`. Project previews reuse the
+original research descriptions and link to their full records.
+
+News cards use their own published photographs, and image-free articles display
 their imported featured image. Where no source picture exists, original SVG
 editorial covers provide a visual without pretending to be event photography.
-These repository-authored illustrations and the homepage's decorative field
+These repository-authored illustrations and the shared cover-field artwork
 live in `assets/web/editorial/`. The shared FGEA cover is recorded separately
 under `editorial_assets` in `_data/media.yml`.
 
-FGEA event cards and detail pages reuse the picture from their linked news
-record unless the event supplies its own. Agenda images are shown uncropped.
+FGEA events reuse the picture from their linked news record unless the event
+supplies its own. Listing cards replace agenda screenshots with legible,
+title-and-date covers; the original, uncropped agendas remain on detail pages.
+Cover markup retains its original image reference for build-time validation.
 Keep accurate image descriptions and captions with the original news record.
 Photograph galleries use consistent thumbnails linked to the full-size images.
-People and incomplete card rows are centred; longer prose remains left-aligned
+People use compact, centred directory entries rather than large boxes.
+Incomplete card rows are centred; longer prose remains left-aligned
 in a narrower reading column. FGEA listing pages use `wide: true` with the shared
 card includes to keep the same layout across event, news, and leadership records.
 

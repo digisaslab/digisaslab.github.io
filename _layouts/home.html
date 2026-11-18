@@ -16,17 +16,24 @@ layout: default
         </div>
       {% endif %}
     </div>
-    <div class="hero-network" aria-hidden="true" data-reveal>
-      <span class="network-ring network-ring-one"></span>
-      <span class="network-ring network-ring-two"></span>
-      <span class="network-line network-line-one"></span>
-      <span class="network-line network-line-two"></span>
-      <span class="network-line network-line-three"></span>
-      <span class="network-core">FGEA<br><strong>CoP</strong></span>
-      <span class="network-node node-one">Government</span>
-      <span class="network-node node-two">Higher education</span>
-      <span class="network-node node-three">Industry</span>
-    </div>
+    <figure class="community-photo">
+      <a href="{{ '/news/2025-q4-symposium/' | relative_url }}"><img src="{{ '/assets/images/events/fgea-2025-q4-symposium/participants.jpg' | relative_url }}" alt="Participants at the FGEA CoP 2025 Q4 symposium at UTS" width="1600" height="1200" fetchpriority="high"></a>
+      <figcaption>Ideas exchanged in person. FGEA CoP at UTS &middot; 2025 Q4</figcaption>
+    </figure>
+  </div>
+</section>
+
+{% assign next_event = site.upcoming_events | first %}
+<section class="next-symposium" aria-labelledby="next-symposium-title">
+  <div class="container next-symposium-grid">
+    <div><p class="eyebrow dark">Next symposium</p><h2 id="next-symposium-title">{% if next_event %}{{ next_event.start_date | date: "%-d %B %Y" }}{% else %}Stay connected{% endif %}</h2></div>
+    {% if next_event %}
+      <div><h3><a href="{{ next_event.url | relative_url }}">{{ next_event.title }}</a></h3><p>{{ next_event.summary }}</p></div>
+      <a class="button button-primary" href="{{ next_event.url | relative_url }}">View symposium <span aria-hidden="true">&rarr;</span></a>
+    {% else %}
+      <p>No upcoming symposiums have been published. Contact the community to express interest in future events.</p>
+      <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Contact FGEA CoP <span aria-hidden="true">&rarr;</span></a>
+    {% endif %}
   </div>
 </section>
 
@@ -39,24 +46,6 @@ layout: default
   </div>
 </div>
 {% endif %}
-
-<section class="section section-tint" aria-labelledby="upcoming-events-title">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow dark">Events</p>
-      <h2 id="upcoming-events-title">Upcoming events</h2>
-    </div>
-    {% if site.upcoming_events.size > 0 %}
-      <div class="card-grid">
-        {% for event in site.upcoming_events limit: 3 %}
-          {% include event-card.html event=event %}
-        {% endfor %}
-      </div>
-    {% else %}
-      <p class="empty-state">There are no upcoming events at present. Please check back for future dates.</p>
-    {% endif %}
-  </div>
-</section>
 
 {% assign news_posts = site.posts | where: "published", true | sort: "date" | reverse %}
 {% if news_posts.size > 0 %}
@@ -72,14 +61,12 @@ layout: default
 {% endif %}
 
 {% assign resources = site.resources | where: "published", true | sort: "published_date" | reverse %}
+{% if resources.size > 0 %}
 <section class="section section-tint" aria-labelledby="resources-title">
   <div class="container">
     <div class="section-heading"><p class="eyebrow dark">Knowledge</p><h2 id="resources-title">Resources</h2></div>
-    {% if resources.size > 0 %}
-      <div class="card-grid">{% for resource in resources limit: 3 %}{% include resource-card.html resource=resource %}{% endfor %}</div>
-    {% else %}
-      <p class="empty-state">Resources will be added here as they become available.</p>
-    {% endif %}
+    <div class="card-grid">{% for resource in resources limit: 3 %}{% include resource-card.html resource=resource %}{% endfor %}</div>
   </div>
 </section>
+{% endif %}
 {% include structured-data.html %}

@@ -7,9 +7,19 @@
 {% assign picture = picture_record.image | default: '/assets/images/editorial/fgea-community.svg' %}
 {% assign picture_alt = picture_record.image_alt | default: 'FGEA community and enterprise architecture illustration' %}
 {% if include.card %}
-  <div class="record-card-image">
-    <img class="card-image" src="{{ picture | relative_url }}" alt="" width="{{ picture_record.image_width | default: 1200 }}" height="{{ picture_record.image_height | default: 720 }}" loading="lazy" decoding="async">
-  </div>
+  {% if picture contains 'published-agenda' or picture contains '/editorial/' %}
+    {% assign cover_event = site.events | where: 'event_id', record.event_id | first %}
+    <div class="record-card-image record-card-image--editorial" data-source-image="{{ picture | relative_url }}" aria-hidden="true">
+      <img class="card-image" src="{{ site.lab_baseurl | append: '/assets/editorial/cover-field.svg' }}" alt="" width="1200" height="720" loading="lazy" decoding="async">
+      <span class="cover-brand">FGEA CoP</span>
+      <span class="cover-title">{{ record.title | remove: 'FGEA CoP ' }}</span>
+      <span class="cover-note">{% if cover_event.start_date %}{{ cover_event.start_date | date: "%-d %B %Y" }}{% else %}Community of practice{% endif %}</span>
+    </div>
+  {% else %}
+    <div class="record-card-image{% if picture contains '.jpg' or picture contains '.jpeg' %} record-card-image--photo{% endif %}">
+      <img class="card-image" src="{{ picture | relative_url }}" alt="" width="{{ picture_record.image_width | default: 1200 }}" height="{{ picture_record.image_height | default: 720 }}" loading="lazy" decoding="async">
+    </div>
+  {% endif %}
 {% else %}
   <figure class="record-image">
     <a href="{{ picture | relative_url }}" aria-label="View full image: {{ picture_alt | escape }}">

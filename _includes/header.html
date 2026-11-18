@@ -1,14 +1,14 @@
 {% assign organization = site.data.organization %}
 {% assign brand_name = organization.short_name | default: organization.name | default: site.title %}
-<div class="container parent-site-link">
-  <a href="{{ site.lab_baseurl | append: '/' }}">&larr; DigiSAS Lab</a>
+<div class="parent-site-link">
+  <div class="container"><a href="{{ site.lab_baseurl | append: '/' }}">&larr; DigiSAS Lab</a><span>University of Technology Sydney</span></div>
 </div>
 <header class="site-header">
   <div class="container nav-wrap">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ brand_name }} home">
-      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-      <span>{{ brand_name }}</span>
-    </a>
+    <div class="community-brand">
+      <a href="{{ site.lab_baseurl | append: '/' }}"><img class="brand-logo" src="{{ site.lab_baseurl | append: '/wp-content/uploads/2022/03/cropped-DigiSAS-Logo-Under-Black.png' }}" alt="DigiSAS Lab" width="260" height="170"></a>
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ brand_name }} home">{{ brand_name }}<small>Community of Practice</small></a>
+    </div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
       <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
     </button>

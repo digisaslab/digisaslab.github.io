@@ -135,6 +135,30 @@ class MigrationRenderingTests(unittest.TestCase):
         self.assertEqual(title["href"], self.builder.posts[0]["path"])
         self.assertIsNone(rendered.select_one(".card h3"))
 
+    def test_event_card_uses_a_readable_cover_without_removing_the_original_agenda(self):
+        self.builder.base = "/example"
+        document = next(doc for doc in self.builder.documents if doc["id"] == 1734)
+        card = BeautifulSoup(self.builder.cards([document]), "html.parser")
+        self.assertEqual(card.select_one(".card-media img")["src"], "/example/assets/editorial/cover-field.svg")
+        self.assertIn("26 November 2026", card.select_one(".cover-note").get_text())
+        self.assertEqual(card.h3.a.get_text(), document["title"])
+        detail = BeautifulSoup(self.builder.content(document), "html.parser")
+        self.assertTrue(any("Pasted-2026-11-17" in image["src"] for image in detail.select("img")))
+
+    def test_homepage_prioritises_research_and_links_to_original_projects_and_people(self):
+        self.builder.base = "/example"
+        home = BeautifulSoup(self.builder.homepage_content(), "html.parser")
+        sections = [section.get("aria-labelledby") for section in home.select("section")]
+        self.assertLess(sections.index("projects-title"), sections.index("news-title"))
+        research = BeautifulSoup(self.builder.content(next(doc for doc in self.builder.documents if doc["path"] == "/research/")), "html.parser")
+        people = BeautifulSoup(self.builder.content(next(doc for doc in self.builder.documents if doc["path"] == "/people/")), "html.parser")
+        for link in home.select(".project-preview a, .theme-link, .person-preview"):
+            target = people if "/people/" in link["href"] else research
+            self.assertTrue(link["href"].startswith("/example/"))
+            self.assertIsNotNone(target.find(id=link["href"].split("#")[1]))
+        self.assertIn("Executable Twin", home.select_one(".hero-visual img")["alt"])
+        self.assertTrue(all(link.find("img").get("alt") for link in home.select(".person-preview")))
+
 
 if __name__ == "__main__":
     unittest.main()

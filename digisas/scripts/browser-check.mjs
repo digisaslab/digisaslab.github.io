@@ -77,11 +77,17 @@ try {
     { name: "mobile-sarv", route: "/people/#sarv-girn", width: 390, height: 844 },
     { name: "desktop-sarv", route: "/people/#sarv-girn", width: 1440, height: 1080 },
     { name: "tablet-home", route: "/", width: 820, height: 1180 },
+    { name: "desktop-home-research", route: "/", scroll: ".research-overview", width: 1440, height: 1080 },
+    { name: "mobile-home-projects", route: "/", scroll: ".feature-grid", width: 390, height: 844 },
+    { name: "desktop-home-people", route: "/", scroll: ".home-people", width: 1440, height: 1080 },
+    { name: "desktop-fgea-next", route: "/fgea-cop/", scroll: ".next-symposium", width: 1440, height: 1080 },
+    { name: "mobile-fgea-next", route: "/fgea-cop/", scroll: ".next-symposium", width: 390, height: 844 },
     { name: "mobile-research", route: "/research/", width: 390, height: 844 },
     { name: "desktop-research", route: "/research/", width: 1440, height: 1080 },
     { name: "desktop-research-cards", route: "/research/", scroll: ".cb-callback__inner", width: 1440, height: 1080 },
     { name: "mobile-research-cards", route: "/research/", scroll: ".cb-callback__inner", width: 390, height: 844 },
     { name: "desktop-about", route: "/about/", width: 1440, height: 1080 },
+    { name: "mobile-about", route: "/about/", width: 390, height: 844 },
     { name: "desktop-news", route: "/blog/", width: 1440, height: 1080 },
     { name: "mobile-news", route: "/blog/", width: 390, height: 844 },
     { name: "mobile-fgea", route: "/fgea-cop/", width: 390, height: 844 },
@@ -156,12 +162,17 @@ try {
       expression: `JSON.stringify({
         viewport: innerWidth, width: document.documentElement.scrollWidth,
         menuVisible: getComputedStyle(document.querySelector("summary, .menu-toggle")).display !== "none",
+        menuIconVisible: (() => { const icon = document.querySelector(".menu-toggle span"); return !icon || getComputedStyle(icon).backgroundColor !== getComputedStyle(document.querySelector(".site-header")).backgroundColor; })(),
         menuOpen: document.querySelector(".navigation")?.open ?? (document.querySelector(".menu-toggle")?.getAttribute("aria-expanded") === "true"),
         navigationVisible: document.querySelector(".navigation nav, #site-nav").checkVisibility(),
         search: document.querySelector("#search-status")?.textContent,
         logo: (() => { const i = document.querySelector(".brand-logo"); if (!i) return null; const b = i.getBoundingClientRect(); return { src: i.src, width: i.naturalWidth, height: i.naturalHeight, displayedRatio: b.width / b.height, home: i.closest("a").pathname }; })(),
         portrait: (() => { const i = document.querySelector("#sarv-girn img"); if (!i) return null; const b = i.getBoundingClientRect(); return { src: i.src, width: i.naturalWidth, visible: b.bottom > 0 && b.top < innerHeight }; })(),
         cardImages: document.querySelectorAll("main .card img").length,
+        researchFirst: (() => { const research = document.querySelector(".research-overview"); const news = document.querySelector(".news-section"); return !!research && !!news && !!(research.compareDocumentPosition(news) & Node.DOCUMENT_POSITION_FOLLOWING); })(),
+        editorialCovers: [...document.querySelectorAll(".card-media--editorial, .record-card-image--editorial")].every(cover => !!cover.querySelector(".cover-title")?.textContent.trim() && !!cover.querySelector("img")?.src.endsWith("/cover-field.svg")),
+        nextSymposium: document.querySelector(".next-symposium h3 a")?.pathname,
+        nextSymposiumFallback: !!document.querySelector('.next-symposium a[href$="/contact/"]'),
         scrollTargetFound: ${JSON.stringify(test.scroll)} ? !!document.querySelector(${JSON.stringify(test.scroll)}) : true,
         cardImageLink: (() => { const card = document.querySelector(".cards > .card"); const image = card?.querySelector(".card-media"); if (!image) return null; const b = image.getBoundingClientRect(); return document.elementFromPoint(b.x + b.width / 2, b.y + b.height / 2)?.closest("a")?.href === card.querySelector("h2 a, h3 a").href; })(),
         alignmentIssues: (() => {
@@ -216,10 +227,13 @@ try {
     if (test.scroll === ".event-gallery" && (!metrics.gallery?.uniformThumbnails || !metrics.gallery.fullImagesLinked)) failures.push(`${test.name}: gallery pictures are uneven or cannot open at full size`);
     if (metrics.alignmentIssues.length) failures.push(`${test.name}: ${metrics.alignmentIssues.join("; ")}`);
     if (["desktop-news", "mobile-news"].includes(test.name) && !metrics.cardImageLink) failures.push(`${test.name}: card image does not lead to its article`);
-    if (!test.route.startsWith("/fgea-cop/") && (!metrics.logo || metrics.logo.width !== 260 || metrics.logo.height !== 170 || Math.abs(metrics.logo.displayedRatio - 260 / 170) > 0.01 || metrics.logo.home !== "/")) failures.push(`${test.name}: official lab logo is missing, distorted, or linked incorrectly`);
+    if (!metrics.logo || metrics.logo.width !== 260 || metrics.logo.height !== 170 || Math.abs(metrics.logo.displayedRatio - 260 / 170) > 0.01 || metrics.logo.home !== "/") failures.push(`${test.name}: official lab logo is missing, distorted, or linked incorrectly`);
     if (test.name.endsWith("-sarv") && (!metrics.portrait?.visible || metrics.portrait?.width !== 400 || !metrics.portrait?.src.endsWith("/Sarv.jpg"))) failures.push(`${test.name}: Sarv's full-size portrait did not display`);
     if (test.name.includes("native-event") && !metrics.recordImage) failures.push(`${test.name}: event picture did not load`);
-    if (test.name.includes("home") && metrics.cardImages !== 6) failures.push(`${test.name}: news cards are missing pictures`);
+    if (test.route === "/" && (metrics.cardImages !== 3 || !metrics.researchFirst)) failures.push(`${test.name}: research-first homepage or illustrated news cards are missing`);
+    if (!metrics.editorialCovers) failures.push(`${test.name}: an editorial cover is missing its title or artwork`);
+    if (test.scroll === ".next-symposium" && !metrics.nextSymposium?.startsWith("/fgea-cop/events/") && !metrics.nextSymposiumFallback) failures.push(`${test.name}: next symposium is missing its event link or contact fallback`);
+    if (metrics.menuVisible && !metrics.menuIconVisible) failures.push(`${test.name}: navigation icon is invisible against its background`);
     if (test.name === "mobile-sarv" && (!metrics.reducedMotion || metrics.cardTransition !== "0s")) failures.push("Reduced-motion preference was not respected");
     if (test.width < 600 && (!metrics.menuVisible || metrics.menuOpen)) failures.push(`${test.name}: mobile menu state incorrect`);
     if (test.width < 600 && metrics.navigationVisible) failures.push(`${test.name}: closed navigation is still displayed`);

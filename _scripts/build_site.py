@@ -93,7 +93,8 @@ def build(base="", origin="https://digisaslab.github.io"):
     sitemap.write(OUTPUT / "sitemap.xml", encoding="utf-8", xml_declaration=True)
     command(sys.executable, str(ROOT / "digisas/scripts/validate.py"),
             "--base-path", base, "--output", str(OUTPUT))
-    assert "Intelligent software" in (OUTPUT / "index.html").read_text()
+    homepage = BeautifulSoup((OUTPUT / "index.html").read_text(), "html.parser")
+    assert homepage.select_one(".research-overview") and homepage.select_one(".hero-visual img"), "The lab homepage must lead with research and authentic photography"
     assert "Architecture for public good" in (community / "index.html").read_text()
     assert not (OUTPUT / "digisas").exists(), "Source snapshots must not be published"
     (ROOT / "digisas/migration/shared-build.json").write_text(json.dumps({

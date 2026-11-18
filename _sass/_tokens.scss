@@ -1,13 +1,13 @@
 :root {
-  --navy: #0b2434;
-  --navy-deep: #071a26;
-  --navy-light: #173a4d;
+  --navy: var(--dark);
+  --navy-deep: #102f35;
+  --navy-light: #edf2ee;
   --ink: #142f3f;
   --muted: #536871;
   --teal: #3fc1ae;
-  --teal-dark: #087d73;
+  --teal-dark: var(--accent);
   --lime: #d9f06d;
-  --cream: #f5f3eb;
+  --cream: var(--paper);
   --tint: #e8eee9;
   --white: #fff;
   --line: rgba(20, 47, 63, 0.18);

@@ -1,0 +1,30 @@
+:root {
+  --ink: #172f35;
+  --muted: #53666b;
+  --paper: #fafbf9;
+  --line: #d7e1dc;
+  --accent: #006f65;
+  --teal: var(--accent);
+  --dark: #102f35;
+  --lime: #dcebcf;
+  --display: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: var(--display);
+  --container: 74rem;
+  --card-radius: 6px;
+  --card-shadow: none;
+}
+
+body { font-family: var(--body); }
+h1, h2, h3 { font-family: var(--display); font-weight: 650; letter-spacing: -.045em; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); }
+::selection { color: var(--ink); background: #dcebcf; }
+
+.cover-brand, .cover-title, .cover-note { position: absolute; z-index: 1; left: 1.5rem; right: 1.5rem; color: white; }
+.cover-brand { top: 1.25rem; font-size: .65rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.cover-title { top: 50%; transform: translateY(-50%); font-family: var(--display); font-size: clamp(1.15rem, 2vw, 1.65rem); font-weight: 650; line-height: 1.15; letter-spacing: -.035em; text-wrap: balance; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
+.cover-note { bottom: 1.15rem; font-size: .72rem; color: #dcebcf; }
+
+@media (max-width: 45rem) {
+  .cover-title { font-size: 1.5rem; }
+}
