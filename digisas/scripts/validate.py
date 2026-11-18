@@ -46,6 +46,8 @@ def validate(base_path="", output_path=None):
         soup = BeautifulSoup(destination.read_text(), "html.parser")
         if not soup.h1 or soup.h1.get_text() != doc["title"]:
             errors.append(f"Title missing or changed: {doc['path']}")
+        if not soup.select_one("main img"):
+            errors.append(f"Content page is missing its picture: {doc['path']}")
         source = BeautifulSoup(doc["content"], "html.parser")
         for node in source.find_all(["script", "style", "iframe", "form", "input", "button", "object", "embed"]):
             node.decompose()
@@ -69,6 +71,8 @@ def validate(base_path="", output_path=None):
         for image in soup.find_all("img"):
             if not image.has_attr("alt"):
                 errors.append(f"Image missing alt attribute: {path.relative_to(output)}")
+        if soup.select_one("body.layout-event, body.layout-post") and not soup.select_one(".record-image img"):
+            errors.append(f"FGEA news/event page is missing its picture: {path.relative_to(output)}")
         for node in soup.find_all(True):
             if any(attr.startswith("on") for attr in node.attrs):
                 errors.append(f"Inline event handler: {path.relative_to(output)}")
@@ -116,6 +120,12 @@ def validate(base_path="", output_path=None):
         errors.append("Search index does not cover every document")
     if (output / "sitemap.xml").exists():
         ET.parse(output / "sitemap.xml")
+    for path in (output / "assets/editorial").glob("*.svg"):
+        ET.parse(path)
+    people = parsed_pages.get(output / "people/index.html")
+    sarv = people.select_one("#sarv-girn img") if people else None
+    if not sarv or not sarv.get("src", "").endswith("/Sarv.jpg") or sarv.get("alt") != "Sarv Girn":
+        errors.append("Sarv Girn's full-size labelled portrait is missing")
     if errors:
         for error in sorted(set(errors)):
             print("ERROR:", error)

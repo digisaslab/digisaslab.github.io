@@ -1,11 +1,7 @@
 {% assign item = include.post %}
 {% assign item_summary = item.summary | default: item.description | default: item.excerpt %}
 <article class="card news-card{% if include.featured %} featured{% endif %}" data-reveal>
-  {% if item.image %}
-    <img class="card-image" src="{{ item.image | relative_url }}" alt="{{ item.image_alt | default: '' }}"{% if item.image_width %} width="{{ item.image_width }}"{% endif %}{% if item.image_height %} height="{{ item.image_height }}"{% endif %} loading="lazy" decoding="async">
-  {% else %}
-    <div class="card-art" aria-hidden="true"><span>{{ item.date | date: "%Y" }}</span></div>
-  {% endif %}
+  {% include record-image.html record=item card=true %}
   <div class="card-content">
     {% if item.date %}<time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%-d %B %Y" }}</time>{% endif %}
     <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <path fill="#eee9dc" d="M0 0h1200v720H0z"/>
+  <g stroke="#aaa991" opacity=".45"><circle cx="875" cy="300" r="230"/><circle cx="875" cy="300" r="175"/><circle cx="875" cy="300" r="120"/><path d="M875 0v600M575 300h600"/></g>
+  <rect x="650" y="160" width="300" height="210" rx="28" fill="#174a48"/>
+  <path d="m710 355-20 65 100-65" fill="#174a48"/>
+  <rect x="825" y="310" width="235" height="165" rx="25" fill="#9eba9a"/>
+  <path d="m1000 465 35 50-100-50" fill="#9eba9a"/>
+  <g stroke="#dce8c3" stroke-width="8" stroke-linecap="round"><path d="M710 225h175M710 270h120"/></g>
+  <g font-family="system-ui,sans-serif" fill="#173c40"><text x="70" y="100" font-size="24" letter-spacing="5">DIGISAS LAB</text><text x="70" y="535" font-size="52">Research.</text><text x="70" y="600" font-size="52">In conversation.</text></g>
+  <path d="M70 460h90" stroke="#00766b" stroke-width="4"/>
+</svg>

@@ -115,6 +115,9 @@ def main(reuse_media=False):
     media_by_link = {urllib.parse.urlsplit(item["link"]).path: item for item in media}
     attachments = {}
     documents, asset_urls, features = [], set(), []
+    site_path = ROOT / "content" / "site.json"
+    if site_path.exists():
+        asset_urls.update(json.loads(site_path.read_text()).get("additional_media", []))
     homepage, _ = fetch(SOURCE + "/")
     homepage_soup = BeautifulSoup(homepage, "html.parser")
     menus = [

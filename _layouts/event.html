@@ -13,7 +13,10 @@ layout: default
   </header>
   <div class="section">
     <div class="container article-layout">
-      <div class="prose">{{ content }}</div>
+      <div class="prose">
+        {% include record-image.html record=page %}
+        {{ content }}
+      </div>
       <aside class="detail-panel" aria-label="Event details">
         {% assign related_post = site.posts | where: "event_id", page.event_id | first %}
         {% assign host_chapter = site.data.community.chapters | where: "slug", page.host_chapter | first %}

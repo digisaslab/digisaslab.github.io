@@ -1,4 +1,10 @@
 {
+  "additional_media": [
+    "https://www.digisaslab.org/wp-content/uploads/2021/01/Sarv.jpg"
+  ],
+  "image_overrides": {
+    "/wp-content/uploads/2021/01/Sarv-150x150.jpg": "https://www.digisaslab.org/wp-content/uploads/2021/01/Sarv.jpg"
+  },
   "route_overrides": {
     "/fgea-cop/": "/fgea-cop/lab-overview/"
   }

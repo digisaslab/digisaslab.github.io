@@ -1,5 +1,7 @@
 import unittest
 
+from bs4 import BeautifulSoup
+
 from scripts.build import Builder
 
 
@@ -66,6 +68,35 @@ class MigrationRenderingTests(unittest.TestCase):
         self.assertIn("Speaker name", rendered)
         self.assertIn('id="topic"', rendered)
         self.assertNotIn("<a", rendered)
+
+    def test_featured_picture_is_restored_for_image_free_posts(self):
+        source = next(d["featured_image"] for d in self.builder.documents if d.get("featured_image"))
+        document = {**self.doc, "title": "Research news", "featured_image": source}
+        visual = self.builder.visual(document)
+        self.assertNotEqual(visual["kind"], "illustration")
+        self.assertIn("/wp-content/uploads/", visual["src"])
+
+    def test_full_size_srcset_preserves_unicode_filenames(self):
+        prefix = "https://www.digisaslab.org/wp-content/uploads/2026/09/Screenshot-2026-09-24-at-9.26.49\u202fam"
+        image = {"src": prefix + "-1024x515.png", "srcset": prefix + "-1024x515.png 1024w, " + prefix + ".png 1576w"}
+        self.assertEqual(self.builder.image_source(image, self.doc), prefix + ".png")
+
+    def test_missing_source_pictures_use_honest_editorial_art(self):
+        visual = self.builder.visual({**self.doc, "title": "Research seminar", "slug": "research-seminar"})
+        self.assertEqual(visual["kind"], "illustration")
+        self.assertTrue(visual["src"].endswith("/editorial/talk.svg"))
+
+    def test_people_cards_restore_sarv_without_losing_any_biographies(self):
+        document = next(d for d in self.builder.documents if d["path"] == "/people/")
+        source = BeautifulSoup(document["content"], "html.parser")
+        rendered = BeautifulSoup(self.builder.content(document), "html.parser")
+        self.assertEqual(" ".join(source.get_text(" ", strip=True).split()),
+                         " ".join(rendered.get_text(" ", strip=True).split()))
+        portrait = rendered.select_one("#sarv-girn img")
+        self.assertIsNotNone(portrait)
+        self.assertTrue(portrait["src"].endswith("/Sarv.jpg"))
+        self.assertEqual(portrait["alt"], "Sarv Girn")
+        self.assertEqual(portrait["loading"], "eager")
 
 
 if __name__ == "__main__":

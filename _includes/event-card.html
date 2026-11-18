@@ -2,6 +2,7 @@
 {% assign item_summary = item.summary | default: item.description %}
 {% assign host_chapter = site.data.community.chapters | where: "slug", item.host_chapter | first %}
 <article class="card event-card" data-reveal>
+  {% include record-image.html record=item card=true %}
   <div class="card-content">
     <p class="card-kicker">Event</p>
     {% if item.start_date %}<time datetime="{{ item.start_iso | default: item.start_date | date_to_xmlschema }}">{{ item.start_date | date: "%-d %B %Y" }}</time>{% endif %}

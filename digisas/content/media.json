@@ -1050,6 +1050,13 @@
     "sha256": "1acca16bd8d93606ba30f07d6c925efeb16c6a686573546c5ea3bb1a8abcc136"
   },
   {
+    "source": "https://www.digisaslab.org/wp-content/uploads/2021/01/Sarv.jpg",
+    "path": "/assets/imported/wp-content/uploads/2021/01/Sarv.jpg",
+    "bytes": 29198,
+    "source_sha256": "5edf56641ad4317c995e1d166be7de5c7a00970231f1e28bd89bc34219e57df0",
+    "sha256": "112d3dbe2872bf527b056e8d524d1c2eac74c4561b6b0a635043aa30a17c8852"
+  },
+  {
     "source": "https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf",
     "path": "/assets/imported/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf",
     "bytes": 136161,

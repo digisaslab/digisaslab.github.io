@@ -5,6 +5,12 @@ review_status:
     permanent migration, including event photographs. This records content
     reuse authorisation only and makes no claim to third-party trademarks.
 
+editorial_assets:
+  - path: /assets/images/editorial/fgea-community.svg
+    original_format: SVG
+    source: Original vector artwork created for this site's visual design.
+    purpose: Community cover for records with no supplied picture; not event photography.
+
 items:
   - path: /assets/images/events/fgea-2024-q1-symposium/published-agenda.png
     event_id: fgea-2024-q1-symposium

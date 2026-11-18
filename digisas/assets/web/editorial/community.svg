@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <path fill="#e2eadc" d="M0 0h1200v720H0z"/>
+  <g stroke="#789b86" stroke-width="2"><circle cx="860" cy="300" r="230" stroke-dasharray="6 10"/><circle cx="860" cy="300" r="150"/><path d="m860 300-160-140m160 140 170-90m-170 90 40 180"/></g>
+  <g fill="#fffdf5" stroke="#bfd0bb" stroke-width="2"><circle cx="700" cy="160" r="55"/><circle cx="1030" cy="210" r="55"/><circle cx="900" cy="480" r="55"/></g>
+  <circle cx="860" cy="300" r="80" fill="#1e5c54"/><g fill="#b9d1ad"><circle cx="700" cy="150" r="14"/><path d="M675 184a25 25 0 0 1 50 0"/><circle cx="1030" cy="200" r="14"/><path d="M1005 234a25 25 0 0 1 50 0"/><circle cx="900" cy="470" r="14"/><path d="M875 504a25 25 0 0 1 50 0"/></g>
+  <g font-family="system-ui,sans-serif"><text x="860" y="310" text-anchor="middle" fill="#e7edc1" font-size="24">FGEA</text><g fill="#173c40"><text x="70" y="100" font-size="24" letter-spacing="5">DIGISAS LAB</text><text x="70" y="535" font-size="52">Shared knowledge.</text><text x="70" y="600" font-size="52">Stronger connections.</text></g></g><path d="M70 460h90" stroke="#00766b" stroke-width="4"/>
+</svg>

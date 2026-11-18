@@ -13,6 +13,7 @@ from datetime import datetime
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = "https://www.digisaslab.org"
@@ -30,6 +31,9 @@ class Builder:
         self.site_url = site_url.rstrip("/")
         self.output = Path(output).resolve() if output else ROOT / "_site"
         self.route_overrides = load("site").get("route_overrides", {})
+        self.image_overrides = load("site").get("image_overrides", {})
+        self.visual_cache = {}
+        self.dimension_cache = {}
         self.documents = load("documents")
         self.posts = sorted((d for d in self.documents if d["kind"] == "post"),
                             key=lambda d: d["date"], reverse=True)
@@ -66,6 +70,63 @@ class Builder:
 
     def local(self, path):
         return self.base + path
+
+    def image_source(self, image, document):
+        source = urllib.parse.urljoin(document["url"], image.get("src", ""))
+        path = urllib.parse.unquote(urllib.parse.urlsplit(source).path)
+        if path in self.image_overrides:
+            return self.image_overrides[path]
+        candidates = [(0, source)]
+        for candidate in image.get("srcset", "").split(","):
+            match = re.match(r"(.+)\s+([0-9]+)w$", candidate.strip(), re.ASCII)
+            if match:
+                url = urllib.parse.urljoin(document["url"], match[1])
+                if urllib.parse.unquote(urllib.parse.urlsplit(url).path) in self.media_by_path:
+                    candidates.append((int(match[2]), url))
+        return max(candidates, key=lambda item: item[0])[1]
+
+    def visual(self, document):
+        identity = document.get("id")
+        if identity in self.visual_cache:
+            return self.visual_cache[identity]
+        soup = BeautifulSoup(document["content"], "html.parser")
+        candidates = [self.image_source(image, document) for image in soup.find_all("img")]
+        if document.get("featured_image"):
+            candidates.append(document["featured_image"])
+        for source in candidates:
+            path = urllib.parse.unquote(urllib.parse.urlsplit(source).path)
+            if path not in self.media_by_path:
+                continue
+            media = self.media_by_path[path]
+            local_path = media["path"].removeprefix("/assets/imported")
+            if local_path not in self.dimension_cache:
+                with Image.open(ROOT / media["path"].lstrip("/")) as image:
+                    self.dimension_cache[local_path] = image.size
+            width, height = self.dimension_cache[local_path]
+            result = {
+                "src": self.local(local_path), "alt": "Published image for " + document["title"],
+                "width": width, "height": height,
+                "kind": "document" if Path(path).suffix.lower() == ".png" else "photo",
+            }
+            break
+        else:
+            label = (document.get("slug", "") + " " + document.get("title", "")).lower()
+            theme = "community" if any(word in label for word in ("fgea", "symposium", "registration", "organiser", "partner")) else "research"
+            if any(word in label for word in ("seminar", "talk", "podcast", "lecture")):
+                theme = "talk"
+            result = {
+                "src": self.local(f"/assets/editorial/{theme}.svg"),
+                "alt": f"DigiSAS Lab {theme} illustration",
+                "width": 1200, "height": 720, "kind": "illustration",
+            }
+        if identity is not None:
+            self.visual_cache[identity] = result
+        return result
+
+    def image_markup(self, visual, css_class, loading="lazy", decorative=False):
+        alt = "" if decorative else visual["alt"]
+        return (f'<img class="{css_class}" src="{ESC(visual["src"])}" alt="{ESC(alt)}" '
+                f'width="{visual["width"]}" height="{visual["height"]}" loading="{loading}" decoding="async">')
 
     def url(self, value, document, attribute="href"):
         if value and value.startswith("mailto:"):
@@ -124,6 +185,7 @@ class Builder:
                 else:
                     anchor.unwrap()
         for image in list(soup.find_all("img")):
+            image["src"] = self.image_source(image, document)
             path = urllib.parse.unquote(urllib.parse.urlsplit(
                 urllib.parse.urljoin(document["url"], image.get("src", ""))).path)
             if path not in self.media_by_path:
@@ -138,6 +200,13 @@ class Builder:
                 image.attrs.pop("sizes", None)
                 if not image.has_attr("alt"):
                     image["alt"] = ""
+                profile = image.find_parent("article", class_="cb-profile__post")
+                if profile:
+                    name = profile.select_one(".cb-profile__title")
+                    if name:
+                        image["alt"] = name.get_text(" ", strip=True)
+                        if image["alt"] == "Sarv Girn":
+                            image["loading"] = "eager"
         for node in soup.find_all(True):
             for attribute in list(node.attrs):
                 if attribute.startswith("on") or attribute in {"style", "srcdoc", "data-secret", "data-src"}:
@@ -151,6 +220,36 @@ class Builder:
             contact = soup.find(string=lambda value: value and value.strip() == "Contact")
             if contact:
                 contact.parent["id"] = "contact"
+        if document["path"] == "/people/":
+            grid = soup.new_tag("div", attrs={"class": "people-grid"})
+            identifiers = set()
+
+            def profiles(container):
+                for child in list(container.children):
+                    if not getattr(child, "name", None):
+                        if str(child).strip():
+                            grid.append(child.extract())
+                        continue
+                    if "cb-profile__post" in child.get("class", []):
+                        name = child.select_one(".cb-profile__title")
+                        if name:
+                            slug = re.sub(r"[^a-z0-9]+", "-", name.get_text().lower()).strip("-")
+                            identifier = slug
+                            suffix = 2
+                            while identifier in identifiers:
+                                identifier = f"{slug}-{suffix}"
+                                suffix += 1
+                            identifiers.add(identifier)
+                            child["id"] = identifier
+                        grid.append(child.extract())
+                    elif child.select_one(".cb-profile__post"):
+                        profiles(child)
+                    elif child.get_text(strip=True):
+                        grid.append(child.extract())
+
+            profiles(soup)
+            soup.clear()
+            soup.append(grid)
         return str(soup)
 
     def cards(self, documents):
@@ -163,12 +262,14 @@ class Builder:
             if len(excerpt) > 180:
                 excerpt = excerpt[:177].rsplit(" ", 1)[0] + "..."
             date = datetime.fromisoformat(doc["date"]).strftime("%d %b %Y").lstrip("0")
-            cards.append(f'''<article class="card"><p class="eyebrow"><time datetime="{doc["date"][:10]}">{date}</time></p>
+            visual = self.visual(doc)
+            picture = self.image_markup(visual, "card-image", decorative=True)
+            cards.append(f'''<article class="card"><div class="card-media card-media--{visual["kind"]}">{picture}</div><div class="card-copy"><p class="eyebrow"><time datetime="{doc["date"][:10]}">{date}</time></p>
 <h3><a href="{ESC(self.local(doc["path"]))}">{ESC(doc["title"])}</a></h3><p>{ESC(excerpt)}</p>
-<span class="card-arrow" aria-hidden="true">&rarr;</span></article>''')
+<span class="card-arrow" aria-hidden="true">Read the story &nearr;</span></div></article>''')
         return '<div class="cards">' + "".join(cards) + "</div>"
 
-    def write(self, route, title, body, description=""):
+    def write(self, route, title, body, description="", body_class=""):
         nav = [("/about/", "About"), ("/people/", "People"), ("/research/", "Research"),
                ("/blog/", "News & events"), ("/fgea-cop/", "FGEA CoP"), ("/ea4ai-2026/", "EA4AI 2026")]
         links = "".join(f'<a href="{self.local(p)}"{" aria-current=page" if p == route else ""}>{label}</a>' for p, label in nav)
@@ -177,8 +278,9 @@ class Builder:
 <html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{ESC(title)} | DigiSAS Lab</title><meta name="description" content="{ESC(description[:250])}">
 {canonical}<link rel="stylesheet" href="{self.local('/assets/site.css')}">
+<link rel="stylesheet" href="{self.local('/assets/editorial.css')}">
 <link rel="alternate" type="application/rss+xml" title="DigiSAS Lab news" href="{self.local('/feed/index.xml')}">
-<script src="{self.local('/assets/site.js')}" defer></script></head><body>
+<script src="{self.local('/assets/site.js')}" defer></script></head><body class="{body_class}">
 <a class="skip" href="#main">Skip to content</a>
 <div class="university-bar">University of Technology Sydney <span>Software and societal systems</span></div>
 <header class="site-header"><div class="header-inner"><a class="brand" href="{self.local('/')}"><span class="brand-mark" aria-hidden="true">D<span>:</span></span><span>DigiSAS Lab<small>Research &amp; innovation</small></span></a>
@@ -208,9 +310,14 @@ class Builder:
             if doc["path"] == "/fgea-cop/":
                 intro = f'<aside class="notice">Explore the <a href="{self.local("/fgea-cop/")}">FGEA Community of Practice</a> for community information and its event archive.</aside>'
             route = self.route_overrides.get(doc["path"], doc["path"])
+            cover = ""
+            if not BeautifulSoup(rendered, "html.parser").find("img"):
+                visual = self.visual(doc)
+                cover = f'<figure class="document-cover document-cover--{visual["kind"]} wrap">{self.image_markup(visual, "cover-image", "eager")}</figure>'
             self.write(route, doc["title"],
                        f'<section class="page-heading wrap"><a class="breadcrumb" href="{self.local("/")}">DigiSAS Lab</a><p class="eyebrow">{ESC(eyebrow)}</p><h1>{ESC(doc["title"])}</h1></section>'
-                       f'<div class="prose wrap">{intro}{rendered}</div>')
+                       f'{cover}<div class="prose wrap">{intro}{rendered}</div>',
+                       body_class="people-page" if doc["path"] == "/people/" else "content-page")
             text = BeautifulSoup(rendered, "html.parser").get_text(" ", strip=True)
             self.search.append({"title": doc["title"], "url": self.local(route), "text": text})
         for route, (title, items) in self.archives.items():
@@ -225,7 +332,8 @@ class Builder:
 <h1>Intelligent software.<br>Meaningful societal impact.</h1>
 <p class="hero-intro">Human-centred research and innovation for safe, resilient and responsible digital ecosystems.</p>
 <div class="actions"><a class="button" href="{self.local('/research/')}">Explore our research &rarr;</a><a class="text-link" href="{self.local('/about/')}">Meet the lab &rarr;</a></div></div>
-<div class="hero-panel"><p class="eyebrow">Our approach</p><ol><li><span>01</span>Thinking</li><li><span>02</span>Architecting</li><li><span>03</span>Building</li><li><span>04</span>Evaluating</li></ol><p>Software and societal systems.<br>Research grounded in practice.</p></div></div></section>
+<figure class="hero-visual"><a href="{self.local('/fgea-cop/news/2025-q4-symposium/')}"><img src="{self.local('/fgea-cop/assets/images/events/fgea-2025-q4-symposium/participants.jpg')}" alt="Participants at the FGEA CoP 2025 Q4 symposium at UTS" width="1600" height="1200" fetchpriority="high" decoding="async"></a><figcaption><span>Ideas grow through connection.</span>FGEA CoP at UTS &middot; 2025 Q4</figcaption><span class="photo-label">Research in practice</span></figure></div>
+<div class="wrap approach-strip"><span>Our approach</span><ol><li><b>01</b> Thinking</li><li><b>02</b> Architecting</li><li><b>03</b> Building</li><li><b>04</b> Evaluating</li></ol></div></section>
 <section class="wrap section"><div class="section-top"><div><p class="eyebrow">From the lab</p><h2>Latest news &amp; events</h2></div><a href="{self.local('/blog/')}">All news &rarr;</a></div>{self.cards(self.posts[:6])}</section>
 <section class="community-strip"><div class="wrap"><p class="eyebrow">Connecting research and practice</p><h2>A community for what comes next.</h2><p>Explore the Future Generation Enterprise Architecture Community of Practice, and our enterprise architecture and AI activities.</p><div class="actions"><a class="button" href="{self.local('/fgea-cop/')}">FGEA Community of Practice &rarr;</a><a class="text-link" href="{self.local('/ea4ai-2026/')}">EA4AI 2026 &rarr;</a></div></div></section>''',
                    "DigiSAS Lab at the University of Technology Sydney: research and innovation in human-centred software and societal systems.")

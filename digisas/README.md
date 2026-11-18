@@ -27,7 +27,7 @@ The generated site consists only of HTML, CSS, JavaScript, media and a search in
 - `content/media.json`: source URLs, local files and file hashes.
 - `content/taxonomies.json`: original categories and tags.
 - `content/attachments.json`: linked WordPress attachment pages.
-- `content/site.json`: intentional route overrides for the shared community.
+- `content/site.json`: route overrides, additional imported media, and image replacements.
 - `assets/imported/`: downloaded images and documents, with image EXIF removed.
 - `assets/web/`: the new site's stylesheet and browser-side code.
 
@@ -50,6 +50,25 @@ digisas/.venv/bin/python digisas/scripts/migrate.py
 This refreshes public content and media. `--reuse-media` refreshes text while
 retaining already downloaded media. Builds and deployments do not contact
 WordPress.
+
+## Pictures and visual design
+
+News cards use their own published pictures, and image-free articles display
+their imported featured image. Where no source picture exists, original SVG
+editorial covers provide a visual without pretending to be event photography.
+These repository-authored illustrations and the homepage's decorative field
+live in `assets/web/editorial/`. The shared FGEA cover is recorded separately
+under `editorial_assets` in `_data/media.yml`.
+
+FGEA event cards and detail pages reuse the picture from their linked news
+record unless the event supplies its own. Agenda images are shown uncropped.
+Keep accurate image descriptions and captions with the original news record.
+
+To replace a low-resolution source picture, map its original URL path to the
+verified full-size source URL in `content/site.json` under `image_overrides`.
+Also list that URL in `additional_media` so later imports retain it. The image
+must be downloaded into the local media manifest, not hotlinked. Sarv Girn's
+portrait uses this mechanism on both his people and historical speaker pages.
 
 ## GitHub Pages
 

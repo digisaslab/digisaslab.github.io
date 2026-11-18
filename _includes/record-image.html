@@ -1,0 +1,20 @@
+{% assign record = include.record %}
+{% assign picture_record = record %}
+{% if record.event_id and record.layout == 'event' %}
+  {% assign linked_post = site.posts | where: "event_id", record.event_id | first %}
+  {% unless record.image %}{% assign picture_record = linked_post %}{% endunless %}
+{% endif %}
+{% assign picture = picture_record.image | default: '/assets/images/editorial/fgea-community.svg' %}
+{% assign picture_alt = picture_record.image_alt | default: 'FGEA community and enterprise architecture illustration' %}
+{% if include.card %}
+  <div class="record-card-image">
+    <img class="card-image" src="{{ picture | relative_url }}" alt="" width="{{ picture_record.image_width | default: 1200 }}" height="{{ picture_record.image_height | default: 720 }}" loading="lazy" decoding="async">
+  </div>
+{% else %}
+  <figure class="record-image">
+    <a href="{{ picture | relative_url }}" aria-label="View full image: {{ picture_alt | escape }}">
+      <img src="{{ picture | relative_url }}" alt="{{ picture_alt | escape }}" width="{{ picture_record.image_width | default: 1200 }}" height="{{ picture_record.image_height | default: 720 }}" loading="eager" decoding="async">
+    </a>
+    {% if picture_record.image_caption %}<figcaption>{{ picture_record.image_caption }}</figcaption>{% endif %}
+  </figure>
+{% endif %}

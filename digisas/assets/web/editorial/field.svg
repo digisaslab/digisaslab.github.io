@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" fill="none">
+  <defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#48776b" opacity=".14"/></pattern><linearGradient id="fade"><stop stop-color="#f6f7ee"/><stop offset="1" stop-color="#e6efdf"/></linearGradient></defs>
+  <path fill="url(#fade)" d="M0 0h1440v760H0z"/><path fill="url(#grid)" d="M760 0h680v760H760z"/>
+  <g stroke="#86a996" opacity=".24"><path d="M800-100c-260 260-240 640 100 840M1040-120C780 140 760 510 1120 800M1240-120C980 140 960 510 1320 800"/><circle cx="1200" cy="370" r="220"/><circle cx="1200" cy="370" r="300"/></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <defs><linearGradient id="bg" x2="1200" y2="720" gradientUnits="userSpaceOnUse"><stop stop-color="#153f43"/><stop offset="1" stop-color="#296c63"/></linearGradient><pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c6e7c7" opacity=".17"/></pattern></defs>
+  <path fill="url(#bg)" d="M0 0h1200v720H0z"/><path fill="url(#dots)" d="M0 0h1200v720H0z"/>
+  <g stroke="#e2edb7" stroke-width="2" opacity=".6"><path d="m640 180 170 100 180-75M810 280v200l180 100M810 480 640 380V180M640 380l170-100 180 100V205M990 380v200"/><path d="m640 180 180-100 170 125M810 480l180-100"/></g>
+  <g fill="#e2edb7"><circle cx="640" cy="180" r="8"/><circle cx="810" cy="280" r="11"/><circle cx="810" cy="480" r="8"/><circle cx="990" cy="380" r="8"/></g>
+  <g font-family="system-ui,sans-serif" fill="#eaf3e7"><text x="70" y="100" font-size="24" letter-spacing="5">DIGISAS LAB</text><text x="70" y="535" font-size="52">Ideas into</text><text x="70" y="600" font-size="52">meaningful impact.</text></g>
+  <path d="M70 460h90" stroke="#e2edb7" stroke-width="4"/>
+</svg>
