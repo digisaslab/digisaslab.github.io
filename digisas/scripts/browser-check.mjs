@@ -86,7 +86,20 @@ try {
     await call("Page.navigate", { url: origin + test.route }, sessionId);
     await loaded;
     await call("Runtime.evaluate", {
-      expression: `new Promise(resolve => setTimeout(resolve, 600))`, awaitPromise: true,
+      expression: `(async () => {
+        await document.fonts.ready;
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        await new Promise(resolve => {
+          const deadline = Date.now() + 15000;
+          const ready = () => {
+            const images = [...document.images].filter(image => image.getBoundingClientRect().top < innerHeight);
+            const searching = document.querySelector("#search-status")?.textContent === "Searching...";
+            if ((!searching && images.every(image => image.complete)) || Date.now() > deadline) resolve();
+            else setTimeout(ready, 100);
+          };
+          ready();
+        });
+      })()`, awaitPromise: true,
     }, sessionId);
     const { result } = await call("Runtime.evaluate", {
       expression: `JSON.stringify({
