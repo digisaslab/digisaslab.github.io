@@ -177,6 +177,13 @@ try {
         cardImageLink: (() => { const card = document.querySelector(".cards > .card"); const image = card?.querySelector(".card-media"); if (!image) return null; const b = image.getBoundingClientRect(); return document.elementFromPoint(b.x + b.width / 2, b.y + b.height / 2)?.closest("a")?.href === card.querySelector("h2 a, h3 a").href; })(),
         alignmentIssues: (() => {
           const issues = [];
+          for (const heading of document.querySelectorAll(".page-heading, .listing-heading, .search-page .section")) {
+            const labels = [...heading.children].filter(element => element.matches(".breadcrumb, .eyebrow, h1"));
+            const left = heading.matches(".listing-heading")
+              ? heading.parentElement.getBoundingClientRect().left : labels[0]?.getBoundingClientRect().left;
+            if (labels.some(element => getComputedStyle(element).textAlign !== "left"
+              || Math.abs(element.getBoundingClientRect().left - left) > 2)) issues.push("Page heading is not left-aligned");
+          }
           for (const [gridSelector, itemSelector] of [
             [".people-grid", ":scope > article"],
             [".cards", ":scope > .card"],
