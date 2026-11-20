@@ -39,6 +39,122 @@ The source URL is used to resolve relative links; use the intended final URL for
 new content. The completeness check permits additional content but protects
 original imported documents and routes from accidental deletion.
 
+## Adding lab posts and pages
+
+For browser-only branches, organiser review, and publishing, start with the
+[organiser quick start](../README.md#organiser-quick-start-publish-without-installing-anything).
+These steps are for **DigiSAS Lab**, not the FGEA Markdown collections.
+Lab authoring currently requires JSON and a small amount of HTML; there is no
+WordPress-style visual editor.
+
+1. On your working branch, open `digisas/content/documents.json` and choose
+   **Edit**. This file is one JSON array of document objects.
+2. Add a comma after the last existing object, then paste the object below
+   **before the final `]`**. Do not replace an imported record to create a new
+   one.
+3. Choose an integer `id` not used by any other document. `200001` below is an
+   example, not a reusable ID; search the file for it before using it.
+4. Replace the title, slug, dates, path, body, and summary. Keep all keys.
+   Use a unique address ending in `/`; do not reuse an existing page, archive,
+   `/fgea-cop/` route, or other generated address.
+5. Save on the branch, then follow the root README's pull-request review and
+   deployment steps. Check the resulting `/blog/` listing and the new page.
+
+Copy this object for a lab news post:
+
+```json
+{
+  "id": 200001,
+  "kind": "post",
+  "slug": "research-workshop-announcement",
+  "title": "Research workshop announcement",
+  "url": "https://digisaslab.github.io/blog/2027/02/01/research-workshop-announcement/",
+  "path": "/blog/2027/02/01/research-workshop-announcement/",
+  "date": "2027-02-01T09:00:00",
+  "modified": "2027-02-01T09:00:00",
+  "content": "<p>Write the reviewed announcement here.</p><h2>Details</h2><p>Add confirmed dates, speakers, and registration information.</p>",
+  "excerpt": "<p>A short, factual summary for news cards.</p>",
+  "categories": [],
+  "tags": [],
+  "featured_image": null
+}
+```
+
+Use the actual publication date consistently in `date`, `url`, and `path`.
+Update `modified` when correcting a record. Leave category/tag arrays empty
+unless using IDs already defined in `content/taxonomies.json`.
+
+**Lab records do not currently support drafts or scheduled publication.**
+Every record in `documents.json` is built, even with a future date or a
+`published: false` field. Keep unfinished or embargoed work off `main`.
+Unmerged branches are not deployed but are still visible in this public
+repository: never use them for confidential drafts or private material.
+
+For an information page, use the same object with `"kind": "page"`, a unique
+`slug` such as `"industry-collaboration"`, and matching addresses:
+
+```json
+"url": "https://digisaslab.github.io/industry-collaboration/",
+"path": "/industry-collaboration/"
+```
+
+New lab posts enter the news archive, recent homepage news, feed, and search
+automatically. New information pages enter **All pages & archives** and search;
+also link them from a relevant existing lab page. The lab's main navigation is
+defined in `scripts/build.py`, not `_data/navigation.yml`; ask the maintainer
+to change it only when a new main-menu entry is necessary.
+
+### Writing the lab body
+
+The `content` and `excerpt` values are HTML strings, not Markdown. Useful
+elements are `<p>Paragraph</p>`, `<h2>Section heading</h2>`, and
+`<ul><li>List item</li></ul>`. The template supplies the main page title, so do
+not add another `<h1>`.
+
+JSON requires double quotes around strings and commas between fields/objects,
+but no trailing comma before `}` or `]`. Inside a JSON string, escape HTML
+attribute quotes with `\"`, for example:
+
+```json
+"content": "<p><a href=\"/research/\">Explore our research</a></p>"
+```
+
+Do not paste literal line breaks inside a JSON string; use one line or escaped
+`\n`. Use root-relative lab links such as `/research/` and
+`/fgea-cop/events/`, or full HTTPS addresses for external websites. The build
+checks internal destinations.
+
+### Pictures for lab content
+
+- To reuse an existing lab picture, find its `source` URL in
+  `content/media.json`. Copy that complete URL into `featured_image` instead
+  of `null`. Use a photograph genuinely related to the post.
+- To show it within the article as well, add an `<img>` inside a `<figure>` in
+  `content`, with accurate `alt` text and a `<figcaption>`; escape its attribute
+  quotes as above. The existing manifest lets the build serve a local copy.
+- Without a supplied picture, a new record gets an illustrated cover. There
+  is no need to invent a photo or edit CSS.
+- **A new upload needs maintainer preparation:** the file must be metadata-free,
+  placed in `assets/imported/`, and registered with its source, path, byte
+  count, and hashes in `content/media.json`. Simply uploading a photo or
+  pasting a new external URL into `featured_image` is not enough for the
+  automatic card image to use it. Include the approved photo, caption, and
+  provenance in the review handoff; do not run the WordPress importer to add it.
+
+The FGEA Markdown image-upload workflow is separate and documented in the
+[root README](../README.md#add-event-images).
+
+### Correcting existing lab content
+
+Search `documents.json` for the page's `path` or title. Change only the relevant
+body/title/summary and `modified` date, preserving its ID and published address.
+For people, edit the original `/people/` content; homepage previews reuse those
+profiles. Selected homepage research links and cover labels are in
+`content/homepage.json`. Never edit `_site/` output or refresh from WordPress as
+part of routine publishing.
+
+## Refreshing the original WordPress import
+
 The importer is for pre-cutover refreshes, not a CMS. It replaces the snapshot's
 document and media indexes. **Back up or commit local editorial changes before
 running it; do not overwrite new static-site content with a WordPress import.**

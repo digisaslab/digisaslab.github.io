@@ -1,5 +1,10 @@
 # Contributing content
 
+For everyday browser-only publishing, start with the
+[organiser quick start in the README](README.md#organiser-quick-start-publish-without-installing-anything).
+It covers access, working branches, templates, pictures, review, deployment,
+and corrections for both sites. This document is the detailed field reference.
+
 All published statements must be factual, attributable where appropriate, and
 reviewed by a person familiar with the subject. Do not infer that a scheduled
 event occurred. Use Australian/British spelling, Oxford commas, and concise
